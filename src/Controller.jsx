@@ -1,4 +1,4 @@
-import controllerImage from './assets/v3-controller-grounded.webp';
+import controllerImage from "./assets/v3-controller-grounded.webp";
 
 export default function Controller() {
   return (

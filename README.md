@@ -14,7 +14,7 @@ Game Shelf is my personal Steam journal. I add entries manually, starting with 2
 
 Built with **React, JavaScript, Vite and plain CSS**. Case titles and controls are HTML. No automatic Steam sync, account system or backend.
 
-Games are entered by hand with dates and lifetime hours checked in Steam. A clearly labelled fictional collection remains available when the game list is empty; those examples are not my Steam history.
+Games are entered by hand with dates and lifetime hours checked in Steam. When the game list is empty, the app shows a clearly labelled fictional collection.
 
 ## Run locally
 
@@ -30,6 +30,8 @@ npm test
 npm run build
 npm run preview
 ```
+
+`npm run build` creates the static site in `dist/`, with relative asset paths suitable for GitHub Pages.
 
 ## Add a game
 
