@@ -119,7 +119,12 @@ export const games = [
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2552430/library_600x900_2x.jpg",
     color: "#f8f8f0",
     ink: "#191928",
-    notes: [],
+    notes: [
+      {
+        date: "2026-10-04",
+        text: "I had wanted to revisit the first Kingdom Hearts for a while after loving it on the PS2. It did not quite live up to those memories, but I still enjoyed spending time in its worlds again. This is the only game I have played from the collection so far. I am skipping Chain of Memories because the card system does not appeal to me, though I plan to play Kingdom Hearts II eventually.\n\nThe story, Disney and Square characters, colourful worlds and music remain the main attractions. Even here, I could see the beginnings of the increasingly convoluted storytelling the series would become known for. There is plenty of postgame content, and the tournaments in Hercules' world offer a welcome change of pace when I just want a few battles or some levelling instead of more exploration.\n\nOutside the boss fights, combat is often easy enough that repeatedly pressing attack does the job. The camera is the bigger frustration: at its worst, it takes much of the enjoyment out of playing. I was surprised that this collection had not done more to address it.",
+      },
+    ],
   },
   {
     id: "minds-beneath-us",
@@ -292,6 +297,10 @@ export const games = [
         date: "2026-10-04",
         text: "Started in November 2025. I still return to it regularly, long after earning every achievement.",
       },
+      {
+        date: "2026-10-04",
+        text: "I bought this as a palate cleanser between my usual story-focused games. Roguelites are not normally my thing, but the Turtles' designs caught my eye, and TMNT was one of my favourite franchises growing up. What I expected to be a change of pace has become a game I return to regularly, long after earning every achievement.\n\nThe soundtrack is great, combat is responsive, and there are plenty of viable builds to experiment with. The bosses call for different strategies, while the goofy dialogue feels right for the franchise. I still finish a run and immediately start another with a different Turtle, simply because playing is so much fun. The DLC has generally felt fairly priced, too.\n\nMy main frustration is the limited choice of routes. Currently, only the third level has an alternative, and that requires DLC; otherwise, every run follows the same sequence. Casey Jones aside, the extra characters have not offered much for me so far, as I have not found them particularly interesting. I expect to keep coming back for a long time, and more levels would give me even more reason to do so.",
+      },
     ],
   },
   {
@@ -306,6 +315,11 @@ export const games = [
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1361510/library_600x900_2x.jpg?t=1782982752",
     color: "#afda4a",
     ink: "#191928",
-    notes: [],
+    notes: [
+      {
+        date: "2026-10-04",
+        text: "After Splintered Fate, I wanted more TMNT, and this seemed like a natural next stop. It also reminded me of Turtles in Time, which I played a lot growing up. Unfortunately, it never connected with me in the same way.\n\nThe colours are vibrant, some of the original cartoon cast return, and it plays well. The pixel art did little for me, though, as it is not a style I usually enjoy. Even with a short campaign, there were enough similar stages for the journey to feel repetitive, and after finishing it once I felt little urge to return. Co-op might have made a difference, but I never tried it.",
+      },
+    ],
   },
 ];
