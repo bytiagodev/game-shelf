@@ -1,5 +1,7 @@
 ![Game Shelf. My personal Steam tracker.](docs/assets/game-shelf-banner.webp)
 
+**Live:** [bytiagodev.github.io/game-shelf](https://bytiagodev.github.io/game-shelf/)
+
 A little place to keep the games I've played, with a case for each game and notes to remind me what I thought of it at the time.
 
 Game Shelf is my personal Steam journal. I add entries manually, starting with 2026, and open their cases to see a cover, lifetime playtime, last-played date and dated notes. The illustrated cabinet grows into more rows as the collection grows.
@@ -18,7 +20,7 @@ Games are entered by hand with dates and lifetime hours checked in Steam. When t
 
 ## Run locally
 
-Use Node 20.19 or newer.
+Use Node 20.19+ or 22.12+.
 
 ```sh
 npm ci
@@ -56,8 +58,6 @@ export const games = [
   },
 ];
 ```
-
-This is a format example, not actual play history.
 
 - `id` is a unique, stable identifier. `year` chooses the shelf year.
 - `lastPlayed` can be `null`, an exact date with `precision: 'day'`, or an approximate month with `precision: 'month'`. For a month, use its first day for sorting; the interface displays only the month and year.
