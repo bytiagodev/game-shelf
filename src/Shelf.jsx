@@ -64,9 +64,12 @@ export default function Shelf({ games, onSelect, profile, emptyContent }) {
   const lowerCapacity = Math.max(1, Math.floor(((containerWidth - 16) * 2 / 3 - 36 + 10) / 66));
   const firstCount = isWideLayout ? smallCapacity * 2 : fullCapacity;
   const controller = <div className="cubby controller-cubby">
-    <div className="profile-label"><span>{profile.name}</span>
-      {profile.steamUrl && <a href={profile.steamUrl} target="_blank" rel="noreferrer"
-        aria-label="Open Steam">↗</a>}</div>
+    <div className="profile-label">
+      {profile.steamUrl
+        ? <a href={profile.steamUrl} target="_blank" rel="noreferrer"
+          aria-label="Open Steam">{profile.name}</a>
+        : <span>{profile.name}</span>}
+    </div>
     <div className="controller-rest"><Controller /></div></div>;
   const headset = <div className="cubby headset-cubby"><div className="headset-rest"><img className="headset" src={headsetImage}
     alt="Illustrated charcoal and lavender gaming headset on a stand" decoding="async" /></div></div>;

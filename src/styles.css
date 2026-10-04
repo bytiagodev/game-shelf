@@ -56,8 +56,10 @@ input::placeholder { color: #665a78; opacity: 1; }
 .controller-rest { width: min(90%, 270px); }
 .controller-rest::before, .headset-rest::before { content: ""; position: absolute; width: 78%; height: 5px; bottom: -1px; left: 11%; border-radius: 50%; background: #28283e40; z-index: -1; }
 .controller { display: block; width: 100%; height: auto; margin: 0; }
-.profile-label { position: absolute; top: 24px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 8px; justify-content: center; padding: 6px 14px; border: 2px solid var(--ink); border-radius: 6px; background: #ffcf64; box-shadow: 2px 2px 0 var(--ink); font-size: 13px; font-weight: 800; }
-.profile-label a { display: grid; place-items: center; width: 44px; height: 44px; margin: -6px -10px -6px 0; text-decoration: none; }
+.profile-label { position: absolute; top: 24px; left: 50%; transform: translateX(-50%); min-width: 140px; max-width: calc(100% - 32px); border: 2px solid var(--ink); border-radius: 6px; background: #ffcf64; box-shadow: 2px 2px 0 var(--ink); font-family: "Arial Black", "Trebuchet MS", sans-serif; font-size: 24px; font-weight: 900; line-height: 1.1; text-align: center; }
+.profile-label a, .profile-label span { display: grid; place-items: center; min-height: 48px; padding: 8px 20px; }
+.profile-label a { text-decoration: none; }
+.profile-label a:hover { text-decoration: underline; text-underline-offset: 4px; }
 .headset-cubby { background: #ffcfde; box-shadow: inset 8px 8px 0 #e9a8c1, inset -3px 0 0 #c58da8; }
 .headset-rest { width: min(92%, 248px); height: calc(100% - 14px); }
 .headset { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center bottom; }
@@ -100,7 +102,7 @@ input::placeholder { color: #665a78; opacity: 1; }
 .cover-motif { border: 3px solid currentColor; position: absolute; width: 160px; height: 160px; border-radius: 50%; left: 55px; top: 40px; opacity: .22; }
 .cover--moon .cover-motif { background: currentColor; border: 0; width: 95px; height: 95px; left: 95px; top: 50px; }
 .cover--steps .cover-motif { border-radius: 0; transform: rotate(35deg); }
-.steam-link { display: flex; justify-content: space-between; gap: 10px; padding: 14px 0; font-size: 13px; text-underline-offset: 3px; min-height: 44px; }
+.steam-link { display: block; padding: 14px 0; font-size: 13px; text-underline-offset: 3px; min-height: 44px; }
 .sample-label { font-size: 12px; color: var(--muted); margin: 0 0 12px; }
 .detail-content h2 { font-size: 30px; margin: 0; line-height: 1.2; font-weight: 900; overflow-wrap: anywhere; padding-right: 9px; }
 .collection-label { margin: 10px 0 0; font-size: 12px; line-height: 1.5; }
@@ -145,7 +147,7 @@ input::placeholder { color: #665a78; opacity: 1; }
   .game-cubby { padding-inline: 12px; }
   .spine-title { font-size: 16px; top: 36px; bottom: 20px; }
   .spine-platform { top: 4px; }
-  .profile-label { top: 16px; font-size: 12px; padding: 5px 11px; }
+  .profile-label { top: 16px; }
   .shelf-ledge { height: 19px; grid-template-columns: 26px minmax(0,1fr) 26px; }
   .game-dialog { width: calc(100% - 24px); padding: 64px 22px 26px; }
   .detail-layout { grid-template-columns: 1fr; gap: 28px; }

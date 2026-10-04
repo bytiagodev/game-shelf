@@ -53,7 +53,7 @@ export default function GameDetail({ game, isSample, onDismiss }) {
             <Cover key={game.id} game={game} />
             {game.steamAppId && <a className="steam-link"
               href={'https://store.steampowered.com/app/' + game.steamAppId + '/'}
-              target="_blank" rel="noreferrer">View on Steam <span aria-hidden="true">↗</span></a>}
+              target="_blank" rel="noreferrer">View on Steam</a>}
           </div>
           <div className="detail-content">
             {isSample && <p className="sample-label">Fictional sample</p>}
