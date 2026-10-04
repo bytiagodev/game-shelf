@@ -58,6 +58,7 @@ export default function GameDetail({ game, isSample, onDismiss }) {
           <div className="detail-content">
             {isSample && <p className="sample-label">Fictional sample</p>}
             <h2 id="game-title">{game.title}</h2>
+            {game.steamCollection && <p className="collection-label">From {game.steamCollection}</p>}
             <div className="tags">{game.genres.map(genre => <span key={genre}>{genre}</span>)}</div>
             <dl className="game-facts">
               <div><dt>Steam hours (lifetime)</dt><dd>{formatHours(game.totalHours)}</dd></div>

@@ -14,7 +14,7 @@ Game Shelf is my personal Steam journal. I add entries manually, starting with 2
 
 Built with **React, JavaScript, Vite and plain CSS**. Case titles and controls are HTML. No automatic Steam sync, account system or backend.
 
-The real collection is still empty. Until I add the first entry, the app shows clearly labelled fictional games so I can try the interface. Those examples are not my Steam history.
+Games are entered by hand with dates and lifetime hours checked in Steam. A clearly labelled fictional collection remains available when the game list is empty; those examples are not my Steam history.
 
 ## Run locally
 
@@ -61,6 +61,7 @@ This is a format example, not actual play history.
 - `lastPlayed` can be `null`, an exact date with `precision: 'day'`, or an approximate month with `precision: 'month'`. For a month, use its first day for sorting; the interface displays only the month and year.
 - `totalHours` is the lifetime total copied from Steam. Use `null` if unknown; zero remains zero. It does not represent hours played that year.
 - `steamAppId` enables the Steam store link. `coverUrl` supplies that game's own cover; missing or failed images have a title fallback.
+- For a game inside a Steam collection, use its individual title and the collection's app ID and cover. The optional `steamCollection` field identifies that collection in the details panel.
 - `color` selects the nearest illustrated sleeve colour. `ink` sets the fallback cover's title colour.
 - Use `notes: []` when there are no notes. Append a dated note when returning to a game and update `lastPlayed`, keeping one case for it.
 - Games can have several genres, so genre counts may overlap. The breakdown covers the selected year, even when the shelf is filtered.

@@ -33,7 +33,8 @@ export default function App() {
         </a>
         <p className="shelf-status" role="status">{visibleGames.length === yearGames.length
           ? yearGames.length
-          : visibleGames.length + ' of ' + yearGames.length}{isSample ? ' fictional samples' : ' games'}</p>
+          : visibleGames.length + ' of ' + yearGames.length}{isSample ? (yearGames.length === 1 ? ' fictional sample' : ' fictional samples')
+          : (yearGames.length === 1 ? ' game' : ' games')}</p>
         </div>
       </header>
 
