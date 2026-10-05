@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import Controller from "./Controller.jsx";
-import headsetImage from "./assets/v2-headset.webp";
+import headsetImage from "./assets/v3-headset-blackshark.webp";
 import beamImage from "./assets/v2-beam.webp";
 import mint from "./assets/v3-spine-mint.webp";
 import yellow from "./assets/v3-spine-yellow.webp";
@@ -176,7 +176,7 @@ export default function Shelf({ games, onSelect, profile, emptyContent }) {
         <img
           className="headset"
           src={headsetImage}
-          alt="Illustrated charcoal and lavender gaming headset on a stand"
+          alt="Illustrated black BlackShark V3 inspired headset on a stand"
           decoding="async"
         />
       </div>
