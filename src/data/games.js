@@ -8,6 +8,25 @@ export const profile = {
 
 export const games = [
   {
+    id: "007-first-light",
+    title: "007 First Light",
+    steamAppId: 3768760,
+    genres: ["Action", "Adventure"],
+    year: 2026,
+    lastPlayed: { date: "2026-10-05", precision: "day" },
+    totalHours: 19,
+    coverUrl:
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3768760/1159a696d257cbeb3f4479be3466cfba2ae938a0/library_600x900_2x.jpg?t=1790955737",
+    color: "#22232c",
+    ink: "#fffaf3",
+    notes: [
+      {
+        date: "2026-10-05",
+        text: "James Bond is one of my favourite film franchises. I grew up watching the films and always go to the cinema when a new one comes out, so a new 007 game was bound to get my attention. The games have rarely done the franchise justice, though. Everything or Nothing on PS2 was the last good one I remember playing; most of what followed ranged from poor to average. I had high hopes for First Light, but kept my expectations in check.\n\nFortunately, it delivered. The story is entertaining and easy to follow, with memorable action sequences and plenty of that classic Bond atmosphere. It also does a great job of introducing James and showing how he earns the 007 designation. Where earlier games often leaned heavily on action, this one gives you room to investigate, eavesdrop and find different ways through a mission. Those quieter moments made me feel more like Bond than simply winning another gunfight.\n\nThe gameplay mechanics are a highlight. Being able to bluff my way out of trouble instead of immediately reaching for a gun was particularly satisfying, and the gadgets were fun to use, with distinct purposes rather than feeling interchangeable.\n\nI would have liked the cars to play a bigger part, and the opening couple of hours spent too much time on training. I understood the intention behind the rougher combat, with Bond still inexperienced, but it could feel awkward enough that I found myself wishing for a lock-on button.\n\nEven with those gripes, I had a great time and earned every achievement. I hope IO Interactive gets the chance to build on this with another Bond game. Whatever happens with the licence, it would be a shame if the studio could not continue after such a strong start.",
+      },
+    ],
+  },
+  {
     id: "prince-of-persia-the-lost-crown",
     title: "Prince of Persia: The Lost Crown",
     steamAppId: 2751000,
