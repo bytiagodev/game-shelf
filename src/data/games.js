@@ -76,7 +76,12 @@ export const games = [
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2001760/f257ca2dc23c5590ade297fca68f3cab2e4edb4e/library_capsule_2x.jpg?t=1788151394",
     color: "#ff9961",
     ink: "#191928",
-    notes: [],
+    notes: [
+      {
+        date: "2026-10-05",
+        text: "An okay game that falls short of its potential. Combat was clunky at first but improved as I went on, the music was pretty good, and the visual ideas were interesting despite some rough presentation. Koo was also a welcome companion in battle.\n\nEmma was a bland protagonist, though, and the story never made the most of its intriguing premise. Frequent boss reuse and an unreliable camera added to the frustration. I think more development time could have turned this into a much better game.",
+      },
+    ],
   },
   {
     id: "life-is-strange-double-exposure",
@@ -90,7 +95,12 @@ export const games = [
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1874000/library_600x900_2x.jpg",
     color: "#aa8ef1",
     ink: "#191928",
-    notes: [],
+    notes: [
+      {
+        date: "2026-10-05",
+        text: "I loved the first Life is Strange, and after disappointing follow-ups I hoped bringing Max back would help the series find its footing again. Instead, she felt like a watered-down version of the character I remembered, which made the disappointment even greater.\n\nHer return seemed like an opportunity to explore post-traumatic stress, grief, depression or guilt. For most of the game, though, she comes across as happy, mellow and largely unaffected. That felt like a missed opportunity. I found the supporting cast unlikeable, too, and did not care about any of them.\n\nThe new power was far less interesting to me than rewinding time. The split-timeline premise never worked for me either: it introduced unnecessary plot holes and made decisions feel even less consequential. For me, the series still has not matched the quality of the original.",
+      },
+    ],
   },
   {
     id: "assassins-creed-black-flag-resynced",
@@ -104,7 +114,12 @@ export const games = [
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3751950/36a1644b03afce1a648ab90b232196609e827539/library_capsule_2x.jpg?t=1787915122",
     color: "#22232c",
     ink: "#fffaf3",
-    notes: [],
+    notes: [
+      {
+        date: "2026-10-05",
+        text: "The original Black Flag was my favourite Assassin's Creed, so I came into this with huge expectations. It more than met them. Some elements are missing, including the modern-day story, but I never enjoyed those sections and did not miss them here. I was unsure about the revised combat at first, yet ended up liking it.\n\nThe visuals are stunning, the additions to naval combat are welcome, and the pets bring a lovely bit of charm to both the hideout and life at sea. Albert the Monkey was my favourite.\n\nBy the end, I had earned every achievement and explored every nook and cranny. Rather than feeling ready to move on, I was sad that there was nothing left to do. I would happily have spent many more hours with it.",
+      },
+    ],
   },
   {
     id: "kingdom-hearts-final-mix",
@@ -138,7 +153,12 @@ export const games = [
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1610440/library_600x900_2x.jpg",
     color: "#3b68d9",
     ink: "#fffaf3",
-    notes: [],
+    notes: [
+      {
+        date: "2026-10-05",
+        text: "With so much discussion about AI, this felt like a fitting game to play. Its dystopian cyberpunk setting is strong, and the art, characters, story and mystery all kept me interested. My feelings about the game as a whole are more mixed.\n\nThe gameplay itself is fairly dull, and the ending choices felt anticlimactic. In particular, I could not see why the two anti-authority options needed to be mutually exclusive. That restriction seemed forced. The story also appears to leave room for DLC or a sequel, and I would be willing to give either a try.",
+      },
+    ],
   },
   {
     id: "clair-obscur-expedition-33",
