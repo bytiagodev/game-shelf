@@ -275,7 +275,12 @@ export const games = [
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2515020/library_600x900_2x.jpg?t=1773294537",
     color: "#8c99aa",
     ink: "#191928",
-    notes: [],
+    notes: [
+      {
+        date: "2026-10-06",
+        text: "The story is alright, but fairly basic. It has the familiar Final Fantasy ingredients without doing anything exceptional with them, and it left me missing the stories of VII, VIII, IX and X.\n\nCombat quickly settled into the same routine: dodge, counterattack and work through the stagger gauge, which felt like another health bar. Once an enemy staggered, I unloaded my cooldown abilities to squeeze as much damage as possible into that window. Every boss felt like a variation on this pattern with different animations. Customisation was limited to the Eikons I had unlocked, while crafting mostly meant replacing a sword or piece of armour with the same thing carrying higher numbers.\n\nThe side quests were my biggest frustration because they dragged the pacing down. Most amounted to talking to an NPC, travelling somewhere to collect an item or fight a handful of enemies, then returning for a story I struggled to care about. The characters felt one-dimensional, and the money and crafting materials rarely seemed worth the detour in a game that already offered so little challenge.\n\nTo me, XVI feels like a mixture of an MMO and Devil May Cry. I could have accepted that more readily as a spin-off, but I expected better from a mainline Final Fantasy.",
+      },
+    ],
   },
   {
     id: "dying-light-the-beast",
@@ -289,7 +294,12 @@ export const games = [
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3008130/66ecd6b5e71e85cd3e339ba9233979a23c5f0ec0/library_capsule_2x.jpg?t=1789646537",
     color: "#2e8653",
     ink: "#fffaf3",
-    notes: [],
+    notes: [
+      {
+        date: "2026-10-06",
+        text: "I really liked the first Dying Light, so I hoped bringing Kyle Crane back would help the series return to form. I was not keen on what they had done with his character or the ability to transform into a beast, but having him and his snappy attitude back still felt nostalgic. Sadly, The Beast did not live up to those hopes. It is not a bad game, but the original remains the best for me.\n\nThe story leaves a lot to be desired. It is simple and straightforward, driven by a vague desire for revenge, yet Kyle often seemed to lack a clear objective or a plan for achieving it. The supporting cast did little to help: they were so bland that I had largely forgotten them as soon as their quest chains ended.\n\nParkour was a huge part of what made Dying Light special. Here, the forest-heavy map made it feel much less important and less enjoyable. The vehicles were another disappointment. The buggy in the first Dying Light had felt like my own vehicle, something I could upgrade, repair, modify and call back at certain places on the map. These cars felt disposable, respawning in the same locations and condition every time. Refuelling seemed pointless when swapping to another car was just as easy.\n\nMy affection for the first game kept me going. I wanted to see whether this one improved, or at least find out where the story took Kyle, so I finished it. Without that attachment, I probably would not have. For me, it was average at best.",
+      },
+    ],
   },
   {
     id: "cast-n-chill",
@@ -303,7 +313,12 @@ export const games = [
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3483740/ae3040b8888720472de900f70824c845fac45aaf/library_capsule_2x.jpg?t=1785377115",
     color: "#79c8f0",
     ink: "#191928",
-    notes: [],
+    notes: [
+      {
+        date: "2026-10-06",
+        text: "The pixel art is stunning, and the animations look lovely. There just was not much gameplay to hold my attention. I came looking for an idle game, and although Cast n Chill has an idle mode, it felt more like handing the controls over than building towards automation.\n\nAs far as I could tell, there was no real reason to play manually. I understand the usual idle-game loop of doing things yourself before gradually automating them. In Cast n Chill, turning on idle mode felt more like switching from playing the game to watching a YouTube video of it.\n\nIt is not bad, but it did not give me what I wanted from an idle game. Most of my time with it was spent letting it run on a second monitor while I did other things.",
+      },
+    ],
   },
   {
     id: "mullet-madjack",
@@ -317,7 +332,12 @@ export const games = [
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2111190/library_600x900_2x.jpg?t=1787078659",
     color: "#d93640",
     ink: "#fffaf3",
-    notes: [],
+    notes: [
+      {
+        date: "2026-10-06",
+        text: "There is barely a story to speak of. You chase a billionaire through 80 floors of a tower to rescue a kidnapped girl, while an irritating character keeps talking in your ear. After all that, Jack's reward is a pair of shoes.\n\nThe game felt basic and rushed to me. With only ten seconds to live and kills extending the timer, each level becomes another frantic dash from point A to point B. The same few layouts repeat, and the constant rush to the exit left the gameplay feeling thin and repetitive.\n\nThe weapon balance made things worse. The railgun sniper felt practically useless when I needed to keep firing and moving to stay alive. The shotgun, on the other hand, was so overpowered that I saw little reason to use anything else: body shots regularly killed enemies outright, and it tore through bosses just as quickly. An extra second for a headshot did little to encourage careful aiming when spamming the shotgun was already so effective.\n\nEven though it is a very short game, I had already lost interest well before the end.",
+      },
+    ],
   },
   {
     id: "tmnt-splintered-fate",
