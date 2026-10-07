@@ -6,6 +6,25 @@ export const profile = {
 
 export const games = [
   {
+    id: "onimusha-way-of-the-sword",
+    title: "Onimusha: Way of the Sword",
+    steamAppId: 2638890,
+    genres: ["Action", "Adventure", "RPG"],
+    year: 2026,
+    lastPlayed: { date: "2026-10-07", precision: "day" },
+    totalHours: 4,
+    coverUrl:
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2638890/730daf025e5922da7441a4c02b1999f27dc026fd/library_capsule_2x.jpg?t=1790383151",
+    color: "#892e4a",
+    ink: "#fffaf3",
+    notes: [
+      {
+        date: "2026-10-07",
+        text: "Onimusha: Warlords was great, Samurai's Destiny was good, and Demon Siege was okay. Dawn of Dreams did so little for me that I never finished it. When Way of the Sword was announced, I was curious to see where it would land. I am still playing, but so far it feels about on par with the third game: not bad, but not great either.\n\nCombat is great against bosses, but regular enemies are too easy and passive, even when they outnumber me. Musashi can be funny, though the humour often goes too far into silliness and breaks the game's otherwise serious atmosphere. The open world also feels empty and lacking so far.\n\nThe English voice actors have very thick British accents that, to me, do not suit the characters at all. I hope the game improves as I keep playing, but at this point I am not particularly confident.",
+      },
+    ],
+  },
+  {
     id: "007-first-light",
     title: "007 First Light",
     steamAppId: 3768760,
