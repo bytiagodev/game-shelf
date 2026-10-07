@@ -208,7 +208,12 @@ export const games = [
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1903340/8b21381a43ac5a535a838f723815f8fe14ceaf7c/library_600x900_2x.jpg?t=1782830877",
     color: "#e3d1a1",
     ink: "#191928",
-    notes: [],
+    notes: [
+      {
+        date: "2026-10-07",
+        text: "Expedition 33 started so strongly that I thought I might be playing an almost perfect game. By the end, I was mostly carrying on because I wanted to be done with it.\n\nThere was still a lot I liked. The soundtrack is fantastic, the art direction and cutscenes are beautiful, and I enjoyed combat for much of the game. The parry system makes turn-based fights feel more active, and figuring out how each character works was fun.\n\nThe story was my biggest disappointment. Early on, it was emotional and impactful, with characters expressing their feelings and frustrations in ways that felt convincing. The idea of sending an expedition each year to try to save the next generation was fascinating. Around ten hours in, though, the story took a dive and never recovered for me.\n\nGustave's death felt designed for shock value, only to be cheapened by almost immediately replacing him with a character who felt like a copy but was nowhere near as captivating or interesting. Gustave had been the best character by far for me, and losing him that way drained much of my interest in the game.\n\nNot long afterwards, the story shifted away from the expeditions towards a family conflict and two different worlds: the painted world the characters inhabit and the real one. That revelation made the suffering and struggles of the opening feel as though they no longer mattered, because this was a fictional world controlled by someone else. At that point, I stopped caring about the story. Both endings felt in poor taste, too.\n\nLevel design was another frustration. Most areas felt like one corridor after another, with enemies blocking the way and side paths leading to an item, a cosmetic, or a dead end. The environments look huge and interesting, but invisible walls constantly reveal how little of them can actually be explored. The overworld looks great as well, though exploring it rarely felt worth the effort.\n\nCombat became repetitive once I found setups that worked, while movement and collision felt surprisingly rough compared with the quality of the visuals.\n\nI do not think Expedition 33 is a bad game. The things it does well are fantastic, but the story declined so much that the music and presentation could not carry it for me. If it had stayed true to its opening premise, it could have been a masterpiece in my eyes. Sadly, it did not.",
+      },
+    ],
   },
   {
     id: "ghost-of-tsushima",
@@ -222,7 +227,12 @@ export const games = [
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2215430/library_600x900_2x.jpg?t=1763409398",
     color: "#f8f8f0",
     ink: "#191928",
-    notes: [],
+    notes: [
+      {
+        date: "2026-10-07",
+        text: "I absolutely loved Ghost of Tsushima. The world is beautiful, combat feels amazing, and the story is one I will remember for a long time.\n\nWhat makes it so special is how emotional it can be. Fighting my own uncle, the bond I built with my horse, and eventually losing that loyal companion were some of the most heartbreaking moments for me. Jin's struggle between honour, family, and doing what he believes is right made the story feel personal.\n\nIt can also be really challenging. Sometimes a single mistake is enough to get me killed, so I had to stay focused, learn my enemies' moves, and choose my actions carefully. That could be frustrating, but it made every victory feel earned.\n\nI have played many games, but rarely experienced anything quite like this. Beyond its beautiful open world, Ghost of Tsushima made me feel connected to its characters and their struggles.\n\nA beautiful, challenging, and unforgettable experience. Highly recommended.",
+      },
+    ],
   },
   {
     id: "quarantine-zone-the-last-check",
@@ -236,7 +246,12 @@ export const games = [
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3419520/304549a90f9aa611c709e478854a21d5d41dc820/library_capsule_2x.jpg?t=1790010680",
     color: "#afda4a",
     ink: "#191928",
-    notes: [],
+    notes: [
+      {
+        date: "2026-10-07",
+        text: "This was something to relax with and switch my brain off for a while. There is little depth, the story is almost nonexistent, and the gameplay is straightforward. It is fun for a few hours before becoming repetitive, but fortunately it is short enough not to outstay its welcome.\n\nYou start with a handful of tools, unlock upgrades, and adapt as the virus evolves. Eventually, though, there are about ten tools to use on each survivor. Even after I had used them all and done everything I thought was required, the game could still give me a \"Poor Inspection\" rating, costing me money and research without explaining what I had missed.\n\nThe drone sections were terrible. They felt disconnected from the rest of the game, and the awkward controls made them even less enjoyable.\n\nFor me, it was a bit like chewing gum: something to pass the time between other games before moving on to something more in line with my tastes.",
+      },
+    ],
   },
   {
     id: "stray",
