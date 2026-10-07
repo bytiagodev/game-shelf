@@ -96,7 +96,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-04",
-        text: "As a big fan of the original trilogy, I had to try this, and it delivered on the feeling of stepping into Indy's shoes. Travelling between beautiful locations, discovering different cultures and civilisations, and exploring carefully detailed environments captured much of what I love about the films. The whip felt right, too, without becoming an overused gimmick. Troy Baker did a great job as a younger Indiana, and most of the puzzles were a pleasure to work through. Emmerich Voss made an effective villain, although he occasionally tipped too far into cheesy silliness for my taste. The adventure lost some momentum in a later area where getting around by boat made exploration and backtracking cumbersome. The enemy AI also offered little challenge. The DLC was the weakest part for me: short, with no real contribution to the main story and puzzles that fell well below the standard of the main game. Despite those frustrations, there were plenty of moments when I felt like I really was Indiana Jones. I finished with 100% of the achievements.",
+        text: "Really captured the feeling of being Indy. Loved the locations, exploration, whip and puzzles, and Troy Baker was great. Voss occasionally became too silly, boat travel made backtracking cumbersome, and enemies offered little challenge. The DLC was short, with weaker puzzles and little contribution to the story. Still had a great time and earned every achievement.",
       },
     ],
   },
@@ -325,7 +325,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-06",
-        text: "The story is alright, but fairly basic. It has the familiar Final Fantasy ingredients without doing anything exceptional with them, and it left me missing the stories of VII, VIII, IX and X.\n\nCombat quickly settled into the same routine: dodge, counterattack and work through the stagger gauge, which felt like another health bar. Once an enemy staggered, I unloaded my cooldown abilities to squeeze as much damage as possible into that window. Every boss felt like a variation on this pattern with different animations. Customisation was limited to the Eikons I had unlocked, while crafting mostly meant replacing a sword or piece of armour with the same thing carrying higher numbers.\n\nThe side quests were my biggest frustration because they dragged the pacing down. Most amounted to talking to an NPC, travelling somewhere to collect an item or fight a handful of enemies, then returning for a story I struggled to care about. The characters felt one-dimensional, and the money and crafting materials rarely seemed worth the detour in a game that already offered so little challenge.\n\nTo me, XVI feels like a mixture of an MMO and Devil May Cry. I could have accepted that more readily as a spin-off, but I expected better from a mainline Final Fantasy.",
+        text: "Basic story that left me missing VII, VIII, IX and X. Combat settled into the same dodge, stagger and cooldown routine, with little meaningful customisation or crafting. The mundane side quests and forgettable characters dragged the pacing down. Felt like a mixture of an MMO and Devil May Cry. Expected more from a mainline Final Fantasy.",
       },
     ],
   },
@@ -344,7 +344,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-06",
-        text: "I really liked the first Dying Light, so I hoped bringing Kyle Crane back would help the series return to form. I was not keen on what they had done with his character or the ability to transform into a beast, but having him and his snappy attitude back still felt nostalgic. Sadly, The Beast did not live up to those hopes. It is not a bad game, but the original remains the best for me.\n\nThe story leaves a lot to be desired. It is simple and straightforward, driven by a vague desire for revenge, yet Kyle often seemed to lack a clear objective or a plan for achieving it. The supporting cast did little to help: they were so bland that I had largely forgotten them as soon as their quest chains ended.\n\nParkour was a huge part of what made Dying Light special. Here, the forest-heavy map made it feel much less important and less enjoyable. The vehicles were another disappointment. The buggy in the first Dying Light had felt like my own vehicle, something I could upgrade, repair, modify and call back at certain places on the map. These cars felt disposable, respawning in the same locations and condition every time. Refuelling seemed pointless when swapping to another car was just as easy.\n\nMy affection for the first game kept me going. I wanted to see whether this one improved, or at least find out where the story took Kyle, so I finished it. Without that attachment, I probably would not have. For me, it was average at best.",
+        text: "Kyle's return was nostalgic, but I never liked the beast transformation. Weak revenge story and forgettable supporting characters. The forest-heavy map made parkour less enjoyable, and the cars felt disposable compared with the first game's customisable buggy. Mostly finished because I cared about Kyle and wanted to see where his story went. Average at best; the original remains my favourite.",
       },
     ],
   },
