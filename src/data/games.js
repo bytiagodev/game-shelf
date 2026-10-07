@@ -233,7 +233,12 @@ export const games = [
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1332010/9c1bae81b2603c25ccf2a8f4944b3b58227005d7/library_capsule_2x.jpg?t=1785424330",
     color: "#ff9961",
     ink: "#191928",
-    notes: [],
+    notes: [
+      {
+        date: "2026-10-07",
+        text: "Playing as a cat in a cyberpunk city sounded like an interesting idea, and the environments made a strong first impression. They are detailed, moody and full of atmosphere. Exploring those neon-lit streets initially felt fresh and immersive, but Stray ultimately did not click with me.\n\nOnce the novelty wore off, the gameplay felt shallow. Movement is smooth, but so much of it is automated that exploration seemed more scripted than free. The puzzles were straightforward and rarely challenging, while the stealth sections frustrated me more than they engaged me.\n\nThe story was predictable and ended on an anticlimactic note. It also seemed more interested in the robots than in the cat I was playing as. The interactions between the cat and the other characters, the robots' conversations with one another, and even the bond with the cat's robot companion all felt emotionally thin. The atmosphere drew me in, but the gameplay and story gave me little reason to stay invested.",
+      },
+    ],
   },
   {
     id: "ratchet-and-clank-rift-apart",
@@ -247,7 +252,12 @@ export const games = [
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1895880/library_600x900_2x.jpg?t=1787838873",
     color: "#7245bc",
     ink: "#fffaf3",
-    notes: [],
+    notes: [
+      {
+        date: "2026-10-07",
+        text: "The graphics and animation are outstanding. The attention to detail felt close to Pixar's work, especially in how large and distinctive the worlds are. Gameplay follows the familiar Ratchet & Clank formula: third-person shooting through hectic, bullet-filled fights, a wide variety of weapons to unlock, simple melee attacks, dodging and teleporting. It became repetitive after a while, although that did not bother me too much. The bigger limitation was that it never really developed beyond that routine.\n\nThe animals you can ride and the rocket boots make getting around fun, but the story lost my interest after chapter two. It starts strongly, then the pacing slows to a crawl for much of the remaining game. The cutscenes are well made, and there is certainly a story being told, but the premise seemed to offer more possibilities than the game was willing to explore. It played things far too safely for me.\n\nThere are also plenty of references and story details that rely on familiarity with earlier entries. I admired the presentation and enjoyed parts of the gameplay, but the story did not sustain the promise of its opening.",
+      },
+    ],
   },
   {
     id: "final-fantasy-vii-rebirth",
@@ -261,7 +271,12 @@ export const games = [
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2909400/771d94cceea4bf97bd8afeee5e09e31f15bd0196/library_600x900_2x.jpg?t=1789446799",
     color: "#892e4a",
     ink: "#fffaf3",
-    notes: [],
+    notes: [
+      {
+        date: "2026-10-07",
+        text: "At first glance, Rebirth looks amazing and is fun to play. I enjoyed the combat, even if it is not a huge departure from Remake, and the more developed party conversations and interactions were lovely to see, particularly early on.\n\nAt this point, it feels more like a sequel to the original than a straightforward remake. I would have preferred a faithful retelling with updated graphics, but even with that change of direction, I wanted it to stay closer to the original's themes and atmosphere. The PlayStation game presented a near-dystopian world with moments of levity, and I could understand what the party was trying to save. Remake's Midgar setting still captured much of that feeling. Rebirth often seemed more like a Final Fantasy VII themed Disneyland: the world felt oddly relaxed, and serious or quiet moments were repeatedly interrupted by campy side characters or exaggerated anime dialogue.\n\nThe open world was another disappointment. It follows a familiar Ubisoft-style checklist, with everything marked on the map and little that felt rewarding to discover. Small tasks such as the shrine QTEs seemed designed to keep me pressing buttons rather than make exploration interesting. Chadley was more a symptom of that design than its root problem. These activities may be optional, but the world is clearly arranged to steer you towards them.\n\nThere is a good 20-hour game somewhere in here, but it feels buried beneath 80 hours of repetitive filler.",
+      },
+    ],
   },
   {
     id: "final-fantasy-xvi-complete-edition",
