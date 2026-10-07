@@ -309,37 +309,6 @@ input::placeholder {
   height: auto;
   margin: 0;
 }
-.profile-label {
-  position: absolute;
-  top: 24px;
-  left: 50%;
-  transform: translateX(-50%);
-  min-width: 140px;
-  max-width: calc(100% - 32px);
-  border: 2px solid var(--ink);
-  border-radius: 6px;
-  background: #ffcf64;
-  box-shadow: 2px 2px 0 var(--ink);
-  font-family: "Arial Black", "Trebuchet MS", sans-serif;
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 1.1;
-  text-align: center;
-}
-.profile-label a,
-.profile-label span {
-  display: grid;
-  place-items: center;
-  min-height: 48px;
-  padding: 8px 20px;
-}
-.profile-label a {
-  text-decoration: none;
-}
-.profile-label a:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
 .headset-cubby {
   background: #ffcfde;
   box-shadow:
@@ -808,9 +777,6 @@ input::placeholder {
   }
   .spine-platform {
     top: 4px;
-  }
-  .profile-label {
-    top: 16px;
   }
   .shelf-ledge {
     height: 19px;

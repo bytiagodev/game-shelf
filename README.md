@@ -1,4 +1,4 @@
-![Game Shelf. My personal Steam tracker.](docs/assets/game-shelf-banner.webp)
+![Game Shelf](docs/assets/game-shelf-banner.webp)
 
 **Live:** [bytiagodev.github.io/game-shelf](https://bytiagodev.github.io/game-shelf/)
 
@@ -68,7 +68,7 @@ export const games = [
 - Use `notes: []` when there are no notes. Append a dated note when returning to a game and update `lastPlayed`, keeping one case for it.
 - Games can have several genres, so genre counts may overlap. The breakdown covers the selected year, even when the shelf is filtered.
 
-The `profile` object in the same file holds the display name, starting year and optional link to Steam.
+The `profile` object in the same file sets the collection's starting year.
 
 Historical dates may be approximate or unknown. Lifetime Steam hours cannot reconstruct yearly hours or session counts. New entries and notes can be more precise as I record them.
 

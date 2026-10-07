@@ -127,7 +127,6 @@ export default function App() {
               <Shelf
                 games={visibleGames}
                 onSelect={setSelectedGame}
-                profile={profile}
                 emptyContent={
                   <div className="empty-shelf">
                     <h3>No games here yet.</h3>

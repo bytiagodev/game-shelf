@@ -127,7 +127,7 @@ function Beam() {
   );
 }
 
-export default function Shelf({ games, onSelect, profile, emptyContent }) {
+export default function Shelf({ games, onSelect, emptyContent }) {
   const container = useRef(null);
   const [containerWidth, setContainerWidth] = useState(0);
   useEffect(() => {
@@ -151,20 +151,6 @@ export default function Shelf({ games, onSelect, profile, emptyContent }) {
   const firstCount = isWideLayout ? smallCapacity * 2 : fullCapacity;
   const controller = (
     <div className="cubby controller-cubby">
-      <div className="profile-label">
-        {profile.steamUrl ? (
-          <a
-            href={profile.steamUrl}
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Open Steam"
-          >
-            {profile.name}
-          </a>
-        ) : (
-          <span>{profile.name}</span>
-        )}
-      </div>
       <div className="controller-rest">
         <Controller />
       </div>
