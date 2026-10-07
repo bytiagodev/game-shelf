@@ -58,7 +58,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-04",
-        text: "Metroidvanias are not usually my thing, but I had been craving a Prince of Persia game without revisiting the Sands of Time trilogy. The Lost Crown won me over visually more than The Rogue Prince of Persia did. There is plenty to explore, the combat feels fluid and responsive, and some of the abilities are a real highlight. The quality-of-life features also made a difference. My impression is that several are less common elsewhere in the genre, so this might have spoiled me a little for my next metroidvania. A few powers arrive too late in the story, though, and the plot itself did not leave much of an impression. Even so, I enjoyed it enough to reach 100% in both the main game and the DLC. It also rekindled my interest in Prince of Persia: I might pick up Rogue after all, despite having no interest in it at first.",
+        text: "Metroidvanias aren't usually my thing, but this won me over. Loved the responsive combat, exploration and abilities, with quality-of-life features that made a real difference. Some powers arrived too late, and the story was forgettable. Reached 100% in the main game and DLC. Rekindled my interest in Prince of Persia enough to consider Rogue, despite initially disliking its look.",
       },
     ],
   },
@@ -77,7 +77,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-04",
-        text: "I nearly skipped this one. Vampires have never been much of a draw for me, and even with former Witcher 3 developers behind it, I worried it would feel like a cheap imitation. The time limits were another concern, since I usually dislike being put on a clock. I gave it a chance anyway, and I am glad I did. For a studio's first game and the start of a new series, this is an impressive debut. The story drew me in, the characters were memorable, especially Coen, and I loved the atmosphere and freedom to explore. Switching between day and night changes how you approach the world, but combat was probably my favourite part: the directional parrying felt great and never grew stale. Even the time pressure won me over. Choosing between another quest and spending time on new skills or levelling up gave those decisions weight. My complaints were few, mostly around enemy variety. Many guards look almost identical, and the sheer number of boars and wolves makes encounters across the map repetitive. This went well beyond my cautious expectations. I came away thoroughly impressed and earned every achievement.",
+        text: "Nearly skipped it over the vampires, time limits and resemblance to The Witcher 3. Glad I didn't. Loved the story, Coen, atmosphere and freedom to explore. Day/night changes and directional parrying kept things interesting, and the time pressure made decisions feel meaningful. Enemy variety was the main weakness, especially repeated guards, boars and wolves. Exceeded my expectations. Earned every achievement.",
       },
     ],
   },
@@ -153,7 +153,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-05",
-        text: "The original Black Flag was my favourite Assassin's Creed, so I came into this with huge expectations. It more than met them. Some elements are missing, including the modern-day story, but I never enjoyed those sections and did not miss them here. I was unsure about the revised combat at first, yet ended up liking it.\n\nThe visuals are stunning, the additions to naval combat are welcome, and the pets bring a lovely bit of charm to both the hideout and life at sea. Albert the Monkey was my favourite.\n\nBy the end, I had earned every achievement and explored every nook and cranny. Rather than feeling ready to move on, I was sad that there was nothing left to do. I would happily have spent many more hours with it.",
+        text: "The original was my favourite Assassin's Creed, and this exceeded my huge expectations. Didn't miss the modern-day sections. The revised combat grew on me, the visuals were stunning, and the naval additions were welcome. Loved the pets, especially Albert the Monkey. Earned every achievement and explored everything I could. Finished wishing there was more to do.",
       },
     ],
   },
