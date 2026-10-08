@@ -173,7 +173,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-04",
-        text: "I had wanted to revisit the first Kingdom Hearts for a while after loving it on the PS2. It did not quite live up to those memories, but I still enjoyed spending time in its worlds again. This is the only game I have played from the collection so far. I am skipping Chain of Memories because the card system does not appeal to me, though I plan to play Kingdom Hearts II eventually.\n\nThe story, Disney and Square characters, colourful worlds and music remain the main attractions. Even here, I could see the beginnings of the increasingly convoluted storytelling the series would become known for. There is plenty of postgame content, and the tournaments in Hercules' world offer a welcome change of pace when I just want a few battles or some levelling instead of more exploration.\n\nOutside the boss fights, combat is often easy enough that repeatedly pressing attack does the job. The camera is the bigger frustration: at its worst, it takes much of the enjoyment out of playing. I was surprised that this collection had not done more to address it.",
+        text: "Enjoyed revisiting the first game, though it didn't quite match my PS2 memories. The worlds, characters and music still hold up. Combat is mostly too easy outside bosses, and the camera is frustrating. The Hercules tournaments offer a welcome change of pace. Only played this one from the collection so far; skipping Chain of Memories because of its cards, but plan to play II.",
       },
     ],
   },
@@ -382,7 +382,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-06",
-        text: "There is barely a story to speak of. You chase a billionaire through 80 floors of a tower to rescue a kidnapped girl, while an irritating character keeps talking in your ear. After all that, Jack's reward is a pair of shoes.\n\nThe game felt basic and rushed to me. With only ten seconds to live and kills extending the timer, each level becomes another frantic dash from point A to point B. The same few layouts repeat, and the constant rush to the exit left the gameplay feeling thin and repetitive.\n\nThe weapon balance made things worse. The railgun sniper felt practically useless when I needed to keep firing and moving to stay alive. The shotgun, on the other hand, was so overpowered that I saw little reason to use anything else: body shots regularly killed enemies outright, and it tore through bosses just as quickly. An extra second for a headshot did little to encourage careful aiming when spamming the shotgun was already so effective.\n\nEven though it is a very short game, I had already lost interest well before the end.",
+        text: "Barely any story, irritating commentary, and 80 floors of rescuing someone for a pair of shoes. The ten-second timer made every level a frantic dash through repetitive layouts. The railgun felt useless while the shotgun trivialised enemies and bosses, leaving little reason to aim for headshots. Lost interest well before the end, despite how short it is.",
       },
     ],
   },
@@ -405,7 +405,7 @@ export const games = [
       },
       {
         date: "2026-10-04",
-        text: "I bought this as a palate cleanser between my usual story-focused games. Roguelites are not normally my thing, but the Turtles' designs caught my eye, and TMNT was one of my favourite franchises growing up. What I expected to be a change of pace has become a game I return to regularly, long after earning every achievement.\n\nThe soundtrack is great, combat is responsive, and there are plenty of viable builds to experiment with. The bosses call for different strategies, while the goofy dialogue feels right for the franchise. I still finish a run and immediately start another with a different Turtle, simply because playing is so much fun. The DLC has generally felt fairly priced, too.\n\nMy main frustration is the limited choice of routes. Currently, only the third level has an alternative, and that requires DLC; otherwise, every run follows the same sequence. Casey Jones aside, the extra characters have not offered much for me so far, as I have not found them particularly interesting. I expect to keep coming back for a long time, and more levels would give me even more reason to do so.",
+        text: "Bought it as a break from story-heavy games and ended up constantly returning. Great music, responsive combat, varied builds and bosses that need different approaches. The goofy dialogue fits TMNT, and the DLC generally felt fairly priced. Limited routes are my biggest frustration. Apart from Casey Jones, the extra characters haven't interested me much. More levels would give me even more reason to keep playing.",
       },
     ],
   },
