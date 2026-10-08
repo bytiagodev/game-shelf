@@ -115,7 +115,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-05",
-        text: "An okay game that falls short of its potential. Combat was clunky at first but improved as I went on, the music was pretty good, and the visual ideas were interesting despite some rough presentation. Koo was also a welcome companion in battle.\n\nEmma was a bland protagonist, though, and the story never made the most of its intriguing premise. Frequent boss reuse and an unreliable camera added to the frustration. I think more development time could have turned this into a much better game.",
+        text: "Okay, but fell short of its potential. Combat improved after a clunky start, and I liked the music, visual ideas and having Koo alongside me. Emma was bland, and the story wasted an interesting premise. Reused bosses and an unreliable camera added frustration. More development time might have made a real difference.",
       },
     ],
   },
@@ -363,7 +363,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-06",
-        text: "The pixel art is stunning, and the animations look lovely. There just was not much gameplay to hold my attention. I came looking for an idle game, and although Cast n Chill has an idle mode, it felt more like handing the controls over than building towards automation.\n\nAs far as I could tell, there was no real reason to play manually. I understand the usual idle-game loop of doing things yourself before gradually automating them. In Cast n Chill, turning on idle mode felt more like switching from playing the game to watching a YouTube video of it.\n\nIt is not bad, but it did not give me what I wanted from an idle game. Most of my time with it was spent letting it run on a second monitor while I did other things.",
+        text: "Stunning pixel art and lovely animation, but little gameplay to hold my attention. Couldn't see much reason to play manually. Idle mode felt more like watching a video of the game than progressing towards automation. Mostly left it running on a second monitor. Didn't give me what I wanted from an idle game.",
       },
     ],
   },
@@ -401,10 +401,6 @@ export const games = [
     notes: [
       {
         date: "2026-10-04",
-        text: "Started in November 2025. I still return to it regularly, long after earning every achievement.",
-      },
-      {
-        date: "2026-10-04",
         text: "Bought it as a break from story-heavy games and ended up constantly returning. Great music, responsive combat, varied builds and bosses that need different approaches. The goofy dialogue fits TMNT, and the DLC generally felt fairly priced. Limited routes are my biggest frustration. Apart from Casey Jones, the extra characters haven't interested me much. More levels would give me even more reason to keep playing.",
       },
     ],
@@ -424,7 +420,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-04",
-        text: "After Splintered Fate, I wanted more TMNT, and this seemed like a natural next stop. It also reminded me of Turtles in Time, which I played a lot growing up. Unfortunately, it never connected with me in the same way.\n\nThe colours are vibrant, some of the original cartoon cast return, and it plays well. The pixel art did little for me, though, as it is not a style I usually enjoy. Even with a short campaign, there were enough similar stages for the journey to feel repetitive, and after finishing it once I felt little urge to return. Co-op might have made a difference, but I never tried it.",
+        text: "Picked it up after Splintered Fate, with fond memories of Turtles in Time. Vibrant colours, returning cartoon voices and solid gameplay, but the pixel art wasn't for me. Similar stages made even the short campaign repetitive, and I felt little urge to return. Co-op might have helped, but I never tried it.",
       },
     ],
   },
