@@ -134,7 +134,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-05",
-        text: "I loved the first Life is Strange, and after disappointing follow-ups I hoped bringing Max back would help the series find its footing again. Instead, she felt like a watered-down version of the character I remembered, which made the disappointment even greater.\n\nHer return seemed like an opportunity to explore post-traumatic stress, grief, depression or guilt. For most of the game, though, she comes across as happy, mellow and largely unaffected. That felt like a missed opportunity. I found the supporting cast unlikeable, too, and did not care about any of them.\n\nThe new power was far less interesting to me than rewinding time. The split-timeline premise never worked for me either: it introduced unnecessary plot holes and made decisions feel even less consequential. For me, the series still has not matched the quality of the original.",
+        text: "Hoped Max's return would bring back what I loved about the original. Instead, she felt watered down, with a missed opportunity to explore her trauma, grief and guilt. Didn't like the supporting cast. The new power was less interesting than rewinding time, and the split timelines brought plot holes and weaker consequences. Another disappointing follow-up in a series that still hasn't matched its first game for me.",
       },
     ],
   },
@@ -192,7 +192,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-05",
-        text: "With so much discussion about AI, this felt like a fitting game to play. Its dystopian cyberpunk setting is strong, and the art, characters, story and mystery all kept me interested. My feelings about the game as a whole are more mixed.\n\nThe gameplay itself is fairly dull, and the ending choices felt anticlimactic. In particular, I could not see why the two anti-authority options needed to be mutually exclusive. That restriction seemed forced. The story also appears to leave room for DLC or a sequel, and I would be willing to give either a try.",
+        text: "Strong dystopian cyberpunk setting. The art, characters, story and mystery kept me interested, but the gameplay was dull. The ending felt anticlimactic, and I couldn't see why the two anti-authority choices had to exclude each other. That restriction felt forced. Mixed feelings overall, though I'd still give DLC or a sequel a try.",
       },
     ],
   },
@@ -268,7 +268,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-07",
-        text: "Playing as a cat in a cyberpunk city sounded like an interesting idea, and the environments made a strong first impression. They are detailed, moody and full of atmosphere. Exploring those neon-lit streets initially felt fresh and immersive, but Stray ultimately did not click with me.\n\nOnce the novelty wore off, the gameplay felt shallow. Movement is smooth, but so much of it is automated that exploration seemed more scripted than free. The puzzles were straightforward and rarely challenging, while the stealth sections frustrated me more than they engaged me.\n\nThe story was predictable and ended on an anticlimactic note. It also seemed more interested in the robots than in the cat I was playing as. The interactions between the cat and the other characters, the robots' conversations with one another, and even the bond with the cat's robot companion all felt emotionally thin. The atmosphere drew me in, but the gameplay and story gave me little reason to stay invested.",
+        text: "Playing a cat in a cyberpunk city sounded great, and the atmospheric environments drew me in. Once the novelty wore off, movement felt too automated, puzzles were simple, and stealth was frustrating. The predictable story focused more on the robots than the cat, with emotionally thin interactions and an anticlimactic ending. Never really clicked with me.",
       },
     ],
   },
