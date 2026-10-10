@@ -39,7 +39,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-05",
-        text: "As a lifelong Bond fan, this delivered. Enjoyed the origin story and atmosphere, especially investigating, eavesdropping, bluffing and using gadgets. Those choices made me feel like Bond. The training opening dragged, combat felt awkward enough to make me wish for lock-on, and I wanted more driving. Had a great time and earned every achievement. Hope IO Interactive gets to make another.",
+        text: "As a lifelong Bond fan, this delivered. Enjoyed the origin story and atmosphere, especially investigating, eavesdropping, bluffing and using gadgets. Those choices made me feel like Bond. The training opening dragged, combat felt awkward enough to make me wish for lock-on, and I wanted more driving. Had a great time. Hope IO Interactive gets to make another.",
       },
     ],
   },
@@ -58,7 +58,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-04",
-        text: "Metroidvanias aren't usually my thing, but this won me over. Loved the responsive combat, exploration and abilities, with quality-of-life features that made a real difference. Some powers arrived too late, and the story was forgettable. Reached 100% in the main game and DLC. Rekindled my interest in Prince of Persia enough to consider Rogue, despite initially disliking its look.",
+        text: "Metroidvanias aren't usually my thing, but this won me over. Enjoyed the responsive combat, exploration and abilities, with quality-of-life features that made a real difference. Some powers arrived too late, and the story was forgettable. Rekindled my interest in Prince of Persia enough to consider Rogue, despite initially disliking its look.",
       },
     ],
   },
@@ -77,7 +77,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-04",
-        text: "Nearly skipped it over the vampires, time limits and resemblance to The Witcher 3. Glad I didn't. Loved the story, Coen, atmosphere and freedom to explore. Day/night changes and directional parrying kept things interesting, and the time pressure made decisions feel meaningful. Enemy variety was the main weakness, especially repeated guards, boars and wolves. Exceeded my expectations. Earned every achievement.",
+        text: "Nearly skipped it over the vampires, time limits and resemblance to The Witcher 3. Glad I didn't. Enjoyed the story, Coen, atmosphere and freedom to explore. Day/night changes and directional parrying kept things interesting, and the time pressure made decisions feel meaningful. Enemy variety was the main weakness, especially repeated guards, boars and wolves. Exceeded my expectations.",
       },
     ],
   },
@@ -96,7 +96,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-04",
-        text: "Really captured the feeling of being Indy. Loved the locations, exploration, whip and puzzles, and Troy Baker was great. Voss occasionally became too silly, boat travel made backtracking cumbersome, and enemies offered little challenge. The DLC was short, with weaker puzzles and little contribution to the story. Still had a great time and earned every achievement.",
+        text: "Really captured the feeling of being Indy. Enjoyed the locations, exploration, whip and puzzles, and Indy's voice acting was great. Voss occasionally became too silly, boat travel made backtracking cumbersome, and enemies offered little challenge. The DLC was short, with weaker puzzles and little contribution to the story. Still had a great time.",
       },
     ],
   },
@@ -115,7 +115,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-05",
-        text: "Okay, but fell short of its potential. Combat improved after a clunky start, and I liked the music, visual ideas and having Koo alongside me. Emma was bland, and the story wasted an interesting premise. Reused bosses and an unreliable camera added frustration. More development time might have made a real difference.",
+        text: "Okay, but fell short of its potential. Combat improved after a clunky start, and I liked the music, visual ideas and having Koo alongside me. Emma was bland, and the story wasted an interesting premise. Reused bosses and an unreliable camera held it back too. More development time might have made a real difference.",
       },
     ],
   },
@@ -134,7 +134,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-05",
-        text: "Hoped Max's return would bring back what I loved about the original. Instead, she felt watered down, with a missed opportunity to explore her trauma, grief and guilt. Didn't like the supporting cast. The new power was less interesting than rewinding time, and the split timelines brought plot holes and weaker consequences. Another disappointing follow-up in a series that still hasn't matched its first game for me.",
+        text: "Hoped Max's return would bring back what made the original special to me. Instead, she felt watered down, with a missed opportunity to explore her trauma, grief and guilt. Didn't like the supporting cast. The new power was less interesting than rewinding time, and the split timelines brought plot holes and weaker consequences. Another disappointing follow-up in a series that still hasn't matched its first game for me.",
       },
     ],
   },
@@ -153,7 +153,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-05",
-        text: "The original was my favourite Assassin's Creed, and this exceeded my huge expectations. Didn't miss the modern-day sections. The revised combat grew on me, the visuals were stunning, and the naval additions were welcome. Loved the pets, especially Albert the Monkey. Earned every achievement and explored everything I could. Finished wishing there was more to do.",
+        text: "The original was my favourite Assassin's Creed, and this exceeded my huge expectations. Didn't miss the modern-day sections. The revised combat grew on me, the visuals were stunning, and the naval additions were welcome. Enjoyed having the pets around, especially Albert the Monkey. Explored everything I could and finished wishing there was more to do.",
       },
     ],
   },
@@ -173,7 +173,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-04",
-        text: "Enjoyed revisiting the first game, though it didn't quite match my PS2 memories. The worlds, characters and music still hold up. Combat is mostly too easy outside bosses, and the camera is frustrating. The Hercules tournaments offer a welcome change of pace. Only played this one from the collection so far; skipping Chain of Memories because of its cards, but plan to play II.",
+        text: "Enjoyed revisiting the first game, though it didn't quite match my PS2 memories. The worlds, characters and music still hold up. Combat is mostly too easy outside bosses, and the camera often gets in the way. The Hercules tournaments offer a welcome change of pace. Only played this one from the collection so far; skipping Chain of Memories because of its card combat system, but plan to play II.",
       },
     ],
   },
@@ -211,7 +211,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-07",
-        text: "Started brilliantly. Loved the soundtrack, art direction and parry combat. Gustave's death and replacement hurt my interest, and the family/painted-world twist lost me completely. I wanted more of the original expedition premise. Corridor-like areas, invisible walls and unrewarding exploration disappointed me too. Combat grew repetitive, and movement felt rough. By the end, I just wanted to finish.",
+        text: "Started brilliantly, with a great soundtrack and striking art direction. The parry combat was enjoyable at first, but grew repetitive over time. Gustave's death and replacement hurt my interest, and the story's shift towards an “it was all a dream” kind of twist lost me. I wanted more of the original expedition premise. Corridor-like areas, invisible walls and unrewarding exploration disappointed me too, while movement felt rough.",
       },
     ],
   },
@@ -230,7 +230,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-07",
-        text: "Absolutely loved it. Beautiful world, excellent combat, and a story that stayed with me. Jin's conflict between honour and family felt personal. Fighting his uncle and losing my horse really hurt. Combat could be unforgiving, sometimes frustrating, but learning enemies' moves made victories feel earned. One of the most memorable games I've played.",
+        text: "Beautiful world, excellent combat, and a story that stayed with me. Jin's conflict between honour and family felt personal. Fighting his uncle and losing my horse really hurt. Combat could be unforgiving, but learning enemies' moves made victories feel earned. A very memorable game.",
       },
     ],
   },
@@ -268,7 +268,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-07",
-        text: "Playing a cat in a cyberpunk city sounded great, and the atmospheric environments drew me in. Once the novelty wore off, movement felt too automated, puzzles were simple, and stealth was frustrating. The predictable story focused more on the robots than the cat, with emotionally thin interactions and an anticlimactic ending. Never really clicked with me.",
+        text: "Playing a cat in a cyberpunk city sounded great, and the atmospheric environments drew me in. Once the novelty wore off, movement felt too automated, puzzles were simple, and the stealth sections were a chore. The predictable story focused more on the robots than the cat, with emotionally thin interactions and an anticlimactic ending. Never really clicked with me.",
       },
     ],
   },
@@ -287,7 +287,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-07",
-        text: "Outstanding graphics and animation, with that Pixar-like attention to detail. Loved the distinctive worlds, and getting around with animals and rocket boots was fun. The familiar combat became repetitive and never developed much further. Lost interest in the story after chapter two as the pacing slowed. Felt too safe with its premise and relied heavily on references to earlier games.",
+        text: "Outstanding graphics and animation, with that Pixar-like attention to detail. Liked the distinctive worlds, and getting around with animals and rocket boots was fun. The familiar combat became repetitive and never developed much further. Lost interest in the story after chapter two as the pacing slowed. Felt too safe with its premise and relied heavily on references to earlier games.",
       },
     ],
   },
@@ -401,7 +401,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-04",
-        text: "Bought it as a break from story-heavy games and ended up constantly returning. Great music, responsive combat, varied builds and bosses that need different approaches. The goofy dialogue fits TMNT, and the DLC generally felt fairly priced. Limited routes are my biggest frustration. Apart from Casey Jones, the extra characters haven't interested me much. More levels would give me even more reason to keep playing.",
+        text: "Bought it as a break from story-heavy games and ended up constantly returning. Great music, responsive combat, varied builds and bosses that need different approaches. The goofy dialogue fits TMNT, and the DLC generally felt fairly priced. Would like more variety in the routes. Apart from Casey Jones, the extra characters haven't interested me much. More levels would give me even more reason to keep playing.",
       },
     ],
   },
