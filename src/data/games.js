@@ -392,8 +392,8 @@ export const games = [
     steamAppId: 2996040,
     genres: ["Action", "Adventure", "RPG", "Strategy"],
     year: 2026,
-    lastPlayed: { date: "2026-10-02", precision: "day" },
-    totalHours: 61,
+    lastPlayed: { date: "2026-10-10", precision: "day" },
+    totalHours: 62,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2996040/c2e04ee36ee08019764946a2ad754796241e59d1/library_capsule_2x.jpg?t=1790615306",
     color: "#2e8653",
