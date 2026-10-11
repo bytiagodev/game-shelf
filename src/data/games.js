@@ -79,7 +79,7 @@ export const games = [
     notes: [
       {
         date: "2026-09-23",
-        text: "Nearly skipped it over the vampires, time limits and resemblance to The Witcher 3. Glad I didn't. Enjoyed the story, Coen, atmosphere and freedom to explore. Day/night changes and directional parrying kept things interesting, and the time pressure made decisions feel meaningful. Enemy variety was the main weakness, especially repeated guards, boars and wolves. Exceeded my expectations.",
+        text: "Nearly skipped it because I'm usually not a fan of time limits. Glad I didn't. Enjoyed the story, Coen, atmosphere and freedom to explore. Day/night changes and directional parrying kept things interesting, and the time pressure made decisions feel meaningful. Enemy variety was the main weakness, especially repeated guards, boars and wolves. Exceeded my expectations. Would like some DLC and to see where they take a sequel.",
       },
     ],
   },
@@ -137,7 +137,7 @@ export const games = [
     notes: [
       {
         date: "2026-08-02",
-        text: "Hoped Max's return would bring back what made the original special to me. Instead, she felt watered down, with a missed opportunity to explore her trauma, grief and guilt. Didn't like the supporting cast. The new power was less interesting than rewinding time, and the split timelines brought plot holes and weaker consequences. Another disappointing follow-up in a series that still hasn't matched its first game for me.",
+        text: "Hoped bringing Max back would return the series to form. Instead, she felt watered down, with a missed opportunity to explore her trauma, grief and guilt. Didn't like the supporting cast. The new power was less interesting than rewinding time, and the split timelines brought plot holes and weaker consequences. Another disappointing follow-up in a series that still hasn't matched its first game for me.",
       },
     ],
   },
@@ -177,7 +177,7 @@ export const games = [
     notes: [
       {
         date: "2026-08-25",
-        text: "Enjoyed revisiting the first game, though it didn't quite match my PS2 memories. The worlds, characters and music still hold up. Combat is mostly too easy outside bosses, and the camera often gets in the way. The Hercules tournaments offer a welcome change of pace. Only played this one from the collection so far; skipping Chain of Memories because of its card combat system, but plan to play II.",
+        text: "Enjoyed Kingdom Hearts Final Mix, the first game in the collection. I'd played the original Kingdom Hearts on PS2, but this was my first time with Final Mix, and it didn't quite live up to those memories. The worlds, characters and music still hold up. Combat is mostly too easy outside bosses, and the camera often gets in the way. The Hercules tournaments offer a welcome change of pace. Skipping Chain of Memories because of its card combat system, but plan to play II.",
       },
     ],
   },
@@ -216,7 +216,7 @@ export const games = [
     notes: [
       {
         date: "2026-01-04",
-        text: "Started brilliantly, with a great soundtrack and striking art direction. The parry combat was enjoyable at first, but grew repetitive over time. Gustave's death and replacement hurt my interest, and the story's shift towards an “it was all a dream” kind of twist lost me. I wanted more of the original expedition premise. Corridor-like areas, invisible walls and unrewarding exploration disappointed me too, while movement felt rough.",
+        text: "Started brilliantly, with a great soundtrack and striking art direction. The parry combat was enjoyable at first, but grew repetitive over time. Gustave's death and replacement hurt my interest, and the story's shift towards an “it was all a dream” kind of twist lost me. I wanted more of the original expedition premise. Corridor-like areas, invisible walls and unrewarding exploration disappointed me too, while movement felt rough. By the end, the change in story direction had left me with little interest in the game.",
       },
     ],
   },
@@ -255,7 +255,7 @@ export const games = [
     notes: [
       {
         date: "2026-01-31",
-        text: "Simple gameplay, barely any story, and fun for a few hours before becoming repetitive. Fortunately, it was short enough not to drag. Using about ten tools per survivor became tedious, especially when “Poor Inspection” cost me money and research without explaining what I'd missed. The drone sections felt out of place and controlled poorly.",
+        text: "Enjoyed the simple early inspections with just a few tools. As I unlocked more, each survivor took longer to check, and the routine started to drag. There was barely any story to break up the repetition. The drone sections felt out of place and controlled poorly.",
       },
     ],
   },
@@ -274,7 +274,7 @@ export const games = [
     notes: [
       {
         date: "2026-02-17",
-        text: "Playing a cat in a cyberpunk city sounded great, and the atmospheric environments drew me in. Once the novelty wore off, movement felt too automated, puzzles were simple, and the stealth sections were a chore. The predictable story focused more on the robots than the cat, with emotionally thin interactions and an anticlimactic ending. Never really clicked with me.",
+        text: "Playing a cat in a cyberpunk city sounded interesting, and the environments look nice. Once the novelty wore off, movement felt too automated, puzzles were simple, and the stealth sections were a chore. The predictable story focused more on the robots than the cat, with emotionally thin interactions and an anticlimactic ending. Never really clicked with me.",
       },
     ],
   },
@@ -313,7 +313,7 @@ export const games = [
     notes: [
       {
         date: "2026-03-30",
-        text: "Great visuals. Enjoyed the combat and party interactions. Feels more like a sequel than the faithful remake I wanted. The Disneyland-like atmosphere and exaggerated dialogue kept undermining serious moments. Exploration became an unrewarding checklist of map markers and small chores. Felt like a good game buried under far too much filler.",
+        text: "Great visuals. Enjoyed the combat and party interactions. Rebirth continues Remake, but together they come across more as a sequel to the original VII than the faithful remake I wanted. The Disneyland-like atmosphere and exaggerated dialogue kept undermining serious moments. Exploration became an unrewarding checklist of map markers and small chores. It's a good game buried under too much filler.",
       },
     ],
   },
@@ -332,7 +332,7 @@ export const games = [
     notes: [
       {
         date: "2026-05-09",
-        text: "Basic story that left me missing VII, VIII, IX and X. Combat settled into the same dodge, stagger and cooldown routine, with little meaningful customisation or crafting. The mundane side quests and forgettable characters dragged the pacing down. Felt like a mixture of an MMO and Devil May Cry. Expected more from a mainline Final Fantasy.",
+        text: "Basic story that left me missing VII, VIII, IX and X. Combat settled into the same dodge, stagger and cooldown routine, with little meaningful customisation or crafting. The mundane side quests and forgettable characters dragged the pacing down. It's a mix of an MMO and Devil May Cry. Expected more from a mainline Final Fantasy.",
       },
     ],
   },
@@ -351,7 +351,7 @@ export const games = [
     notes: [
       {
         date: "2026-06-21",
-        text: "Kyle's return was nostalgic, but I never liked the beast transformation. Weak revenge story and forgettable supporting characters. The forest-heavy map made parkour less enjoyable, and the cars felt disposable compared with the first game's customisable buggy. Mostly finished because I cared about Kyle and wanted to see where his story went. Average at best; the original remains my favourite.",
+        text: "Kyle's return was nostalgic, but I never liked the beast transformation. Weak revenge story and forgettable supporting characters. The forest-heavy map made parkour less enjoyable, and the cars felt disposable compared with the first game's customisable buggy. Mostly finished because I cared about Kyle and wanted to see where his story went. The original remains my favourite.",
       },
     ],
   },
@@ -370,7 +370,7 @@ export const games = [
     notes: [
       {
         date: "2026-06-12",
-        text: "Stunning pixel art and lovely animation, but little gameplay to hold my attention. Couldn't see much reason to play manually. Idle mode felt more like watching a video of the game than progressing towards automation. Mostly left it running on a second monitor. Didn't give me what I wanted from an idle game.",
+        text: "The pixel art and animations are pretty, but there's little gameplay to hold my attention. Couldn't see much reason to play manually. Idle mode felt more like watching a video of the game than progressing towards automation. Mostly left it running on a second monitor. Didn't give me what I wanted from an idle game.",
       },
     ],
   },
@@ -389,7 +389,7 @@ export const games = [
     notes: [
       {
         date: "2026-06-25",
-        text: "Barely any story, irritating commentary, and 80 floors of rescuing someone for a pair of shoes. The ten-second timer made every level a frantic dash through repetitive layouts. The railgun felt useless while the shotgun trivialised enemies and bosses, leaving little reason to aim for headshots. Lost interest well before the end, despite how short it is.",
+        text: "Barely any story, annoying commentary, and 80 floors of rescuing someone for a pair of shoes. The ten-second timer made every level a frantic dash through repetitive layouts. The railgun felt useless while the shotgun trivialised enemies and bosses, leaving little reason to aim for headshots. Lost interest well before the end, despite how short it is.",
       },
     ],
   },
@@ -429,7 +429,7 @@ export const games = [
     notes: [
       {
         date: "2026-08-26",
-        text: "Picked it up after Splintered Fate, with fond memories of Turtles in Time. Vibrant colours, returning cartoon voices and solid gameplay, but the pixel art wasn't for me. Similar stages made even the short campaign repetitive, and I felt little urge to return. Co-op might have helped, but I never tried it.",
+        text: "Wanted more TMNT after Splintered Fate, and this reminded me of Turtles in Time, so I gave it a go. Vibrant colours, returning cartoon voices and solid gameplay, but the pixel art wasn't for me. Similar stages made even the short campaign repetitive, and I felt little urge to return. Co-op might have helped, but I never tried it.",
       },
     ],
   },
