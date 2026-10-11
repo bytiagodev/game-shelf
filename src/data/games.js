@@ -412,8 +412,20 @@ export const games = [
     ink: "#fffaf3",
     notes: [
       {
+        date: "2025-12-28",
+        text: "Great music, responsive combat, varied builds and bosses that need different approaches. Upgrades gradually turned a brutally difficult start into clearing rooms with ease. The goofy dialogue fits TMNT, and the DLC generally feels fairly priced. Casey Jones is strong and fun to play, and I enjoyed the new map. Metalhead is too slow for me, and his ranged playstyle isn't my thing.",
+      },
+      {
+        date: "2026-02-24",
+        text: "Alopex is fast, hits hard and has good animations. Enjoyed her dialogue, especially with Karai. I didn't know the character before this DLC. She's fun, but her playstyle doesn't stand out enough for me to choose her over the turtles.",
+      },
+      {
+        date: "2026-08-18",
+        text: "King's Gambit finally resolved the story's mystery after a long wait. Rat King isn't as compelling a villain as Shredder, but it was good to discover who was behind it all. The new level and Gauntlet Challenge add welcome variety. Slash fits in well and is powerful, but too slow for my taste. Unlikely to use him much.",
+      },
+      {
         date: "2026-10-10",
-        text: "Bought it as a break from story-heavy games and ended up constantly returning. Great music, responsive combat, varied builds and bosses that need different approaches. The goofy dialogue fits TMNT, and the DLC generally felt fairly priced. Would like more variety in the routes. Apart from Casey Jones, the extra characters haven't interested me much. More levels would give me even more reason to keep playing.",
+        text: "Bought it as a break from story-heavy games and still return from time to time. It's still fun, though the same routes are starting to feel stale. With no upgrades left to buy, there's less reason to keep playing. Hoping for more levels and continued support.",
       },
     ],
   },
