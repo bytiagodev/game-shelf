@@ -8,6 +8,7 @@ export const games = [
   {
     id: "onimusha-way-of-the-sword",
     title: "Onimusha: Way of the Sword",
+    spineTitle: "Onimusha:\nWay of the Sword",
     steamAppId: 2638890,
     genres: ["Action", "Adventure", "RPG"],
     year: 2026,
@@ -46,6 +47,7 @@ export const games = [
   {
     id: "prince-of-persia-the-lost-crown",
     title: "Prince of Persia: The Lost Crown",
+    spineTitle: "Prince of Persia:\nThe Lost Crown",
     steamAppId: 2751000,
     genres: ["Action", "Adventure", "Metroidvania", "Platformer"],
     year: 2026,
@@ -122,6 +124,7 @@ export const games = [
   {
     id: "life-is-strange-double-exposure",
     title: "Life is Strange: Double Exposure",
+    spineTitle: "Life is Strange:\nDouble Exposure",
     steamAppId: 1874000,
     genres: ["Action", "Adventure"],
     year: 2026,
@@ -160,6 +163,7 @@ export const games = [
   {
     id: "kingdom-hearts-final-mix",
     title: "Kingdom Hearts Final Mix",
+    spineTitle: "KINGDOM HEARTS\n-HD 1.5+2.5 ReMIX-",
     steamAppId: 2552430,
     steamCollection: "KINGDOM HEARTS -HD 1.5+2.5 ReMIX-",
     genres: ["Action", "Adventure", "RPG"],
@@ -199,6 +203,7 @@ export const games = [
   {
     id: "clair-obscur-expedition-33",
     title: "Clair Obscur: Expedition 33",
+    spineTitle: "Expedition 33",
     steamAppId: 1903340,
     genres: ["Action", "RPG"],
     year: 2026,
@@ -237,6 +242,7 @@ export const games = [
   {
     id: "quarantine-zone-the-last-check",
     title: "Quarantine Zone: The Last Check",
+    spineTitle: "Quarantine Zone:\nThe Last Check",
     steamAppId: 3419520,
     genres: ["Simulation", "Strategy"],
     year: 2026,
@@ -275,6 +281,7 @@ export const games = [
   {
     id: "ratchet-and-clank-rift-apart",
     title: "Ratchet & Clank: Rift Apart",
+    spineTitle: "Ratchet & Clank:\nRift Apart",
     steamAppId: 1895880,
     genres: ["Action", "Adventure"],
     year: 2026,
@@ -389,6 +396,7 @@ export const games = [
   {
     id: "tmnt-splintered-fate",
     title: "Teenage Mutant Ninja Turtles: Splintered Fate",
+    spineTitle: "TMNT: Splintered Fate",
     steamAppId: 2996040,
     genres: ["Action", "Adventure", "RPG", "Strategy"],
     year: 2026,
@@ -408,6 +416,7 @@ export const games = [
   {
     id: "tmnt-shredders-revenge",
     title: "Teenage Mutant Ninja Turtles: Shredder's Revenge",
+    spineTitle: "TMNT:\nShredder's Revenge",
     steamAppId: 1361510,
     genres: ["Action", "Adventure", "Casual"],
     year: 2026,

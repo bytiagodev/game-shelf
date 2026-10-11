@@ -387,14 +387,17 @@ input::placeholder {
   bottom: 22px;
   left: 50%;
   transform: translateX(-50%);
-  white-space: nowrap;
+  max-width: 40px;
+  white-space: pre-line;
   overflow: hidden;
-  text-overflow: ellipsis;
   font-size: 17px;
   font-weight: 800;
   letter-spacing: -0.3px;
-  line-height: 1.2;
-  padding: 1px 3px;
+  line-height: 1.05;
+  padding: 1px 2px;
+}
+.spine-title--long {
+  font-size: 16px;
 }
 .shelf-ledge {
   position: relative;
@@ -774,6 +777,9 @@ input::placeholder {
     font-size: 16px;
     top: 36px;
     bottom: 20px;
+  }
+  .spine-title--long {
+    font-size: 15px;
   }
   .spine-platform {
     top: 4px;

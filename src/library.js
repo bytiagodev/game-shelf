@@ -6,13 +6,19 @@ export function selectGames(
   games,
   { year, genre = "all", query = "", sort = "recent" },
 ) {
-  const search = query.trim().toLocaleLowerCase("en");
+  const search = query.trim().replace(/\s+/g, " ").toLocaleLowerCase("en");
   return games
     .filter(
       (game) =>
         game.year === Number(year) &&
         (genre === "all" || game.genres.includes(genre)) &&
-        (!search || game.title.toLocaleLowerCase("en").includes(search)),
+        (!search ||
+          [game.title, game.spineTitle || ""].some((searchableTitle) =>
+            searchableTitle
+              .replace(/\s+/g, " ")
+              .toLocaleLowerCase("en")
+              .includes(search),
+          )),
     )
     .sort((firstGame, secondGame) => {
       if (sort === "title")

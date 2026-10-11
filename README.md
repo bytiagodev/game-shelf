@@ -65,6 +65,8 @@ export const games = [
 - `steamAppId` enables the Steam store link. `coverUrl` supplies that game's own cover; missing or failed images have a title fallback.
 - For a game inside a Steam collection, use its individual title and the collection's app ID and cover. The optional `steamCollection` field identifies that collection in the details panel.
 - `color` selects the nearest illustrated sleeve colour. `ink` sets the fallback cover's title colour.
+- Optional `spineTitle` provides a shorter case label. Both names are searchable; the full `title` stays in game details and accessible labels.
+- Use `\n` inside `spineTitle` to choose a line break, for example `"Prince of Persia:\nThe Lost Crown"`. Other labels wrap automatically when needed.
 - Use `notes: []` when there are no notes. Append a dated note when returning to a game and update `lastPlayed`, keeping one case for it.
 - Games can have several genres, so genre counts may overlap. The breakdown covers the selected year, even when the shelf is filtered.
 

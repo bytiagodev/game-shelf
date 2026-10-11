@@ -88,6 +88,7 @@ function GameCubby({ games, isWideLayout = false, onSelect }) {
         <div className="cases">
           {games.map((game) => {
             const sleeve = getGameSleeve(game);
+            const spineTitle = game.spineTitle || game.title;
             return (
               <button
                 className="game-case"
@@ -107,7 +108,14 @@ function GameCubby({ games, isWideLayout = false, onSelect }) {
                 <span className="spine-platform" aria-hidden="true">
                   PC
                 </span>
-                <span className="spine-title">{game.title}</span>
+                <span
+                  className={
+                    "spine-title" +
+                    (spineTitle.length > 24 ? " spine-title--long" : "")
+                  }
+                >
+                  {spineTitle}
+                </span>
               </button>
             );
           })}
