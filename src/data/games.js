@@ -35,8 +35,8 @@ export const games = [
     totalHours: 19,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3768760/1159a696d257cbeb3f4479be3466cfba2ae938a0/library_600x900_2x.jpg?t=1790955737",
-    color: "#22232c",
-    ink: "#fffaf3",
+    color: "#e3d1a1",
+    ink: "#191928",
     notes: [
       {
         date: "2026-10-05",
@@ -55,8 +55,8 @@ export const games = [
     totalHours: 26,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2751000/library_600x900_2x.jpg",
-    color: "#3b68d9",
-    ink: "#fffaf3",
+    color: "#79c8f0",
+    ink: "#191928",
     notes: [
       {
         date: "2026-09-29",
@@ -74,7 +74,7 @@ export const games = [
     totalHours: 52,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3751260/82769ab631e6e68b4a38bbba9fb5b74eb0d7db8d/library_capsule_2x.jpg?t=1790718217",
-    color: "#892e4a",
+    color: "#d93640",
     ink: "#fffaf3",
     notes: [
       {
@@ -144,6 +144,7 @@ export const games = [
   {
     id: "assassins-creed-black-flag-resynced",
     title: "Assassin's Creed Black Flag Resynced",
+    spineTitle: "Assassin's Creed\nBlack Flag Resynced",
     steamAppId: 3751950,
     genres: ["Action", "Adventure"],
     year: 2026,
@@ -151,8 +152,8 @@ export const games = [
     totalHours: 96,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3751950/36a1644b03afce1a648ab90b232196609e827539/library_capsule_2x.jpg?t=1787915122",
-    color: "#22232c",
-    ink: "#fffaf3",
+    color: "#8c99aa",
+    ink: "#191928",
     notes: [
       {
         date: "2026-07-25",
@@ -162,18 +163,17 @@ export const games = [
   },
   {
     id: "kingdom-hearts-final-mix",
-    title: "Kingdom Hearts Final Mix",
+    title: "KINGDOM HEARTS -HD 1.5+2.5 ReMIX-",
     spineTitle: "KINGDOM HEARTS\n-HD 1.5+2.5 ReMIX-",
     steamAppId: 2552430,
-    steamCollection: "KINGDOM HEARTS -HD 1.5+2.5 ReMIX-",
     genres: ["Action", "Adventure", "RPG"],
     year: 2026,
     lastPlayed: { date: "2026-08-25", precision: "day" },
     totalHours: 36,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2552430/library_600x900_2x.jpg",
-    color: "#f8f8f0",
-    ink: "#191928",
+    color: "#22232c",
+    ink: "#fffaf3",
     notes: [
       {
         date: "2026-08-25",
@@ -211,8 +211,8 @@ export const games = [
     totalHours: 62,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1903340/8b21381a43ac5a535a838f723815f8fe14ceaf7c/library_600x900_2x.jpg?t=1782830877",
-    color: "#e3d1a1",
-    ink: "#191928",
+    color: "#22232c",
+    ink: "#fffaf3",
     notes: [
       {
         date: "2026-01-04",
@@ -230,7 +230,7 @@ export const games = [
     totalHours: 59,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2215430/library_600x900_2x.jpg?t=1763409398",
-    color: "#f8f8f0",
+    color: "#e3d1a1",
     ink: "#191928",
     notes: [
       {
@@ -250,7 +250,7 @@ export const games = [
     totalHours: 12,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3419520/304549a90f9aa611c709e478854a21d5d41dc820/library_capsule_2x.jpg?t=1790010680",
-    color: "#afda4a",
+    color: "#75e1c4",
     ink: "#191928",
     notes: [
       {
@@ -308,7 +308,7 @@ export const games = [
     totalHours: 89,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2909400/771d94cceea4bf97bd8afeee5e09e31f15bd0196/library_600x900_2x.jpg?t=1789446799",
-    color: "#892e4a",
+    color: "#d93640",
     ink: "#fffaf3",
     notes: [
       {
@@ -327,7 +327,7 @@ export const games = [
     totalHours: 63,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2515020/library_600x900_2x.jpg?t=1773294537",
-    color: "#8c99aa",
+    color: "#f8f8f0",
     ink: "#191928",
     notes: [
       {
@@ -346,7 +346,7 @@ export const games = [
     totalHours: 28,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3008130/66ecd6b5e71e85cd3e339ba9233979a23c5f0ec0/library_capsule_2x.jpg?t=1789646537",
-    color: "#2e8653",
+    color: "#966042",
     ink: "#fffaf3",
     notes: [
       {
@@ -365,7 +365,7 @@ export const games = [
     totalHours: 25,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3483740/ae3040b8888720472de900f70824c845fac45aaf/library_capsule_2x.jpg?t=1785377115",
-    color: "#79c8f0",
+    color: "#199caa",
     ink: "#191928",
     notes: [
       {
@@ -384,8 +384,8 @@ export const games = [
     totalHours: 4,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2111190/library_600x900_2x.jpg?t=1787078659",
-    color: "#d93640",
-    ink: "#fffaf3",
+    color: "#ff8eab",
+    ink: "#191928",
     notes: [
       {
         date: "2026-06-25",
