@@ -41,6 +41,22 @@ export function groupRows(games, count) {
   );
 }
 
+export function groupCompactRows(games, capacity) {
+  const maximumSize = Math.max(1, Math.floor(capacity) || 1);
+  const smallerSize = Math.min(4, maximumSize);
+  const rows = [];
+  let remainingCount = games.length;
+  let nextSize = maximumSize;
+  // Fill from the bottom so spare space stays on the first shelf.
+  while (remainingCount > maximumSize) {
+    rows.unshift(games.slice(remainingCount - nextSize, remainingCount));
+    remainingCount -= nextSize;
+    nextSize = nextSize === maximumSize ? smallerSize : maximumSize;
+  }
+  if (remainingCount) rows.unshift(games.slice(0, remainingCount));
+  return rows;
+}
+
 export function formatPlayedDate(value) {
   if (!value?.date) return "Not recorded";
   // Use UTC to avoid a date shifting on computers in another time zone.

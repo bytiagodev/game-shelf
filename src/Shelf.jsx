@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
+import { groupCompactRows } from "./library.js";
 import Controller from "./Controller.jsx";
 import headsetImage from "./assets/v3-headset-blackshark.webp";
 import beamImage from "./assets/v2-beam.webp";
@@ -137,26 +138,60 @@ function Beam() {
 
 export default function Shelf({ games, onSelect, emptyContent }) {
   const container = useRef(null);
-  const [containerWidth, setContainerWidth] = useState(0);
+  const [layout, setLayout] = useState({
+    containerWidth: 0,
+    caseWidth: 56,
+    caseGap: 10,
+    casePadding: 18,
+  });
   useEffect(() => {
-    const observer = new ResizeObserver(([entry]) =>
-      setContainerWidth(entry.contentRect.width),
-    );
+    const observer = new ResizeObserver(([entry]) => {
+      const shelfStyle = getComputedStyle(container.current);
+      setLayout({
+        containerWidth: entry.contentRect.width,
+        caseWidth: parseFloat(shelfStyle.getPropertyValue("--case-width")),
+        caseGap: parseFloat(shelfStyle.getPropertyValue("--case-gap")),
+        casePadding: parseFloat(shelfStyle.getPropertyValue("--case-padding")),
+      });
+    });
     observer.observe(container.current);
     return () => observer.disconnect();
   }, []);
+  const { containerWidth, caseWidth, caseGap, casePadding } = layout;
   const isWideLayout = containerWidth >= 760;
   const isCompactLayout = containerWidth < 430;
-  const fullCapacity = Math.max(1, Math.floor((containerWidth - 36 + 10) / 66));
+  const availableCapacity = Math.max(
+    1,
+    Math.floor(
+      (containerWidth - casePadding * 2 + caseGap) / (caseWidth + caseGap),
+    ),
+  );
+  const fullCapacity = isCompactLayout
+    ? Math.min(5, availableCapacity)
+    : availableCapacity;
   const smallCapacity = Math.max(
     1,
-    Math.min(3, Math.floor(((containerWidth - 32) / 3 - 36 + 10) / 66)),
+    Math.min(
+      3,
+      Math.floor(
+        ((containerWidth - 32) / 3 - casePadding * 2 + caseGap) /
+          (caseWidth + caseGap),
+      ),
+    ),
   );
   const lowerCapacity = Math.max(
     1,
-    Math.floor((((containerWidth - 16) * 2) / 3 - 36 + 10) / 66),
+    Math.floor(
+      (((containerWidth - 16) * 2) / 3 - casePadding * 2 + caseGap) /
+        (caseWidth + caseGap),
+    ),
   );
-  const firstCount = isWideLayout ? smallCapacity * 2 : fullCapacity;
+  const compactRows = isCompactLayout ? groupCompactRows(games, fullCapacity) : [];
+  const firstCount = isWideLayout
+    ? smallCapacity * 2
+    : isCompactLayout
+      ? compactRows[0]?.length || 0
+      : fullCapacity;
   const controller = (
     <div className="cubby controller-cubby">
       <div className="controller-rest">
@@ -182,13 +217,16 @@ export default function Shelf({ games, onSelect, emptyContent }) {
   const tailRowCount = Math.ceil(remainingGames.length / fullCapacity);
   const tailSize = Math.floor(remainingGames.length / (tailRowCount || 1));
   const extraCaseCount = remainingGames.length % (tailRowCount || 1);
-  const tailRows = Array.from({ length: tailRowCount }, (unusedRow, index) => {
-    const startIndex = index * tailSize + Math.min(index, extraCaseCount);
-    return remainingGames.slice(
-      startIndex,
-      startIndex + tailSize + (index < extraCaseCount ? 1 : 0),
-    );
-  });
+  const tailRows = isCompactLayout
+    ? compactRows.slice(1)
+    : Array.from({ length: tailRowCount }, (unusedRow, index) => {
+        const startIndex = index * tailSize + Math.min(index, extraCaseCount);
+        return remainingGames.slice(
+          startIndex,
+          startIndex + tailSize + (index < extraCaseCount ? 1 : 0),
+        );
+      });
+  const headsetAfterRow = Math.min(2, tailRows.length);
 
   if (games.length === 0)
     return (
@@ -285,12 +323,20 @@ export default function Shelf({ games, onSelect, emptyContent }) {
         </>
       )}
       {tailRows.map((row, index) => (
-        <div className="shelf-row" key={index}>
-          <GameCubby games={row} onSelect={onSelect} />
-          <Beam />
-        </div>
+        <Fragment key={index}>
+          <div className="shelf-row">
+            <GameCubby games={row} onSelect={onSelect} />
+            <Beam />
+          </div>
+          {isCompactLayout && index + 1 === headsetAfterRow && (
+            <div className="shelf-row">
+              {headset}
+              <Beam />
+            </div>
+          )}
+        </Fragment>
       ))}
-      {!isWideLayout && isCompactLayout && (
+      {isCompactLayout && tailRows.length === 0 && (
         <div className="shelf-row">
           {headset}
           <Beam />

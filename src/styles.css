@@ -231,6 +231,7 @@ input::placeholder {
   --case-width: 56px;
   --case-height: 250px;
   --case-gap: 10px;
+  --case-padding: 18px;
   --shelf-contact: 8px;
 }
 .shelf-row {
@@ -259,7 +260,7 @@ input::placeholder {
 .game-cubby {
   display: flex;
   align-items: flex-end;
-  padding: 22px 18px 0;
+  padding: 22px var(--case-padding) 0;
 }
 .wide-cubby {
   grid-column: span 2;
@@ -762,6 +763,8 @@ input::placeholder {
   }
   .shelves {
     --case-height: 220px;
+    --case-gap: 5px;
+    --case-padding: 12px;
     --shelf-contact: 7px;
   }
   .shelf-band {
@@ -769,9 +772,6 @@ input::placeholder {
   }
   .narrow-layout .cubby {
     height: 244px;
-  }
-  .game-cubby {
-    padding-inline: 12px;
   }
   .spine-title {
     font-size: 16px;

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { selectGames, groupRows, getGenres, formatPlayedDate, formatHours } from '../src/library.js';
+import { selectGames, groupRows, groupCompactRows, getGenres, formatPlayedDate, formatHours } from '../src/library.js';
 import { games } from '../src/data/games.js';
 import { sampleGames } from '../src/data/sampleGames.js';
 
@@ -36,6 +36,23 @@ test('rows preserve every case across narrow and wide layouts', () => {
 
 test('genre counts can overlap, but the filter options remain unique', () => {
   assert.deepEqual(getGenres([{ genres: ['Puzzle', 'Adventure'] }, { genres: ['Puzzle'] }]), ['Adventure', 'Puzzle']);
+});
+
+test('compact shelves fill from the bottom and preserve game order as the collection grows', () => {
+  const entries = Array.from({ length: 40 }, (unusedValue, gameIndex) => gameIndex);
+  assert.deepEqual(groupCompactRows(entries.slice(0, 22), 5).map(row => row.length), [4, 4, 5, 4, 5]);
+  assert.deepEqual(groupCompactRows(entries.slice(0, 23), 5).map(row => row.length), [5, 4, 5, 4, 5]);
+  assert.deepEqual(groupCompactRows(entries.slice(0, 24), 5).map(row => row.length), [1, 5, 4, 5, 4, 5]);
+  assert.deepEqual(groupCompactRows(entries.slice(0, 22), 4).map(row => row.length), [2, 4, 4, 4, 4, 4]);
+  for (const capacity of [1, 3, 4, 5]) {
+    for (let count = 0; count <= entries.length; count++) {
+      const collection = entries.slice(0, count);
+      const rows = groupCompactRows(collection, capacity);
+      assert.deepEqual(rows.flat(), collection);
+      assert.ok(rows.every(row => row.length > 0 && row.length <= capacity));
+      assert.ok(rows.slice(1).every(row => row.length >= Math.min(4, capacity)));
+    }
+  }
 });
 
 test('unknown and zero hours differ; month dates never claim an exact day', () => {
