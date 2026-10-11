@@ -57,7 +57,7 @@ export const games = [
     ink: "#fffaf3",
     notes: [
       {
-        date: "2026-10-04",
+        date: "2026-09-29",
         text: "Metroidvanias aren't usually my thing, but this won me over. Enjoyed the responsive combat, exploration and abilities, with quality-of-life features that made a real difference. Some powers arrived too late, and the story was forgettable. Rekindled my interest in Prince of Persia enough to consider Rogue, despite initially disliking its look.",
       },
     ],
@@ -76,7 +76,7 @@ export const games = [
     ink: "#fffaf3",
     notes: [
       {
-        date: "2026-10-04",
+        date: "2026-09-23",
         text: "Nearly skipped it over the vampires, time limits and resemblance to The Witcher 3. Glad I didn't. Enjoyed the story, Coen, atmosphere and freedom to explore. Day/night changes and directional parrying kept things interesting, and the time pressure made decisions feel meaningful. Enemy variety was the main weakness, especially repeated guards, boars and wolves. Exceeded my expectations.",
       },
     ],
@@ -95,7 +95,7 @@ export const games = [
     ink: "#191928",
     notes: [
       {
-        date: "2026-10-04",
+        date: "2026-09-11",
         text: "Really captured the feeling of being Indy. Enjoyed the locations, exploration, whip and puzzles, and Indy's voice acting was great. Voss occasionally became too silly, boat travel made backtracking cumbersome, and enemies offered little challenge. The DLC was short, with weaker puzzles and little contribution to the story. Still had a great time.",
       },
     ],
@@ -114,7 +114,7 @@ export const games = [
     ink: "#191928",
     notes: [
       {
-        date: "2026-10-05",
+        date: "2026-08-17",
         text: "Okay, but fell short of its potential. Combat improved after a clunky start, and I liked the music, visual ideas and having Koo alongside me. Emma was bland, and the story wasted an interesting premise. Reused bosses and an unreliable camera held it back too. More development time might have made a real difference.",
       },
     ],
@@ -133,7 +133,7 @@ export const games = [
     ink: "#191928",
     notes: [
       {
-        date: "2026-10-05",
+        date: "2026-08-02",
         text: "Hoped Max's return would bring back what made the original special to me. Instead, she felt watered down, with a missed opportunity to explore her trauma, grief and guilt. Didn't like the supporting cast. The new power was less interesting than rewinding time, and the split timelines brought plot holes and weaker consequences. Another disappointing follow-up in a series that still hasn't matched its first game for me.",
       },
     ],
@@ -152,7 +152,7 @@ export const games = [
     ink: "#fffaf3",
     notes: [
       {
-        date: "2026-10-05",
+        date: "2026-07-25",
         text: "The original was my favourite Assassin's Creed, and this exceeded my huge expectations. Didn't miss the modern-day sections. The revised combat grew on me, the visuals were stunning, and the naval additions were welcome. Enjoyed having the pets around, especially Albert the Monkey. Explored everything I could and finished wishing there was more to do.",
       },
     ],
@@ -172,7 +172,7 @@ export const games = [
     ink: "#191928",
     notes: [
       {
-        date: "2026-10-04",
+        date: "2026-08-25",
         text: "Enjoyed revisiting the first game, though it didn't quite match my PS2 memories. The worlds, characters and music still hold up. Combat is mostly too easy outside bosses, and the camera often gets in the way. The Hercules tournaments offer a welcome change of pace. Only played this one from the collection so far; skipping Chain of Memories because of its card combat system, but plan to play II.",
       },
     ],
@@ -191,7 +191,7 @@ export const games = [
     ink: "#fffaf3",
     notes: [
       {
-        date: "2026-10-05",
+        date: "2026-07-04",
         text: "Strong dystopian cyberpunk setting. The art, characters, story and mystery kept me interested, but the gameplay was dull. The ending felt anticlimactic, and I couldn't see why the two anti-authority choices had to exclude each other. That restriction felt forced. Mixed feelings overall, though I'd still give DLC or a sequel a try.",
       },
     ],
@@ -210,7 +210,7 @@ export const games = [
     ink: "#191928",
     notes: [
       {
-        date: "2026-10-07",
+        date: "2026-01-04",
         text: "Started brilliantly, with a great soundtrack and striking art direction. The parry combat was enjoyable at first, but grew repetitive over time. Gustave's death and replacement hurt my interest, and the story's shift towards an “it was all a dream” kind of twist lost me. I wanted more of the original expedition premise. Corridor-like areas, invisible walls and unrewarding exploration disappointed me too, while movement felt rough.",
       },
     ],
@@ -229,7 +229,7 @@ export const games = [
     ink: "#191928",
     notes: [
       {
-        date: "2026-10-07",
+        date: "2026-01-30",
         text: "Beautiful world, excellent combat, and a story that stayed with me. Jin's conflict between honour and family felt personal. Fighting his uncle and losing my horse really hurt. Combat could be unforgiving, but learning enemies' moves made victories feel earned. A very memorable game.",
       },
     ],
@@ -248,7 +248,7 @@ export const games = [
     ink: "#191928",
     notes: [
       {
-        date: "2026-10-07",
+        date: "2026-01-31",
         text: "Simple gameplay, barely any story, and fun for a few hours before becoming repetitive. Fortunately, it was short enough not to drag. Using about ten tools per survivor became tedious, especially when “Poor Inspection” cost me money and research without explaining what I'd missed. The drone sections felt out of place and controlled poorly.",
       },
     ],
@@ -267,7 +267,7 @@ export const games = [
     ink: "#191928",
     notes: [
       {
-        date: "2026-10-07",
+        date: "2026-02-17",
         text: "Playing a cat in a cyberpunk city sounded great, and the atmospheric environments drew me in. Once the novelty wore off, movement felt too automated, puzzles were simple, and the stealth sections were a chore. The predictable story focused more on the robots than the cat, with emotionally thin interactions and an anticlimactic ending. Never really clicked with me.",
       },
     ],
@@ -286,7 +286,7 @@ export const games = [
     ink: "#fffaf3",
     notes: [
       {
-        date: "2026-10-07",
+        date: "2026-03-02",
         text: "Outstanding graphics and animation, with that Pixar-like attention to detail. Liked the distinctive worlds, and getting around with animals and rocket boots was fun. The familiar combat became repetitive and never developed much further. Lost interest in the story after chapter two as the pacing slowed. Felt too safe with its premise and relied heavily on references to earlier games.",
       },
     ],
@@ -305,7 +305,7 @@ export const games = [
     ink: "#fffaf3",
     notes: [
       {
-        date: "2026-10-07",
+        date: "2026-03-30",
         text: "Great visuals. Enjoyed the combat and party interactions. Feels more like a sequel than the faithful remake I wanted. The Disneyland-like atmosphere and exaggerated dialogue kept undermining serious moments. Exploration became an unrewarding checklist of map markers and small chores. Felt like a good game buried under far too much filler.",
       },
     ],
@@ -324,7 +324,7 @@ export const games = [
     ink: "#191928",
     notes: [
       {
-        date: "2026-10-06",
+        date: "2026-05-09",
         text: "Basic story that left me missing VII, VIII, IX and X. Combat settled into the same dodge, stagger and cooldown routine, with little meaningful customisation or crafting. The mundane side quests and forgettable characters dragged the pacing down. Felt like a mixture of an MMO and Devil May Cry. Expected more from a mainline Final Fantasy.",
       },
     ],
@@ -343,7 +343,7 @@ export const games = [
     ink: "#fffaf3",
     notes: [
       {
-        date: "2026-10-06",
+        date: "2026-06-21",
         text: "Kyle's return was nostalgic, but I never liked the beast transformation. Weak revenge story and forgettable supporting characters. The forest-heavy map made parkour less enjoyable, and the cars felt disposable compared with the first game's customisable buggy. Mostly finished because I cared about Kyle and wanted to see where his story went. Average at best; the original remains my favourite.",
       },
     ],
@@ -362,7 +362,7 @@ export const games = [
     ink: "#191928",
     notes: [
       {
-        date: "2026-10-06",
+        date: "2026-06-12",
         text: "Stunning pixel art and lovely animation, but little gameplay to hold my attention. Couldn't see much reason to play manually. Idle mode felt more like watching a video of the game than progressing towards automation. Mostly left it running on a second monitor. Didn't give me what I wanted from an idle game.",
       },
     ],
@@ -381,7 +381,7 @@ export const games = [
     ink: "#fffaf3",
     notes: [
       {
-        date: "2026-10-06",
+        date: "2026-06-25",
         text: "Barely any story, irritating commentary, and 80 floors of rescuing someone for a pair of shoes. The ten-second timer made every level a frantic dash through repetitive layouts. The railgun felt useless while the shotgun trivialised enemies and bosses, leaving little reason to aim for headshots. Lost interest well before the end, despite how short it is.",
       },
     ],
@@ -400,7 +400,7 @@ export const games = [
     ink: "#fffaf3",
     notes: [
       {
-        date: "2026-10-04",
+        date: "2026-10-10",
         text: "Bought it as a break from story-heavy games and ended up constantly returning. Great music, responsive combat, varied builds and bosses that need different approaches. The goofy dialogue fits TMNT, and the DLC generally felt fairly priced. Would like more variety in the routes. Apart from Casey Jones, the extra characters haven't interested me much. More levels would give me even more reason to keep playing.",
       },
     ],
@@ -419,7 +419,7 @@ export const games = [
     ink: "#191928",
     notes: [
       {
-        date: "2026-10-04",
+        date: "2026-08-26",
         text: "Picked it up after Splintered Fate, with fond memories of Turtles in Time. Vibrant colours, returning cartoon voices and solid gameplay, but the pixel art wasn't for me. Similar stages made even the short campaign repetitive, and I felt little urge to return. Co-op might have helped, but I never tried it.",
       },
     ],
