@@ -412,7 +412,7 @@ export const games = [
     ink: "#fffaf3",
     notes: [
       {
-        date: "2025-12-28",
+        date: "2025-11-28",
         text: "Great music, responsive combat, varied builds and bosses that need different approaches. Upgrades gradually turned a brutally difficult start into clearing rooms with ease. The goofy dialogue fits TMNT, and the DLC generally feels fairly priced. Casey Jones is strong and fun to play, and I enjoyed the new map. Metalhead is too slow for me, and his ranged playstyle isn't my thing.",
       },
       {
