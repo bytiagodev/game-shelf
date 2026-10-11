@@ -12,8 +12,8 @@ export const games = [
     steamAppId: 2638890,
     genres: ["Action", "Adventure", "RPG"],
     year: 2026,
-    lastPlayed: { date: "2026-10-07", precision: "day" },
-    totalHours: 4,
+    lastPlayed: { date: "2026-10-11", precision: "day" },
+    totalHours: 26,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2638890/730daf025e5922da7441a4c02b1999f27dc026fd/library_capsule_2x.jpg?t=1790383151",
     color: "#892e4a",
@@ -21,7 +21,11 @@ export const games = [
     notes: [
       {
         date: "2026-10-07",
-        text: "Still playing. So far, about on par with Demon Siege: okay, but not great. Boss combat is excellent, while regular enemies are too passive and easy. Musashi's silliness often breaks the atmosphere, the open world feels empty, and the thick British accents don't suit the characters. Hoping it improves, but not confident yet.",
+        text: "Still playing. So far, about on par with Demon Siege: okay, but not great. Boss combat is excellent, while regular enemies are too passive and easy. Musashi's silliness often breaks the atmosphere, and the open world feels empty. Hoping it improves.",
+      },
+      {
+        date: "2026-10-11",
+        text: "Finished with mixed feelings. Regular enemies remained too passive, the open world felt empty, and side quests were basic and often dull. Combat was excellent and got even better as the game progressed. Musashi grew on me and turned out to be a great character, though his jokes still undercut some serious scenes. The story was great, and I enjoyed both the supporting cast and villains, but the open-ended epilogue was disappointing.",
       },
     ],
   },
