@@ -131,7 +131,7 @@ export default function GameDetail({ game, isSample, onDismiss }) {
                 {game.notes.length ? (
                   [...game.notes]
                     .sort((firstNote, secondNote) =>
-                      secondNote.date.localeCompare(firstNote.date),
+                      firstNote.date.localeCompare(secondNote.date),
                     )
                     .map((note, index) => (
                       <article className="note" key={note.date + "-" + index}>
