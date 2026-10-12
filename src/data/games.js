@@ -83,7 +83,7 @@ export const games = [
     notes: [
       {
         date: "2026-09-23",
-        text: "Nearly skipped it because I'm usually not a fan of time limits. Glad I didn't. Enjoyed the story, Coen, atmosphere and freedom to explore. Day/night changes and directional parrying kept things interesting, and the time pressure made decisions feel meaningful. Enemy variety was the main weakness, especially repeated guards, boars and wolves. Exceeded my expectations. Would like some DLC and to see where they take a sequel.",
+        text: "Nearly skipped it because I'm usually not a fan of time limits. Glad I didn't. Enjoyed the story, atmosphere and freedom to explore. Day/night changes and directional parrying kept things interesting, and the time pressure made decisions feel meaningful. Enemy variety was the main weakness, especially repeated guards, boars and wolves. Exceeded my expectations. Would like some DLC and to see where they take a sequel.",
       },
     ],
   },
@@ -161,7 +161,7 @@ export const games = [
     notes: [
       {
         date: "2026-07-25",
-        text: "The original was my favourite Assassin's Creed, and this exceeded my huge expectations. Didn't miss the modern-day sections. The revised combat grew on me, the visuals were stunning, and the naval additions were welcome. Enjoyed having the pets around, especially Albert the Monkey. Explored everything I could and finished wishing there was more to do.",
+        text: "Had huge expectations for this remake because the original is my favourite Assassin's Creed, and it exceeded them. Didn't miss the modern-day sections. The revised combat grew on me, the visuals were stunning, and the naval additions were welcome. Enjoyed having the pets around, especially Albert the Monkey. Explored everything I could and finished wishing there was more to do.",
       },
     ],
   },
@@ -181,7 +181,7 @@ export const games = [
     notes: [
       {
         date: "2026-08-25",
-        text: "Enjoyed Kingdom Hearts Final Mix, the first game in the collection. I'd played the original Kingdom Hearts on PS2, but this was my first time with Final Mix, and it didn't quite live up to those memories. The worlds, characters and music still hold up. Combat is mostly too easy outside bosses, and the camera often gets in the way. The Hercules tournaments offer a welcome change of pace. Skipping Chain of Memories because of its card combat system, but plan to play II.",
+        text: "Started the collection with Kingdom Hearts Final Mix, my first time with this version after playing the original on PS2. Enjoyed it, especially the worlds, characters and music, even if it didn't quite recapture the magic I remembered. Combat is mostly too easy outside bosses, and the camera often gets in the way. The Hercules tournaments offer a welcome change of pace. Skipping Chain of Memories because of its card combat system, but plan to play II.",
       },
     ],
   },
@@ -298,7 +298,7 @@ export const games = [
     notes: [
       {
         date: "2026-03-02",
-        text: "Outstanding graphics and animation, with that Pixar-like attention to detail. Liked the distinctive worlds, and getting around with animals and rocket boots was fun. The familiar combat became repetitive and never developed much further. Lost interest in the story after chapter two as the pacing slowed. Felt too safe with its premise and relied heavily on references to earlier games.",
+        text: "Great graphics and animation, with that Pixar-like attention to detail. Liked the distinctive worlds, and getting around with animals and rocket boots was fun. Combat became repetitive and never developed much further. Lost interest in the story after chapter two as the pacing slowed. It did little with its premise and relied heavily on references to earlier games.",
       },
     ],
   },
@@ -393,7 +393,7 @@ export const games = [
     notes: [
       {
         date: "2026-06-25",
-        text: "Barely any story, annoying commentary, and 80 floors of rescuing someone for a pair of shoes. The ten-second timer made every level a frantic dash through repetitive layouts. The railgun felt useless while the shotgun trivialised enemies and bosses, leaving little reason to aim for headshots. Lost interest well before the end, despite how short it is.",
+        text: "Barely any story, annoying commentary, and 80 floors of rescuing someone for a pair of shoes. The ten-second timer made every level a frantic dash through repetitive layouts. The railgun felt useless while the shotgun trivialised enemies and bosses, leaving little reason to aim for headshots. Finished it, but my interest had faded well before the end, despite its short length.",
       },
     ],
   },
@@ -413,19 +413,15 @@ export const games = [
     notes: [
       {
         date: "2025-11-28",
-        text: "Great music, responsive combat, varied builds and bosses that need different approaches. Upgrades gradually turned a brutally difficult start into clearing rooms with ease. The goofy dialogue fits TMNT, and the DLC generally feels fairly priced. Casey Jones is strong and fun to play, and I enjoyed the new map. Metalhead is too slow for me, and his ranged playstyle isn't my thing.",
-      },
-      {
-        date: "2026-02-24",
-        text: "Alopex is fast, hits hard and has good animations. Enjoyed her dialogue, especially with Karai. I didn't know the character before this DLC. She's fun, but her playstyle doesn't stand out enough for me to choose her over the turtles.",
+        text: "Great music, responsive combat, varied builds and bosses that need different approaches. Upgrades gradually turned a brutally difficult start into clearing rooms with ease. The turtles' entertaining dialogue helps keep the runs from feeling repetitive.",
       },
       {
         date: "2026-08-18",
-        text: "King's Gambit finally resolved the story's mystery after a long wait. Rat King isn't as compelling a villain as Shredder, but it was good to discover who was behind it all. The new level and Gauntlet Challenge add welcome variety. Slash fits in well and is powerful, but too slow for my taste. Unlikely to use him much.",
+        text: "King's Gambit finally resolved the story's mystery after a long wait. Rat King isn't as compelling a villain as Shredder, but it was good to discover who was behind it all. The new level and Gauntlet Challenge add welcome variety.",
       },
       {
         date: "2026-10-10",
-        text: "Bought it as a break from story-heavy games and still return from time to time. It's still fun, though the same routes are starting to feel stale. With no upgrades left to buy, there's less reason to keep playing. Hoping for more levels and continued support.",
+        text: "Still return from time to time for a couple of runs. It's still fun, though the same routes are starting to feel stale. With no upgrades left to buy, there's less reason to keep playing. The game has added fairly priced DLC with new characters, but apart from Casey Jones, the others didn't do much for me. Hoping for continued support, with new levels to bring fresh life to the game.",
       },
     ],
   },
@@ -445,7 +441,7 @@ export const games = [
     notes: [
       {
         date: "2026-08-26",
-        text: "Wanted more TMNT after Splintered Fate, and this reminded me of Turtles in Time, so I gave it a go. Vibrant colours, returning cartoon voices and solid gameplay, but the pixel art wasn't for me. Similar stages made even the short campaign repetitive, and I felt little urge to return. Co-op might have helped, but I never tried it.",
+        text: "Wanted more TMNT after Splintered Fate, and this reminded me of Turtles in Time, so I gave it a go. Vibrant colours, returning cartoon voices and solid gameplay, but the pixel art wasn't for me. Similar stages made even the short campaign repetitive, and I feel no urge to return. Co-op might have helped, but I never tried it.",
       },
     ],
   },
