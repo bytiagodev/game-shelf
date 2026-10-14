@@ -12,8 +12,8 @@ export const games = [
     steamAppId: 2638890,
     genres: ["Action", "Adventure", "RPG"],
     year: 2026,
-    lastPlayed: { date: "2026-10-11", precision: "day" },
-    totalHours: 26,
+    lastPlayed: { date: "2026-10-15", precision: "day" },
+    totalHours: 33,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2638890/730daf025e5922da7441a4c02b1999f27dc026fd/library_capsule_2x.jpg?t=1790383151",
     color: "#892e4a",
@@ -21,11 +21,11 @@ export const games = [
     notes: [
       {
         date: "2026-10-07",
-        text: "Still playing. So far, about on par with Demon Siege: okay, but not great. Boss combat is excellent, while regular enemies are too passive and easy. Musashi's silliness often breaks the atmosphere, and the open world feels empty. Hoping it improves.",
+        text: "Still playing. So far, it's okay, but not great. Boss combat is excellent, while regular enemies are too passive and easy. Musashi's silliness often breaks the atmosphere, and the open world feels empty. Hoping it improves.",
       },
       {
         date: "2026-10-11",
-        text: "Finished with mixed feelings. Regular enemies remained too passive, the open world felt empty, and side quests were basic and often dull. Combat was excellent and got even better as the game progressed. Musashi grew on me and turned out to be a great character, though his jokes still undercut some serious scenes. The story was great, and I enjoyed both the supporting cast and villains, but the open-ended epilogue was disappointing.",
+        text: "Finished with mixed feelings. Most of my earlier issues remained, but the combat kept improving and Musashi grew on me, even if his jokes still undercut some serious scenes. The story was great, and I enjoyed the supporting cast and villains, though the open-ended epilogue was disappointing.",
       },
     ],
   },
@@ -413,15 +413,15 @@ export const games = [
     notes: [
       {
         date: "2025-11-28",
-        text: "Great music, responsive combat, varied builds and bosses that need different approaches. Upgrades gradually turned a brutally difficult start into clearing rooms with ease. The turtles' entertaining dialogue helps keep the runs from feeling repetitive.",
+        text: "Great music, responsive combat and varied builds, with bosses that need different approaches. Upgrades made the tough start much easier, and the turtles' dialogue keeps runs entertaining.",
       },
       {
         date: "2026-08-18",
-        text: "King's Gambit finally resolved the story's mystery after a long wait. Rat King isn't as compelling a villain as Shredder, but it was good to discover who was behind it all. The new level and Gauntlet Challenge add welcome variety.",
+        text: "King's Gambit finally resolved the mystery. Rat King isn't as compelling as Shredder, but the new level and Gauntlet Challenge add welcome variety.",
       },
       {
         date: "2026-10-10",
-        text: "Still return from time to time for a couple of runs. It's still fun, though the same routes are starting to feel stale. With no upgrades left to buy, there's less reason to keep playing. The game has added fairly priced DLC with new characters, but apart from Casey Jones, the others didn't do much for me. Hoping for continued support, with new levels to bring fresh life to the game.",
+        text: "Still return occasionally for a couple of runs, but repeated routes and no upgrades left to buy give me less reason to play. The character DLC is fairly priced, though only Casey Jones stood out. Hoping for continued support and new levels.",
       },
     ],
   },
