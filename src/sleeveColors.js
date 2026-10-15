@@ -1,0 +1,21 @@
+// Kept apart from the sleeve images so plain Node tests can check sleeve names.
+export const sleeveColors = {
+  mint: { color: "#75e1c4", lightTitle: false },
+  yellow: { color: "#ffcf64", lightTitle: false },
+  blue: { color: "#79c8f0", lightTitle: false },
+  lavender: { color: "#aa8ef1", lightTitle: false },
+  pink: { color: "#ff8eab", lightTitle: false },
+  orange: { color: "#ff9961", lightTitle: false },
+  black: { color: "#22232c", lightTitle: true },
+  white: { color: "#f8f8f0", lightTitle: false },
+  red: { color: "#d93640", lightTitle: true },
+  "royal-blue": { color: "#3b68d9", lightTitle: true },
+  green: { color: "#2e8653", lightTitle: true },
+  grey: { color: "#8c99aa", lightTitle: false },
+  teal: { color: "#199caa", lightTitle: false },
+  cream: { color: "#e3d1a1", lightTitle: false },
+  brown: { color: "#966042", lightTitle: true },
+  burgundy: { color: "#892e4a", lightTitle: true },
+  lime: { color: "#afda4a", lightTitle: false },
+  violet: { color: "#7245bc", lightTitle: true },
+};

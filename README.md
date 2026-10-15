@@ -46,12 +46,12 @@ export const games = [
     title: 'Your game',
     steamAppId: null,
     genres: ['Adventure'],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: '2026-09-01', precision: 'month' },
+    status: 'playing',
     totalHours: null,
     coverUrl: null,
-    color: '#75e1c4',
-    ink: '#28283e',
+    sleeve: 'mint',
     notes: [
       { date: '2026-10-04', text: 'A thought to keep for later.' },
     ],
@@ -59,12 +59,14 @@ export const games = [
 ];
 ```
 
-- `id` is a unique, stable identifier. `year` chooses the shelf year.
+- `id` is a unique, stable identifier.
+- `years` lists every year the game was played, from 2026 onwards. When returning to a game in a new year, add that year instead of creating a second case; the game then appears on each of those shelves. Years before the collection's start year are never shown.
 - `lastPlayed` can be `null`, an exact date with `precision: 'day'`, or an approximate month with `precision: 'month'`. For a month, use its first day for sorting; the interface displays only the month and year.
+- `status` is `'playing'`, `'finished'`, `'dropped'` or `null` when not recorded.
 - `totalHours` is the lifetime total copied from Steam. Use `null` if unknown; zero remains zero. It does not represent hours played that year.
 - `steamAppId` enables the Steam store link. `coverUrl` supplies that game's own cover; missing or failed images have a title fallback.
 - For a game inside a Steam collection, use its individual title and the collection's app ID and cover. The optional `steamCollection` field identifies that collection in the details panel.
-- `color` selects the nearest illustrated sleeve colour. `ink` sets the fallback cover's title colour.
+- `sleeve` names one of the 18 illustrated case colours: `mint`, `yellow`, `blue`, `lavender`, `pink`, `orange`, `black`, `white`, `red`, `royal-blue`, `green`, `grey`, `teal`, `cream`, `brown`, `burgundy`, `lime` or `violet`. The spine title colour and the fallback cover follow it.
 - Optional `spineTitle` provides a shorter case label. Both names are searchable; the full `title` stays in game details and accessible labels.
 - Use `\n` inside `spineTitle` to choose a line break, for example `"Prince of Persia:\nThe Lost Crown"`. Other labels wrap automatically when needed.
 - Use `notes: []` when there are no notes. Append a dated note when returning to a game and update `lastPlayed`, keeping one case for it.

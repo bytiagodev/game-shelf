@@ -1,28 +1,40 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { selectGames, groupRows, groupCompactRows, getGenres, formatPlayedDate, formatHours } from '../src/library.js';
-import { games } from '../src/data/games.js';
+import { selectGames, groupRows, groupCompactRows, getGenres, getYears, gameStatuses, formatPlayedDate, formatHours } from '../src/library.js';
+import { games, profile } from '../src/data/games.js';
+import { sleeveColors } from '../src/sleeveColors.js';
 import { sampleGames } from '../src/data/sampleGames.js';
 
 test('filters intersect and search ignores surrounding spaces and case', () => {
   const entries = [
-    { id: 'a', title: 'Moon', year: 2026, genres: ['Puzzle', 'Adventure'], lastPlayed: null },
-    { id: 'b', title: 'Moon Two', year: 2025, genres: ['Puzzle'], lastPlayed: null },
-    { id: 'c', title: 'Moon Three', year: 2026, genres: ['Action'], lastPlayed: null },
+    { id: 'a', title: 'Moon', years: [2026], genres: ['Puzzle', 'Adventure'], lastPlayed: null },
+    { id: 'b', title: 'Moon Two', years: [2027], genres: ['Puzzle'], lastPlayed: null },
+    { id: 'c', title: 'Moon Three', years: [2026], genres: ['Action'], lastPlayed: null },
   ];
   assert.deepEqual(selectGames(entries, { year: '2026', genre: 'Puzzle', query: ' MOON ' }).map(game => game.id), ['a']);
 });
 
 test('recent order puts unknown dates last and breaks ties by title without mutating data', () => {
   const entries = [
-    { title: 'Unknown', year: 2026, genres: [], lastPlayed: null },
-    { title: 'Zebra', year: 2026, genres: [], lastPlayed: { date: '2026-09-01' } },
-    { title: 'Alpha', year: 2026, genres: [], lastPlayed: { date: '2026-09-01' } },
-    { title: 'Earlier', year: 2026, genres: [], lastPlayed: { date: '2026-01-01' } },
+    { title: 'Unknown', years: [2026], genres: [], lastPlayed: null },
+    { title: 'Zebra', years: [2026], genres: [], lastPlayed: { date: '2026-09-01' } },
+    { title: 'Alpha', years: [2026], genres: [], lastPlayed: { date: '2026-09-01' } },
+    { title: 'Earlier', years: [2026], genres: [], lastPlayed: { date: '2026-01-01' } },
   ];
   assert.deepEqual(selectGames(entries, { year: 2026 }).map(game => game.title), ['Alpha', 'Zebra', 'Earlier', 'Unknown']);
   assert.equal(entries[0].title, 'Unknown');
   assert.deepEqual(selectGames(entries, { year: 2026, sort: 'title' }).map(game => game.title), ['Alpha', 'Earlier', 'Unknown', 'Zebra']);
+});
+
+test('a game played across years appears on each of those shelves, and no shelf predates the start year', () => {
+  const entries = [
+    { id: 'returning', title: 'Returning', years: [2026, 2027], genres: [], lastPlayed: null },
+    { id: 'new', title: 'New', years: [2027], genres: [], lastPlayed: null },
+  ];
+  assert.deepEqual(selectGames(entries, { year: 2026 }).map(game => game.id), ['returning']);
+  assert.deepEqual(selectGames(entries, { year: 2027 }).map(game => game.id), ['new', 'returning']);
+  assert.deepEqual(getYears(entries, 2026), [2027, 2026]);
+  assert.deepEqual(getYears([{ years: [2025, 2026] }], 2026), [2026]);
 });
 
 test('rows preserve every case across narrow and wide layouts', () => {
@@ -69,7 +81,12 @@ test('manually edited data has unique ids, valid dates and no invented defaults'
     assert.equal(new Set(collection.map(game => game.id)).size, collection.length);
     for (const game of collection) {
       assert.ok(game.id && game.title);
-      assert.ok(Number.isInteger(game.year) && game.year >= 2026);
+      assert.ok(Array.isArray(game.years) && game.years.length > 0);
+      assert.equal(new Set(game.years).size, game.years.length);
+      assert.ok(game.years.every(year => Number.isInteger(year) && year >= profile.startYear));
+      assert.ok(game.sleeve in sleeveColors, game.id + ' has an unknown sleeve: ' + game.sleeve);
+      assert.ok(game.status === null || game.status in gameStatuses, game.id + ' has an unknown status: ' + game.status);
+      for (const removedField of ['year', 'color', 'ink']) assert.ok(!(removedField in game), game.id + ' still has ' + removedField);
       assert.ok(Array.isArray(game.genres));
       assert.ok(Array.isArray(game.notes));
       assert.ok(game.totalHours === null || (Number.isFinite(game.totalHours) && game.totalHours >= 0));

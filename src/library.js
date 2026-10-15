@@ -1,3 +1,17 @@
+export const gameStatuses = {
+  playing: "Playing",
+  finished: "Finished",
+  dropped: "Dropped",
+};
+
+// A game sits on the shelf of every year it was played, newest year first.
+// The journal starts at startYear, so earlier years never get a shelf.
+export function getYears(games, startYear) {
+  return [...new Set([startYear, ...games.flatMap((game) => game.years)])]
+    .filter((year) => year >= startYear)
+    .sort((firstYear, secondYear) => secondYear - firstYear);
+}
+
 export function getGenres(games) {
   return [...new Set(games.flatMap((game) => game.genres))].sort();
 }
@@ -10,7 +24,7 @@ export function selectGames(
   return games
     .filter(
       (game) =>
-        game.year === Number(year) &&
+        game.years.includes(Number(year)) &&
         (genre === "all" || game.genres.includes(genre)) &&
         (!search ||
           [game.title, game.spineTitle || ""].some((searchableTitle) =>

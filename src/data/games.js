@@ -1,4 +1,4 @@
-// Add your real games here. See README.md for a complete example.
+// Add your real games here. See README.md for the fields.
 // An empty array displays the clearly labelled fictional sample collection.
 export const profile = {
   startYear: 2026,
@@ -11,13 +11,13 @@ export const games = [
     spineTitle: "Onimusha:\nWay of the Sword",
     steamAppId: 2638890,
     genres: ["Action", "Adventure", "RPG"],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: "2026-10-15", precision: "day" },
+    status: "finished",
     totalHours: 33,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2638890/730daf025e5922da7441a4c02b1999f27dc026fd/library_capsule_2x.jpg?t=1790383151",
-    color: "#892e4a",
-    ink: "#fffaf3",
+    sleeve: "burgundy",
     notes: [
       {
         date: "2026-10-07",
@@ -34,13 +34,13 @@ export const games = [
     title: "007 First Light",
     steamAppId: 3768760,
     genres: ["Action", "Adventure"],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: "2026-10-05", precision: "day" },
+    status: null,
     totalHours: 19,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3768760/1159a696d257cbeb3f4479be3466cfba2ae938a0/library_600x900_2x.jpg?t=1790955737",
-    color: "#e3d1a1",
-    ink: "#191928",
+    sleeve: "cream",
     notes: [
       {
         date: "2026-10-05",
@@ -54,13 +54,13 @@ export const games = [
     spineTitle: "Prince of Persia:\nThe Lost Crown",
     steamAppId: 2751000,
     genres: ["Action", "Adventure", "Metroidvania", "Platformer"],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: "2026-09-29", precision: "day" },
+    status: "finished",
     totalHours: 26,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2751000/library_600x900_2x.jpg",
-    color: "#79c8f0",
-    ink: "#191928",
+    sleeve: "blue",
     notes: [
       {
         date: "2026-09-29",
@@ -73,13 +73,13 @@ export const games = [
     title: "The Blood of Dawnwalker",
     steamAppId: 3751260,
     genres: ["Action", "Adventure", "RPG"],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: "2026-09-23", precision: "day" },
+    status: "finished",
     totalHours: 52,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3751260/82769ab631e6e68b4a38bbba9fb5b74eb0d7db8d/library_capsule_2x.jpg?t=1790718217",
-    color: "#d93640",
-    ink: "#fffaf3",
+    sleeve: "red",
     notes: [
       {
         date: "2026-09-23",
@@ -92,13 +92,13 @@ export const games = [
     title: "Indiana Jones and the Great Circle",
     steamAppId: 2677660,
     genres: ["Action", "Adventure"],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: "2026-09-11", precision: "day" },
+    status: "finished",
     totalHours: 34,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2677660/library_600x900_2x.jpg",
-    color: "#ffcf64",
-    ink: "#191928",
+    sleeve: "yellow",
     notes: [
       {
         date: "2026-09-11",
@@ -111,13 +111,13 @@ export const games = [
     title: "Beast of Reincarnation",
     steamAppId: 2001760,
     genres: ["Action", "Adventure", "RPG"],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: "2026-08-17", precision: "day" },
+    status: null,
     totalHours: 29,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2001760/f257ca2dc23c5590ade297fca68f3cab2e4edb4e/library_capsule_2x.jpg?t=1788151394",
-    color: "#ff9961",
-    ink: "#191928",
+    sleeve: "orange",
     notes: [
       {
         date: "2026-08-17",
@@ -131,13 +131,13 @@ export const games = [
     spineTitle: "Life is Strange:\nDouble Exposure",
     steamAppId: 1874000,
     genres: ["Action", "Adventure"],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: "2026-08-02", precision: "day" },
+    status: null,
     totalHours: 11,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1874000/library_600x900_2x.jpg",
-    color: "#aa8ef1",
-    ink: "#191928",
+    sleeve: "lavender",
     notes: [
       {
         date: "2026-08-02",
@@ -151,13 +151,13 @@ export const games = [
     spineTitle: "Assassin's Creed\nBlack Flag Resynced",
     steamAppId: 3751950,
     genres: ["Action", "Adventure"],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: "2026-07-25", precision: "day" },
+    status: "finished",
     totalHours: 96,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3751950/36a1644b03afce1a648ab90b232196609e827539/library_capsule_2x.jpg?t=1787915122",
-    color: "#8c99aa",
-    ink: "#191928",
+    sleeve: "grey",
     notes: [
       {
         date: "2026-07-25",
@@ -171,13 +171,13 @@ export const games = [
     spineTitle: "KINGDOM HEARTS\n-HD 1.5+2.5 ReMIX-",
     steamAppId: 2552430,
     genres: ["Action", "Adventure", "RPG"],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: "2026-08-25", precision: "day" },
+    status: null,
     totalHours: 36,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2552430/library_600x900_2x.jpg",
-    color: "#22232c",
-    ink: "#fffaf3",
+    sleeve: "black",
     notes: [
       {
         date: "2026-08-25",
@@ -190,13 +190,13 @@ export const games = [
     title: "Minds Beneath Us",
     steamAppId: 1610440,
     genres: ["Adventure", "RPG"],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: "2026-07-04", precision: "day" },
+    status: "finished",
     totalHours: 17,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1610440/library_600x900_2x.jpg",
-    color: "#3b68d9",
-    ink: "#fffaf3",
+    sleeve: "royal-blue",
     notes: [
       {
         date: "2026-07-04",
@@ -210,13 +210,13 @@ export const games = [
     spineTitle: "Expedition 33",
     steamAppId: 1903340,
     genres: ["Action", "RPG"],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: "2026-01-04", precision: "day" },
+    status: "finished",
     totalHours: 62,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1903340/8b21381a43ac5a535a838f723815f8fe14ceaf7c/library_600x900_2x.jpg?t=1782830877",
-    color: "#22232c",
-    ink: "#fffaf3",
+    sleeve: "black",
     notes: [
       {
         date: "2026-01-04",
@@ -229,13 +229,13 @@ export const games = [
     title: "Ghost of Tsushima",
     steamAppId: 2215430,
     genres: ["Action", "Adventure"],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: "2026-01-30", precision: "day" },
+    status: null,
     totalHours: 59,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2215430/library_600x900_2x.jpg?t=1763409398",
-    color: "#e3d1a1",
-    ink: "#191928",
+    sleeve: "cream",
     notes: [
       {
         date: "2026-01-30",
@@ -249,13 +249,13 @@ export const games = [
     spineTitle: "Quarantine Zone:\nThe Last Check",
     steamAppId: 3419520,
     genres: ["Simulation", "Strategy"],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: "2026-01-31", precision: "day" },
+    status: null,
     totalHours: 12,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3419520/304549a90f9aa611c709e478854a21d5d41dc820/library_capsule_2x.jpg?t=1790010680",
-    color: "#75e1c4",
-    ink: "#191928",
+    sleeve: "mint",
     notes: [
       {
         date: "2026-01-31",
@@ -268,13 +268,13 @@ export const games = [
     title: "Stray",
     steamAppId: 1332010,
     genres: ["Adventure"],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: "2026-02-17", precision: "day" },
+    status: "finished",
     totalHours: 8,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1332010/9c1bae81b2603c25ccf2a8f4944b3b58227005d7/library_capsule_2x.jpg?t=1785424330",
-    color: "#ff9961",
-    ink: "#191928",
+    sleeve: "orange",
     notes: [
       {
         date: "2026-02-17",
@@ -288,13 +288,13 @@ export const games = [
     spineTitle: "Ratchet & Clank:\nRift Apart",
     steamAppId: 1895880,
     genres: ["Action", "Adventure"],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: "2026-03-02", precision: "day" },
+    status: null,
     totalHours: 15,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1895880/library_600x900_2x.jpg?t=1787838873",
-    color: "#7245bc",
-    ink: "#fffaf3",
+    sleeve: "violet",
     notes: [
       {
         date: "2026-03-02",
@@ -307,13 +307,13 @@ export const games = [
     title: "Final Fantasy VII Rebirth",
     steamAppId: 2909400,
     genres: ["Action", "Adventure", "RPG"],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: "2026-03-30", precision: "day" },
+    status: null,
     totalHours: 89,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2909400/771d94cceea4bf97bd8afeee5e09e31f15bd0196/library_600x900_2x.jpg?t=1789446799",
-    color: "#d93640",
-    ink: "#fffaf3",
+    sleeve: "red",
     notes: [
       {
         date: "2026-03-30",
@@ -326,13 +326,13 @@ export const games = [
     title: "Final Fantasy XVI Complete Edition",
     steamAppId: 2515020,
     genres: ["Action", "RPG"],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: "2026-05-09", precision: "day" },
+    status: null,
     totalHours: 63,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2515020/library_600x900_2x.jpg?t=1773294537",
-    color: "#f8f8f0",
-    ink: "#191928",
+    sleeve: "white",
     notes: [
       {
         date: "2026-05-09",
@@ -345,13 +345,13 @@ export const games = [
     title: "Dying Light: The Beast",
     steamAppId: 3008130,
     genres: ["Action", "Adventure", "RPG"],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: "2026-06-21", precision: "day" },
+    status: "finished",
     totalHours: 28,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3008130/66ecd6b5e71e85cd3e339ba9233979a23c5f0ec0/library_capsule_2x.jpg?t=1789646537",
-    color: "#966042",
-    ink: "#fffaf3",
+    sleeve: "brown",
     notes: [
       {
         date: "2026-06-21",
@@ -364,13 +364,13 @@ export const games = [
     title: "Cast n Chill",
     steamAppId: 3483740,
     genres: ["Casual", "RPG", "Simulation", "Sports"],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: "2026-06-12", precision: "day" },
+    status: null,
     totalHours: 25,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3483740/ae3040b8888720472de900f70824c845fac45aaf/library_capsule_2x.jpg?t=1785377115",
-    color: "#199caa",
-    ink: "#191928",
+    sleeve: "teal",
     notes: [
       {
         date: "2026-06-12",
@@ -383,13 +383,13 @@ export const games = [
     title: "MULLET MADJACK",
     steamAppId: 2111190,
     genres: ["Action"],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: "2026-06-25", precision: "day" },
+    status: "finished",
     totalHours: 4,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2111190/library_600x900_2x.jpg?t=1787078659",
-    color: "#ff8eab",
-    ink: "#191928",
+    sleeve: "pink",
     notes: [
       {
         date: "2026-06-25",
@@ -403,13 +403,13 @@ export const games = [
     spineTitle: "TMNT: Splintered Fate",
     steamAppId: 2996040,
     genres: ["Action", "Adventure", "RPG", "Strategy"],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: "2026-10-10", precision: "day" },
+    status: "playing",
     totalHours: 62,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2996040/c2e04ee36ee08019764946a2ad754796241e59d1/library_capsule_2x.jpg?t=1790615306",
-    color: "#2e8653",
-    ink: "#fffaf3",
+    sleeve: "green",
     notes: [
       {
         date: "2025-11-28",
@@ -431,13 +431,13 @@ export const games = [
     spineTitle: "TMNT:\nShredder's Revenge",
     steamAppId: 1361510,
     genres: ["Action", "Adventure", "Casual"],
-    year: 2026,
+    years: [2026],
     lastPlayed: { date: "2026-08-26", precision: "day" },
+    status: null,
     totalHours: 3,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1361510/library_600x900_2x.jpg?t=1782982752",
-    color: "#afda4a",
-    ink: "#191928",
+    sleeve: "lime",
     notes: [
       {
         date: "2026-08-26",

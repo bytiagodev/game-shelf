@@ -1,15 +1,13 @@
 import { useMemo, useState } from "react";
 import { games, profile } from "./data/games.js";
 import { sampleGames } from "./data/sampleGames.js";
-import { getGenres, selectGames } from "./library.js";
+import { getGenres, getYears, selectGames } from "./library.js";
 import Shelf from "./Shelf.jsx";
 import GameDetail from "./GameDetail.jsx";
 
 const isSample = games.length === 0;
 const collection = isSample ? sampleGames : games;
-const years = [
-  ...new Set([profile.startYear, ...collection.map((game) => game.year)]),
-].sort((firstYear, secondYear) => secondYear - firstYear);
+const years = getYears(collection, profile.startYear);
 
 export default function App() {
   const [year, setYear] = useState(years[0]);
@@ -19,7 +17,7 @@ export default function App() {
   const [selectedGame, setSelectedGame] = useState(null);
 
   const yearGames = useMemo(
-    () => collection.filter((game) => game.year === Number(year)),
+    () => collection.filter((game) => game.years.includes(Number(year))),
     [year],
   );
   const genres = getGenres(yearGames);

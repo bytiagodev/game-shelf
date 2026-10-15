@@ -3,84 +3,7 @@ import { groupCompactRows } from "./library.js";
 import Controller from "./Controller.jsx";
 import headsetImage from "./assets/v3-headset-blackshark.webp";
 import beamImage from "./assets/v2-beam.webp";
-import mint from "./assets/v3-spine-mint.webp";
-import yellow from "./assets/v3-spine-yellow.webp";
-import blue from "./assets/v3-spine-blue.webp";
-import lavender from "./assets/v3-spine-lavender.webp";
-import pink from "./assets/v3-spine-pink.webp";
-import orange from "./assets/v3-spine-orange.webp";
-import black from "./assets/v3-spine-black.webp";
-import white from "./assets/v3-spine-white.webp";
-import red from "./assets/v3-spine-red.webp";
-import royalBlue from "./assets/v3-spine-royal-blue.webp";
-import green from "./assets/v3-spine-green.webp";
-import grey from "./assets/v3-spine-grey.webp";
-import teal from "./assets/v3-spine-teal.webp";
-import cream from "./assets/v3-spine-cream.webp";
-import brown from "./assets/v3-spine-brown.webp";
-import burgundy from "./assets/v3-spine-burgundy.webp";
-import lime from "./assets/v3-spine-lime.webp";
-import violet from "./assets/v3-spine-violet.webp";
-
-const sleeves = [
-  mint,
-  yellow,
-  blue,
-  lavender,
-  pink,
-  orange,
-  black,
-  white,
-  red,
-  royalBlue,
-  green,
-  grey,
-  teal,
-  cream,
-  brown,
-  burgundy,
-  lime,
-  violet,
-];
-const palette = [
-  "75e1c4",
-  "ffcf64",
-  "79c8f0",
-  "aa8ef1",
-  "ff8eab",
-  "ff9961",
-  "22232c",
-  "f8f8f0",
-  "d93640",
-  "3b68d9",
-  "2e8653",
-  "8c99aa",
-  "199caa",
-  "e3d1a1",
-  "966042",
-  "892e4a",
-  "afda4a",
-  "7245bc",
-];
-const lightTitles = new Set([6, 8, 9, 10, 14, 15, 17]);
-const hexToRgb = (hexColor) =>
-  [0, 2, 4].map((offset) => parseInt(hexColor.slice(offset, offset + 2), 16));
-function getGameSleeve(game) {
-  const targetColor = /^#[0-9a-f]{6}$/i.test(game.color || "")
-    ? hexToRgb(game.color.slice(1))
-    : hexToRgb(palette[0]);
-  const distances = palette.map((hexColor) =>
-    hexToRgb(hexColor).reduce(
-      (total, channel, index) => total + (channel - targetColor[index]) ** 2,
-      0,
-    ),
-  );
-  const index = distances.indexOf(Math.min(...distances));
-  return {
-    image: sleeves[index],
-    ink: lightTitles.has(index) ? "#fffaf3" : "#191928",
-  };
-}
+import { getSleeve } from "./sleeves.js";
 
 function GameCubby({ games, isWideLayout = false, onSelect }) {
   return (
@@ -88,7 +11,7 @@ function GameCubby({ games, isWideLayout = false, onSelect }) {
       {games.length ? (
         <div className="cases">
           {games.map((game) => {
-            const sleeve = getGameSleeve(game);
+            const sleeve = getSleeve(game.sleeve);
             const spineTitle = game.spineTitle || game.title;
             return (
               <button

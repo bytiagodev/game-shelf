@@ -1,14 +1,16 @@
 import { useEffect, useRef, useState } from "react";
-import { formatHours, formatPlayedDate } from "./library.js";
+import { formatHours, formatPlayedDate, gameStatuses } from "./library.js";
+import { getSleeve } from "./sleeves.js";
 
 function Cover({ game }) {
   const [coverFailed, setCoverFailed] = useState(false);
+  const sleeve = getSleeve(game.sleeve);
   return (
     <div
       className={"cover cover--" + (game.motif || "orbit")}
       style={{
-        "--case-color": game.color || "#aac3b6",
-        "--case-ink": game.ink || "#253c32",
+        "--case-color": sleeve.color,
+        "--case-ink": sleeve.ink,
       }}
     >
       {game.coverUrl && !coverFailed ? (
@@ -114,6 +116,12 @@ export default function GameDetail({ game, isSample, onDismiss }) {
                 ))}
               </div>
               <dl className="game-facts">
+                {game.status && (
+                  <div>
+                    <dt>Status</dt>
+                    <dd>{gameStatuses[game.status]}</dd>
+                  </div>
+                )}
                 <div>
                   <dt>Steam hours (lifetime)</dt>
                   <dd>{formatHours(game.totalHours)}</dd>

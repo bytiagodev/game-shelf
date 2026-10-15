@@ -690,9 +690,9 @@ input::placeholder {
   font-size: 12px;
 }
 .game-facts {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 44px;
   margin: 0;
 }
 .game-facts dt {
@@ -772,8 +772,7 @@ input::placeholder {
     gap: 24px;
   }
   .game-facts {
-    grid-template-columns: 1fr;
-    gap: 14px;
+    gap: 14px 36px;
   }
 }
 @media (max-width: 480px) {
@@ -862,8 +861,7 @@ input::placeholder {
     font-size: 27px;
   }
   .game-facts {
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    gap: 16px 28px;
   }
   .game-facts dd {
     font-size: 16px;
