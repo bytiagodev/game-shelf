@@ -61,6 +61,9 @@ export default function GameDetail({ game, onDismiss }) {
       aria-labelledby="game-title"
       onClose={onDismiss}
       onClick={closeOnBackdrop}
+      style={
+        game ? { "--sleeve-color": getSleeve(game.sleeve).color } : undefined
+      }
     >
       {game && (
         <>
@@ -72,74 +75,78 @@ export default function GameDetail({ game, onDismiss }) {
           >
             ×
           </button>
-          <div className="detail-layout">
-            <div className="detail-cover">
-              <Cover key={game.id} game={game} />
-              {game.steamAppId && (
-                <a
-                  className="steam-link"
-                  href={
-                    "https://store.steampowered.com/app/" +
-                    game.steamAppId +
-                    "/"
-                  }
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View on Steam
-                </a>
-              )}
-            </div>
-            <div className="detail-content">
-              <h2 id="game-title">{game.title}</h2>
-              {game.steamCollection && (
-                <p className="collection-label">From {game.steamCollection}</p>
-              )}
-              <div className="tags">
-                {game.genres.map((genre) => (
-                  <span key={genre}>{genre}</span>
-                ))}
+          <div className="dialog-body">
+            <div className="detail-layout">
+              <div className="detail-cover">
+                <Cover key={game.id} game={game} />
+                {game.steamAppId && (
+                  <a
+                    className="steam-link"
+                    href={
+                      "https://store.steampowered.com/app/" +
+                      game.steamAppId +
+                      "/"
+                    }
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View on Steam
+                  </a>
+                )}
               </div>
-              <dl className="game-facts">
-                {game.status && (
+              <div className="detail-content">
+                <h2 id="game-title">{game.title}</h2>
+                {game.steamCollection && (
+                  <p className="collection-label">
+                    From {game.steamCollection}
+                  </p>
+                )}
+                <div className="tags">
+                  {game.genres.map((genre) => (
+                    <span key={genre}>{genre}</span>
+                  ))}
+                </div>
+                <dl className="game-facts">
+                  {game.status && (
+                    <div>
+                      <dt>Status</dt>
+                      <dd>{gameStatuses[game.status]}</dd>
+                    </div>
+                  )}
                   <div>
-                    <dt>Status</dt>
-                    <dd>{gameStatuses[game.status]}</dd>
+                    <dt>Steam hours (lifetime)</dt>
+                    <dd>{formatHours(game.totalHours)}</dd>
                   </div>
-                )}
-                <div>
-                  <dt>Steam hours (lifetime)</dt>
-                  <dd>{formatHours(game.totalHours)}</dd>
+                  <div>
+                    <dt>
+                      Last played
+                      {game.lastPlayed?.precision === "month" && " (approx.)"}
+                    </dt>
+                    <dd>{formatPlayedDate(game.lastPlayed)}</dd>
+                  </div>
+                </dl>
+                <div className="notes">
+                  <h3>Notes</h3>
+                  {game.notes.length ? (
+                    [...game.notes]
+                      .sort((firstNote, secondNote) =>
+                        firstNote.date.localeCompare(secondNote.date),
+                      )
+                      .map((note, index) => (
+                        <article className="note" key={note.date + "-" + index}>
+                          <time dateTime={note.date}>
+                            {formatPlayedDate({
+                              date: note.date,
+                              precision: "day",
+                            })}
+                          </time>
+                          <p>{note.text}</p>
+                        </article>
+                      ))
+                  ) : (
+                    <p className="empty-note">No notes yet.</p>
+                  )}
                 </div>
-                <div>
-                  <dt>
-                    Last played
-                    {game.lastPlayed?.precision === "month" && " (approx.)"}
-                  </dt>
-                  <dd>{formatPlayedDate(game.lastPlayed)}</dd>
-                </div>
-              </dl>
-              <div className="notes">
-                <h3>Notes</h3>
-                {game.notes.length ? (
-                  [...game.notes]
-                    .sort((firstNote, secondNote) =>
-                      firstNote.date.localeCompare(secondNote.date),
-                    )
-                    .map((note, index) => (
-                      <article className="note" key={note.date + "-" + index}>
-                        <time dateTime={note.date}>
-                          {formatPlayedDate({
-                            date: note.date,
-                            precision: "day",
-                          })}
-                        </time>
-                        <p>{note.text}</p>
-                      </article>
-                    ))
-                ) : (
-                  <p className="empty-note">No notes yet.</p>
-                )}
               </div>
             </div>
           </div>

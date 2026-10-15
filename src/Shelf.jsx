@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useRef, useState } from "react";
-import { groupCompactRows } from "./library.js";
+import { gameStatuses, groupCompactRows } from "./library.js";
 import Controller from "./Controller.jsx";
 import headsetImage from "./assets/v3-headset-blackshark.webp";
 import beamImage from "./assets/v2-beam.webp";
@@ -13,14 +13,20 @@ function GameCubby({ games, isWideLayout = false, onSelect }) {
           {games.map((game) => {
             const sleeve = getSleeve(game.sleeve);
             const spineTitle = game.spineTitle || game.title;
+            // Finished is the norm, so only the exceptions get a sticker.
+            const hasSticker =
+              game.status === "playing" || game.status === "dropped";
+            const caseLabel = hasSticker
+              ? game.title + ", " + gameStatuses[game.status].toLowerCase()
+              : game.title;
             return (
               <button
                 className="game-case"
                 key={game.id}
                 onClick={() => onSelect(game)}
-                aria-label={"Open " + game.title}
+                aria-label={"Open " + caseLabel}
                 aria-haspopup="dialog"
-                title={game.title}
+                title={caseLabel}
                 style={{ "--spine-ink": sleeve.ink }}
               >
                 <img
@@ -29,6 +35,12 @@ function GameCubby({ games, isWideLayout = false, onSelect }) {
                   alt=""
                   aria-hidden="true"
                 />
+                {hasSticker && (
+                  <span
+                    className={"spine-sticker spine-sticker--" + game.status}
+                    aria-hidden="true"
+                  />
+                )}
                 <span className="spine-platform" aria-hidden="true">
                   PC
                 </span>
@@ -109,7 +121,9 @@ export default function Shelf({ games, onSelect, emptyContent }) {
         (caseWidth + caseGap),
     ),
   );
-  const compactRows = isCompactLayout ? groupCompactRows(games, fullCapacity) : [];
+  const compactRows = isCompactLayout
+    ? groupCompactRows(games, fullCapacity)
+    : [];
   const firstCount = isWideLayout
     ? smallCapacity * 2
     : isCompactLayout
