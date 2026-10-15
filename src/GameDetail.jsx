@@ -114,7 +114,7 @@ export default function GameDetail({ game, onDismiss }) {
                     </div>
                   )}
                   <div>
-                    <dt>Steam hours (lifetime)</dt>
+                    <dt>Lifetime hours</dt>
                     <dd>{formatHours(game.totalHours)}</dd>
                   </div>
                   <div>

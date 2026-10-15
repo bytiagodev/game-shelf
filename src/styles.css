@@ -682,17 +682,23 @@ input::placeholder {
   gap: 6px;
   margin: 18px 0 26px;
 }
+/* Solid ink labels, like the cover's platform badge: clearly not buttons,
+   and readable against every sleeve colour. */
 .tags span {
-  background: #e7dff6;
-  border: 1px solid #9482b2;
-  padding: 6px 9px;
-  border-radius: 5px;
+  background: var(--ink);
+  color: #fff1db;
+  padding: 6px 10px;
+  border-radius: 6px;
   font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
 }
+/* A fixed grid, so every game lays out the same whatever its date length. */
 .game-facts {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px 44px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: start;
+  gap: 16px 32px;
   margin: 0;
 }
 .game-facts dt {
@@ -701,8 +707,9 @@ input::placeholder {
   line-height: 1.6;
 }
 .game-facts dd {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
+  white-space: nowrap;
   margin: 7px 0 0;
   line-height: 1.4;
 }
@@ -736,6 +743,15 @@ input::placeholder {
   line-height: 1.8;
   margin: 0;
 }
+/* Below the dialog's full width, Last played always takes its own row. */
+@media (max-width: 811px) {
+  .game-facts {
+    grid-template-columns: repeat(2, auto);
+  }
+  .game-facts > :last-child {
+    grid-column: 1 / -1;
+  }
+}
 @media (max-width: 700px) {
   .app {
     padding: 24px 18px 48px;
@@ -768,7 +784,7 @@ input::placeholder {
     gap: 24px;
   }
   .game-facts {
-    gap: 14px 36px;
+    gap: 14px 32px;
   }
 }
 @media (max-width: 480px) {
@@ -863,10 +879,7 @@ input::placeholder {
     font-size: 27px;
   }
   .game-facts {
-    gap: 16px 28px;
-  }
-  .game-facts dd {
-    font-size: 16px;
+    gap: 14px 28px;
   }
 }
 @media (max-width: 360px) {
