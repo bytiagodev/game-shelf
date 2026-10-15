@@ -7,7 +7,7 @@ function Cover({ game }) {
   const sleeve = getSleeve(game.sleeve);
   return (
     <div
-      className={"cover cover--" + (game.motif || "orbit")}
+      className="cover"
       style={{
         "--case-color": sleeve.color,
         "--case-ink": sleeve.ink,
@@ -33,28 +33,13 @@ function Cover({ game }) {
   );
 }
 
-export default function GameDetail({ game, isSample, onDismiss }) {
+export default function GameDetail({ game, onDismiss }) {
   const dialog = useRef(null);
   useEffect(() => {
     if (game && !dialog.current.open) dialog.current.showModal();
   }, [game]);
 
   const close = () => dialog.current.close();
-  function keepTabInDialog(event) {
-    if (event.key !== "Tab") return;
-    const controls = [
-      ...event.currentTarget.querySelectorAll("button, a[href]"),
-    ];
-    const firstControl = controls[0];
-    const lastControl = controls.at(-1);
-    if (event.shiftKey && document.activeElement === firstControl) {
-      event.preventDefault();
-      lastControl.focus();
-    } else if (!event.shiftKey && document.activeElement === lastControl) {
-      event.preventDefault();
-      firstControl.focus();
-    }
-  }
   function closeOnBackdrop(event) {
     if (event.target !== dialog.current) return;
     const dialogBounds = dialog.current.getBoundingClientRect();
@@ -74,7 +59,6 @@ export default function GameDetail({ game, isSample, onDismiss }) {
       aria-labelledby="game-title"
       onClose={onDismiss}
       onClick={closeOnBackdrop}
-      onKeyDown={keepTabInDialog}
     >
       {game && (
         <>
@@ -105,7 +89,6 @@ export default function GameDetail({ game, isSample, onDismiss }) {
               )}
             </div>
             <div className="detail-content">
-              {isSample && <p className="sample-label">Fictional sample</p>}
               <h2 id="game-title">{game.title}</h2>
               {game.steamCollection && (
                 <p className="collection-label">From {game.steamCollection}</p>

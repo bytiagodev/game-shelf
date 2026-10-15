@@ -1,13 +1,10 @@
 import { useMemo, useState } from "react";
 import { games, profile } from "./data/games.js";
-import { sampleGames } from "./data/sampleGames.js";
 import { getGenres, getYears, selectGames } from "./library.js";
 import Shelf from "./Shelf.jsx";
 import GameDetail from "./GameDetail.jsx";
 
-const isSample = games.length === 0;
-const collection = isSample ? sampleGames : games;
-const years = getYears(collection, profile.startYear);
+const years = getYears(games, profile.startYear);
 
 export default function App() {
   const [year, setYear] = useState(years[0]);
@@ -17,11 +14,11 @@ export default function App() {
   const [selectedGame, setSelectedGame] = useState(null);
 
   const yearGames = useMemo(
-    () => collection.filter((game) => game.years.includes(Number(year))),
+    () => games.filter((game) => game.years.includes(Number(year))),
     [year],
   );
   const genres = getGenres(yearGames);
-  const visibleGames = selectGames(collection, { year, genre, query, sort });
+  const visibleGames = selectGames(games, { year, genre, query, sort });
 
   function resetFilters() {
     setGenre("all");
@@ -45,13 +42,7 @@ export default function App() {
               {visibleGames.length === yearGames.length
                 ? yearGames.length
                 : visibleGames.length + " of " + yearGames.length}
-              {isSample
-                ? yearGames.length === 1
-                  ? " fictional sample"
-                  : " fictional samples"
-                : yearGames.length === 1
-                  ? " game"
-                  : " games"}
+              {yearGames.length === 1 ? " game" : " games"}
             </p>
           </div>
         </header>
@@ -143,35 +134,8 @@ export default function App() {
           </section>
         </main>
       </div>
-      {genres.length > 0 && (
-        <details className="year-summary">
-          <summary>By genre</summary>
-          <div className="genre-summary">
-            {genres.map((value) => {
-              const count = yearGames.filter((game) =>
-                game.genres.includes(value),
-              ).length;
-              return (
-                <div className="genre-stat" key={value}>
-                  <div>
-                    <span>{value}</span>
-                    <span>{count}</span>
-                  </div>
-                  <div className="genre-track">
-                    <span
-                      style={{ width: (count / yearGames.length) * 100 + "%" }}
-                    />
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </details>
-      )}
-
       <GameDetail
         game={selectedGame}
-        isSample={isSample}
         onDismiss={() => setSelectedGame(null)}
       />
     </div>

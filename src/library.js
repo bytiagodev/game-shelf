@@ -46,15 +46,6 @@ export function selectGames(
     });
 }
 
-export function groupRows(games, count) {
-  const size = Math.max(1, Math.floor(count) || 1);
-  return Array.from(
-    { length: Math.ceil(games.length / size) },
-    (unusedGame, rowIndex) =>
-      games.slice(rowIndex * size, (rowIndex + 1) * size),
-  );
-}
-
 export function groupCompactRows(games, capacity) {
   const maximumSize = Math.max(1, Math.floor(capacity) || 1);
   const smallerSize = Math.min(4, maximumSize);

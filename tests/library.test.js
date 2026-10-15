@@ -1,9 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { selectGames, groupRows, groupCompactRows, getGenres, getYears, gameStatuses, formatPlayedDate, formatHours } from '../src/library.js';
+import { selectGames, groupCompactRows, getGenres, getYears, gameStatuses, formatPlayedDate, formatHours } from '../src/library.js';
 import { games, profile } from '../src/data/games.js';
 import { sleeveColors } from '../src/sleeveColors.js';
-import { sampleGames } from '../src/data/sampleGames.js';
 
 test('filters intersect and search ignores surrounding spaces and case', () => {
   const entries = [
@@ -37,15 +36,6 @@ test('a game played across years appears on each of those shelves, and no shelf 
   assert.deepEqual(getYears([{ years: [2025, 2026] }], 2026), [2026]);
 });
 
-test('rows preserve every case across narrow and wide layouts', () => {
-  const entries = Array.from({ length: 17 }, (unusedValue, gameIndex) => gameIndex);
-  for (const size of [1, 3, 5, 8]) {
-    const rows = groupRows(entries, size);
-    assert.deepEqual(rows.flat(), entries);
-    assert.ok(rows.every(row => row.length <= size));
-  }
-});
-
 test('genre counts can overlap, but the filter options remain unique', () => {
   assert.deepEqual(getGenres([{ genres: ['Puzzle', 'Adventure'] }, { genres: ['Puzzle'] }]), ['Adventure', 'Puzzle']);
 });
@@ -77,27 +67,25 @@ test('unknown and zero hours differ; month dates never claim an exact day', () =
 });
 
 test('manually edited data has unique ids, valid dates and no invented defaults', () => {
-  for (const collection of [games, sampleGames]) {
-    assert.equal(new Set(collection.map(game => game.id)).size, collection.length);
-    for (const game of collection) {
-      assert.ok(game.id && game.title);
-      assert.ok(Array.isArray(game.years) && game.years.length > 0);
-      assert.equal(new Set(game.years).size, game.years.length);
-      assert.ok(game.years.every(year => Number.isInteger(year) && year >= profile.startYear));
-      assert.ok(game.sleeve in sleeveColors, game.id + ' has an unknown sleeve: ' + game.sleeve);
-      assert.ok(game.status === null || game.status in gameStatuses, game.id + ' has an unknown status: ' + game.status);
-      for (const removedField of ['year', 'color', 'ink']) assert.ok(!(removedField in game), game.id + ' still has ' + removedField);
-      assert.ok(Array.isArray(game.genres));
-      assert.ok(Array.isArray(game.notes));
-      assert.ok(game.totalHours === null || (Number.isFinite(game.totalHours) && game.totalHours >= 0));
-      assert.ok(game.steamAppId === null || (Number.isInteger(game.steamAppId) && game.steamAppId > 0));
-      const dates = [...game.notes.map(note => note.date), ...(game.lastPlayed ? [game.lastPlayed.date] : [])];
-      for (const date of dates) {
-        assert.match(date, /^\d{4}-\d{2}-\d{2}$/);
-        assert.equal(new Date(date + 'T00:00:00Z').toISOString().slice(0, 10), date);
-      }
-      if (game.lastPlayed) assert.ok(['day', 'month'].includes(game.lastPlayed.precision));
-      assert.ok(game.notes.every(note => typeof note.text === 'string' && note.text.trim().length > 0));
+  assert.equal(new Set(games.map(game => game.id)).size, games.length);
+  for (const game of games) {
+    assert.ok(game.id && game.title);
+    assert.ok(Array.isArray(game.years) && game.years.length > 0);
+    assert.equal(new Set(game.years).size, game.years.length);
+    assert.ok(game.years.every(year => Number.isInteger(year) && year >= profile.startYear));
+    assert.ok(game.sleeve in sleeveColors, game.id + ' has an unknown sleeve: ' + game.sleeve);
+    assert.ok(game.status === null || game.status in gameStatuses, game.id + ' has an unknown status: ' + game.status);
+    for (const removedField of ['year', 'color', 'ink']) assert.ok(!(removedField in game), game.id + ' still has ' + removedField);
+    assert.ok(Array.isArray(game.genres));
+    assert.ok(Array.isArray(game.notes));
+    assert.ok(game.totalHours === null || (Number.isFinite(game.totalHours) && game.totalHours >= 0));
+    assert.ok(game.steamAppId === null || (Number.isInteger(game.steamAppId) && game.steamAppId > 0));
+    const dates = [...game.notes.map(note => note.date), ...(game.lastPlayed ? [game.lastPlayed.date] : [])];
+    for (const date of dates) {
+      assert.match(date, /^\d{4}-\d{2}-\d{2}$/);
+      assert.equal(new Date(date + 'T00:00:00Z').toISOString().slice(0, 10), date);
     }
+    if (game.lastPlayed) assert.ok(['day', 'month'].includes(game.lastPlayed.precision));
+    assert.ok(game.notes.every(note => typeof note.text === 'string' && note.text.trim().length > 0));
   }
 });

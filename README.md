@@ -10,13 +10,12 @@ Game Shelf is my personal Steam journal. I add entries manually, starting with 2
 
 - One case per game, with 18 sleeve colours and a cover inside.
 - Search, year and genre filters, plus sorting by title or last played.
-- A small genre breakdown for the selected year.
 - Dated notes that keep earlier impressions when I return to a game.
 - Responsive shelves and game details that work with a keyboard.
 
 Built with **React, JavaScript, Vite and plain CSS**. Case titles and controls are HTML. No automatic Steam sync, account system or backend.
 
-Games are entered by hand with dates and lifetime hours checked in Steam. When the game list is empty, the app shows a clearly labelled fictional collection.
+Games are entered by hand with dates and lifetime hours checked in Steam.
 
 ## Run locally
 
@@ -37,7 +36,7 @@ npm run preview
 
 ## Add a game
 
-Edit `src/data/games.js`. Each game is one object; adding the first real entry replaces the fictional collection.
+Edit `src/data/games.js`. Each game is one object.
 
 ```js
 export const games = [
@@ -70,7 +69,7 @@ export const games = [
 - Optional `spineTitle` provides a shorter case label. Both names are searchable; the full `title` stays in game details and accessible labels.
 - Use `\n` inside `spineTitle` to choose a line break, for example `"Prince of Persia:\nThe Lost Crown"`. Other labels wrap automatically when needed.
 - Use `notes: []` when there are no notes. Append a dated note when returning to a game and update `lastPlayed`, keeping one case for it.
-- Games can have several genres, so genre counts may overlap. The breakdown covers the selected year, even when the shelf is filtered.
+- Games can have several genres; the genre filter lists every genre on the selected year's shelf.
 
 The `profile` object in the same file sets the collection's starting year.
 

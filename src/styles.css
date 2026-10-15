@@ -496,58 +496,6 @@ input::placeholder {
   font-weight: 700;
   box-shadow: 2px 2px 0 var(--ink);
 }
-.year-summary {
-  margin-top: 26px;
-  padding: 0 8px;
-}
-.year-summary summary {
-  width: fit-content;
-  min-height: 44px;
-  padding: 12px 4px;
-  color: var(--muted);
-  font-size: 14px;
-  font-weight: 700;
-}
-.genre-summary {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px 32px;
-  padding: 18px 0;
-}
-.genre-stat > div:first-child {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  font-size: 13px;
-  margin-bottom: 10px;
-}
-.genre-track {
-  height: 9px;
-  border: 2px solid var(--ink);
-  border-radius: 4px;
-  background: #e7dff6;
-  overflow: hidden;
-}
-.genre-track span {
-  display: block;
-  background: #79c8f0;
-  height: 100%;
-}
-.genre-stat:nth-child(5n + 1) .genre-track span {
-  background: #ff9961;
-}
-.genre-stat:nth-child(5n + 2) .genre-track span {
-  background: #79c8f0;
-}
-.genre-stat:nth-child(5n + 3) .genre-track span {
-  background: #ffcf64;
-}
-.genre-stat:nth-child(5n + 4) .genre-track span {
-  background: #548dff;
-}
-.genre-stat:nth-child(5n + 5) .genre-track span {
-  background: #7affbf;
-}
 .game-dialog {
   --muted: #5b536e;
   border: 3px solid var(--ink);
@@ -639,29 +587,12 @@ input::placeholder {
   top: 40px;
   opacity: 0.22;
 }
-.cover--moon .cover-motif {
-  background: currentColor;
-  border: 0;
-  width: 95px;
-  height: 95px;
-  left: 95px;
-  top: 50px;
-}
-.cover--steps .cover-motif {
-  border-radius: 0;
-  transform: rotate(35deg);
-}
 .steam-link {
   display: block;
   padding: 14px 0;
   font-size: 13px;
   text-underline-offset: 3px;
   min-height: 44px;
-}
-.sample-label {
-  font-size: 12px;
-  color: var(--muted);
-  margin: 0 0 12px;
 }
 .detail-content h2 {
   font-size: 30px;
@@ -759,10 +690,6 @@ input::placeholder {
   }
   .text-button {
     margin-left: auto;
-  }
-  .genre-summary {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 24px;
   }
   .game-dialog {
     padding: 62px 26px 30px;

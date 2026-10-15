@@ -1,5 +1,4 @@
-// Add your real games here. See README.md for the fields.
-// An empty array displays the clearly labelled fictional sample collection.
+// Add your games here. See README.md for the fields.
 export const profile = {
   startYear: 2026,
 };
@@ -36,7 +35,7 @@ export const games = [
     genres: ["Action", "Adventure"],
     years: [2026],
     lastPlayed: { date: "2026-10-05", precision: "day" },
-    status: null,
+    status: "finished",
     totalHours: 19,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3768760/1159a696d257cbeb3f4479be3466cfba2ae938a0/library_600x900_2x.jpg?t=1790955737",
@@ -113,7 +112,7 @@ export const games = [
     genres: ["Action", "Adventure", "RPG"],
     years: [2026],
     lastPlayed: { date: "2026-08-17", precision: "day" },
-    status: null,
+    status: "finished",
     totalHours: 29,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2001760/f257ca2dc23c5590ade297fca68f3cab2e4edb4e/library_capsule_2x.jpg?t=1788151394",
@@ -133,7 +132,7 @@ export const games = [
     genres: ["Action", "Adventure"],
     years: [2026],
     lastPlayed: { date: "2026-08-02", precision: "day" },
-    status: null,
+    status: "finished",
     totalHours: 11,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1874000/library_600x900_2x.jpg",
@@ -173,7 +172,7 @@ export const games = [
     genres: ["Action", "Adventure", "RPG"],
     years: [2026],
     lastPlayed: { date: "2026-08-25", precision: "day" },
-    status: null,
+    status: "finished",
     totalHours: 36,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2552430/library_600x900_2x.jpg",
@@ -231,7 +230,7 @@ export const games = [
     genres: ["Action", "Adventure"],
     years: [2026],
     lastPlayed: { date: "2026-01-30", precision: "day" },
-    status: null,
+    status: "finished",
     totalHours: 59,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2215430/library_600x900_2x.jpg?t=1763409398",
@@ -251,7 +250,7 @@ export const games = [
     genres: ["Simulation", "Strategy"],
     years: [2026],
     lastPlayed: { date: "2026-01-31", precision: "day" },
-    status: null,
+    status: "finished",
     totalHours: 12,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3419520/304549a90f9aa611c709e478854a21d5d41dc820/library_capsule_2x.jpg?t=1790010680",
@@ -290,7 +289,7 @@ export const games = [
     genres: ["Action", "Adventure"],
     years: [2026],
     lastPlayed: { date: "2026-03-02", precision: "day" },
-    status: null,
+    status: "finished",
     totalHours: 15,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1895880/library_600x900_2x.jpg?t=1787838873",
@@ -309,7 +308,7 @@ export const games = [
     genres: ["Action", "Adventure", "RPG"],
     years: [2026],
     lastPlayed: { date: "2026-03-30", precision: "day" },
-    status: null,
+    status: "finished",
     totalHours: 89,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2909400/771d94cceea4bf97bd8afeee5e09e31f15bd0196/library_600x900_2x.jpg?t=1789446799",
@@ -328,7 +327,7 @@ export const games = [
     genres: ["Action", "RPG"],
     years: [2026],
     lastPlayed: { date: "2026-05-09", precision: "day" },
-    status: null,
+    status: "finished",
     totalHours: 63,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2515020/library_600x900_2x.jpg?t=1773294537",
@@ -366,7 +365,7 @@ export const games = [
     genres: ["Casual", "RPG", "Simulation", "Sports"],
     years: [2026],
     lastPlayed: { date: "2026-06-12", precision: "day" },
-    status: null,
+    status: "finished",
     totalHours: 25,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3483740/ae3040b8888720472de900f70824c845fac45aaf/library_capsule_2x.jpg?t=1785377115",
@@ -433,7 +432,7 @@ export const games = [
     genres: ["Action", "Adventure", "Casual"],
     years: [2026],
     lastPlayed: { date: "2026-08-26", precision: "day" },
-    status: null,
+    status: "finished",
     totalHours: 3,
     coverUrl:
       "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1361510/library_600x900_2x.jpg?t=1782982752",
