@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { formatHours, formatPlayedDate, gameStatuses } from "./library.js";
 import { getSleeve } from "./sleeves.js";
+import { getCover } from "./covers.js";
 
 function Cover({ game }) {
   const [coverFailed, setCoverFailed] = useState(false);
   const sleeve = getSleeve(game.sleeve);
+  const cover = getCover(game.id);
   return (
     <div
       className="cover"
@@ -13,9 +15,9 @@ function Cover({ game }) {
         "--case-ink": sleeve.ink,
       }}
     >
-      {game.coverUrl && !coverFailed ? (
+      {cover && !coverFailed ? (
         <img
-          src={game.coverUrl}
+          src={cover}
           alt={game.title + " game cover"}
           onError={() => setCoverFailed(true)}
         />
@@ -25,7 +27,7 @@ function Cover({ game }) {
           <span className="cover-motif" aria-hidden="true" />
           <strong>{game.title}</strong>
           <span className="cover-caption">
-            {game.coverUrl ? "Cover unavailable" : "Cover not added yet"}
+            {cover ? "Cover unavailable" : "Cover not added yet"}
           </span>
         </>
       )}

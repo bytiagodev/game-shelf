@@ -1,4 +1,5 @@
 import test from 'node:test';
+import { existsSync } from 'node:fs';
 import assert from 'node:assert/strict';
 import { selectGames, groupCompactRows, getGenres, getYears, gameStatuses, formatPlayedDate, formatHours } from '../src/library.js';
 import { games, profile } from '../src/data/games.js';
@@ -88,4 +89,9 @@ test('manually edited data has unique ids, valid dates and no invented defaults'
     if (game.lastPlayed) assert.ok(['day', 'month'].includes(game.lastPlayed.precision));
     assert.ok(game.notes.every(note => typeof note.text === 'string' && note.text.trim().length > 0));
   }
+});
+
+test('every game has a saved cover; run npm run covers if this fails', () => {
+  const missing = games.filter(game => !existsSync(new URL('../src/assets/covers/' + game.id + '.jpg', import.meta.url)));
+  assert.deepEqual(missing.map(game => game.id), []);
 });

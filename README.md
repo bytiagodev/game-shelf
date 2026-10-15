@@ -63,7 +63,8 @@ export const games = [
 - `lastPlayed` can be `null`, an exact date with `precision: 'day'`, or an approximate month with `precision: 'month'`. For a month, use its first day for sorting; the interface displays only the month and year.
 - `status` is `'playing'`, `'finished'`, `'dropped'` or `null` when not recorded.
 - `totalHours` is the lifetime total copied from Steam. Use `null` if unknown; zero remains zero. It does not represent hours played that year.
-- `steamAppId` enables the Steam store link. `coverUrl` supplies that game's own cover; missing or failed images have a title fallback.
+- `steamAppId` enables the Steam store link.
+- `coverUrl` is where the game's portrait cover is downloaded from. Run `npm run covers` after adding a game: it saves any missing cover to `src/assets/covers/<id>.jpg`, and the site shows that local copy, so covers keep working even if Steam changes its links. `npm run covers -- --force` downloads them all again. A missing cover shows a title fallback, and the tests fail until every game has one.
 - For a game inside a Steam collection, use its individual title and the collection's app ID and cover. The optional `steamCollection` field identifies that collection in the details panel.
 - `sleeve` names one of the 18 illustrated case colours: `mint`, `yellow`, `blue`, `lavender`, `pink`, `orange`, `black`, `white`, `red`, `royal-blue`, `green`, `grey`, `teal`, `cream`, `brown`, `burgundy`, `lime` or `violet`. The spine title colour and the fallback cover follow it.
 - Optional `spineTitle` provides a shorter case label. Both names are searchable; the full `title` stays in game details and accessible labels.
