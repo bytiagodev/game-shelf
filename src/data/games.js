@@ -64,7 +64,7 @@ export const games = [
     notes: [
       {
         date: "2026-09-29",
-        text: "Metroidvanias aren't usually my thing, but this won me over. Enjoyed the responsive combat, exploration and abilities, with quality-of-life features that made a real difference. Some powers arrived too late, and the story was forgettable. Rekindled my interest in Prince of Persia enough to consider Rogue, despite initially disliking its look.",
+        text: "Metroidvanias aren't usually my thing, but this won me over. Enjoyed the responsive combat, exploration and abilities, with quality-of-life features that made a real difference. Some powers arrived too late, the story was forgettable, and I wasn't a fan of Sargon's design. Still, it rekindled my interest in Prince of Persia.",
       },
     ],
   },
