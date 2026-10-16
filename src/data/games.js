@@ -11,10 +11,9 @@ export const games = [
     steamAppId: 292030,
     genres: ["RPG"],
     years: [2026],
-    lastPlayed: null,
+    lastPlayed: { date: "2026-10-16", precision: "day" },
     status: "playing",
-    totalHours: null,
-    coverUrl: null,
+    totalHours: 7,
     sleeve: "grey",
     notes: [
       {
@@ -33,8 +32,6 @@ export const games = [
     lastPlayed: { date: "2026-10-15", precision: "day" },
     status: "finished",
     totalHours: 33,
-    coverUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2638890/730daf025e5922da7441a4c02b1999f27dc026fd/library_capsule_2x.jpg?t=1790383151",
     sleeve: "burgundy",
     notes: [
       {
@@ -56,8 +53,6 @@ export const games = [
     lastPlayed: { date: "2026-10-05", precision: "day" },
     status: "finished",
     totalHours: 19,
-    coverUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3768760/1159a696d257cbeb3f4479be3466cfba2ae938a0/library_600x900_2x.jpg?t=1790955737",
     sleeve: "cream",
     notes: [
       {
@@ -76,8 +71,6 @@ export const games = [
     lastPlayed: { date: "2026-09-29", precision: "day" },
     status: "finished",
     totalHours: 26,
-    coverUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2751000/library_600x900_2x.jpg",
     sleeve: "blue",
     notes: [
       {
@@ -95,8 +88,6 @@ export const games = [
     lastPlayed: { date: "2026-09-23", precision: "day" },
     status: "finished",
     totalHours: 52,
-    coverUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3751260/82769ab631e6e68b4a38bbba9fb5b74eb0d7db8d/library_capsule_2x.jpg?t=1790718217",
     sleeve: "red",
     notes: [
       {
@@ -114,8 +105,6 @@ export const games = [
     lastPlayed: { date: "2026-09-11", precision: "day" },
     status: "finished",
     totalHours: 34,
-    coverUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2677660/library_600x900_2x.jpg",
     sleeve: "gold",
     notes: [
       {
@@ -133,8 +122,6 @@ export const games = [
     lastPlayed: { date: "2026-08-17", precision: "day" },
     status: "finished",
     totalHours: 29,
-    coverUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2001760/f257ca2dc23c5590ade297fca68f3cab2e4edb4e/library_capsule_2x.jpg?t=1788151394",
     sleeve: "brown",
     notes: [
       {
@@ -153,8 +140,6 @@ export const games = [
     lastPlayed: { date: "2026-08-02", precision: "day" },
     status: "finished",
     totalHours: 11,
-    coverUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1874000/library_600x900_2x.jpg",
     sleeve: "navy",
     notes: [
       {
@@ -173,8 +158,6 @@ export const games = [
     lastPlayed: { date: "2026-07-25", precision: "day" },
     status: "finished",
     totalHours: 96,
-    coverUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3751950/36a1644b03afce1a648ab90b232196609e827539/library_capsule_2x.jpg?t=1787915122",
     sleeve: "grey",
     notes: [
       {
@@ -193,8 +176,6 @@ export const games = [
     lastPlayed: { date: "2026-08-25", precision: "day" },
     status: "finished",
     totalHours: 36,
-    coverUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2552430/library_600x900_2x.jpg",
     sleeve: "black",
     notes: [
       {
@@ -212,8 +193,6 @@ export const games = [
     lastPlayed: { date: "2026-07-04", precision: "day" },
     status: "finished",
     totalHours: 17,
-    coverUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1610440/library_600x900_2x.jpg",
     sleeve: "navy",
     notes: [
       {
@@ -232,8 +211,6 @@ export const games = [
     lastPlayed: { date: "2026-01-04", precision: "day" },
     status: "finished",
     totalHours: 62,
-    coverUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1903340/8b21381a43ac5a535a838f723815f8fe14ceaf7c/library_600x900_2x.jpg?t=1782830877",
     sleeve: "black",
     notes: [
       {
@@ -251,8 +228,6 @@ export const games = [
     lastPlayed: { date: "2026-01-30", precision: "day" },
     status: "finished",
     totalHours: 59,
-    coverUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2215430/library_600x900_2x.jpg?t=1763409398",
     sleeve: "white",
     notes: [
       {
@@ -271,8 +246,6 @@ export const games = [
     lastPlayed: { date: "2026-01-31", precision: "day" },
     status: "finished",
     totalHours: 12,
-    coverUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3419520/304549a90f9aa611c709e478854a21d5d41dc820/library_capsule_2x.jpg?t=1790010680",
     sleeve: "lime",
     notes: [
       {
@@ -290,8 +263,6 @@ export const games = [
     lastPlayed: { date: "2026-02-17", precision: "day" },
     status: "finished",
     totalHours: 8,
-    coverUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1332010/9c1bae81b2603c25ccf2a8f4944b3b58227005d7/library_capsule_2x.jpg?t=1785424330",
     sleeve: "red",
     notes: [
       {
@@ -310,8 +281,6 @@ export const games = [
     lastPlayed: { date: "2026-03-02", precision: "day" },
     status: "finished",
     totalHours: 15,
-    coverUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1895880/library_600x900_2x.jpg?t=1787838873",
     sleeve: "violet",
     notes: [
       {
@@ -329,8 +298,6 @@ export const games = [
     lastPlayed: { date: "2026-03-30", precision: "day" },
     status: "finished",
     totalHours: 89,
-    coverUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2909400/771d94cceea4bf97bd8afeee5e09e31f15bd0196/library_600x900_2x.jpg?t=1789446799",
     sleeve: "orange",
     notes: [
       {
@@ -348,8 +315,6 @@ export const games = [
     lastPlayed: { date: "2026-05-09", precision: "day" },
     status: "finished",
     totalHours: 63,
-    coverUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2515020/library_600x900_2x.jpg?t=1773294537",
     sleeve: "white",
     notes: [
       {
@@ -367,8 +332,6 @@ export const games = [
     lastPlayed: { date: "2026-06-21", precision: "day" },
     status: "finished",
     totalHours: 28,
-    coverUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3008130/66ecd6b5e71e85cd3e339ba9233979a23c5f0ec0/library_capsule_2x.jpg?t=1789646537",
     sleeve: "brown",
     notes: [
       {
@@ -386,8 +349,6 @@ export const games = [
     lastPlayed: { date: "2026-06-12", precision: "day" },
     status: "finished",
     totalHours: 25,
-    coverUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3483740/ae3040b8888720472de900f70824c845fac45aaf/library_capsule_2x.jpg?t=1785377115",
     sleeve: "blue",
     notes: [
       {
@@ -405,8 +366,6 @@ export const games = [
     lastPlayed: { date: "2026-06-25", precision: "day" },
     status: "finished",
     totalHours: 4,
-    coverUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2111190/library_600x900_2x.jpg?t=1787078659",
     sleeve: "red",
     notes: [
       {
@@ -425,8 +384,6 @@ export const games = [
     lastPlayed: { date: "2026-10-10", precision: "day" },
     status: "playing",
     totalHours: 62,
-    coverUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2996040/c2e04ee36ee08019764946a2ad754796241e59d1/library_capsule_2x.jpg?t=1790615306",
     sleeve: "navy",
     notes: [
       {
@@ -453,8 +410,6 @@ export const games = [
     lastPlayed: { date: "2026-08-26", precision: "day" },
     status: "finished",
     totalHours: 3,
-    coverUrl:
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1361510/library_600x900_2x.jpg?t=1782982752",
     sleeve: "lime",
     notes: [
       {
