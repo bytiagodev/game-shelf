@@ -5,6 +5,25 @@ export const profile = {
 
 export const games = [
   {
+    id: "the-witcher-3-wild-hunt-remastered",
+    title: "The Witcher 3: Wild Hunt Remastered",
+    spineTitle: "The Witcher 3:\nWild Hunt Remastered",
+    steamAppId: 292030,
+    genres: ["RPG"],
+    years: [2026],
+    lastPlayed: null,
+    status: "playing",
+    totalHours: null,
+    coverUrl: null,
+    sleeve: "grey",
+    notes: [
+      {
+        date: "2026-10-16",
+        text: "Over a decade since I last played Wild Hunt. Most of it has faded, but a few things stayed with me: Gwent, Priscilla's Song and the combat, that last one not in a good way. Looking forward to jumping back in with the Remastered to see what held up, what didn't and what CDPR improved.",
+      },
+    ],
+  },
+  {
     id: "onimusha-way-of-the-sword",
     title: "Onimusha: Way of the Sword",
     spineTitle: "Onimusha:\nWay of the Sword",
