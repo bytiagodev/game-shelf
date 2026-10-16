@@ -18,4 +18,6 @@ export const sleeveColors = {
   burgundy: { color: "#892e4a", lightTitle: true },
   lime: { color: "#afda4a", lightTitle: false },
   violet: { color: "#7245bc", lightTitle: true },
+  navy: { color: "#2a3570", lightTitle: true },
+  gold: { color: "#d99a2e", lightTitle: false },
 };

@@ -8,7 +8,7 @@ Game Shelf is my personal Steam journal. I add entries manually, starting with 2
 
 ## What it does
 
-- One case per game, with 18 sleeve colours and a cover inside.
+- One case per game, with 20 sleeve colours and a cover inside.
 - A shelf for each year; a game I return to in a new year appears on both.
 - A status for each game, with a small sticker on cases I'm still playing or dropped.
 - Search, year and genre filters, plus sorting by title or last played.
@@ -68,7 +68,7 @@ export const games = [
 - `steamAppId` enables the Steam store link.
 - `coverUrl` is optional: it's where the game's portrait cover is downloaded from. Leave it `null` and the cover is looked up on Steam from `steamAppId`. Run `npm run covers` after adding a game: it saves any missing cover to `src/assets/covers/<id>.jpg`, and the site shows that local copy, so covers keep working even if Steam changes its links. `npm run covers -- --force` downloads them all again. A missing cover shows a title fallback, and the tests fail until every game has one.
 - For a game I own through a Steam collection, use the collection's app ID and cover. The title can be the single game or the whole collection; when it's the single game, the optional `steamCollection` field names the collection in the details panel.
-- `sleeve` names one of the 18 illustrated case colours: `mint`, `yellow`, `blue`, `lavender`, `pink`, `orange`, `black`, `white`, `red`, `royal-blue`, `green`, `grey`, `teal`, `cream`, `brown`, `burgundy`, `lime` or `violet`. The spine title colour and the fallback cover follow it.
+- `sleeve` names one of the 20 illustrated case colours: `mint`, `yellow`, `gold`, `orange`, `red`, `burgundy`, `pink`, `lavender`, `violet`, `blue`, `royal-blue`, `navy`, `teal`, `green`, `lime`, `cream`, `brown`, `grey`, `black` or `white`. Pick the one closest to the game's cover. The spine title colour and the fallback cover follow it.
 - Optional `spineTitle` provides a shorter case label. Both names are searchable; the full `title` stays in game details and accessible labels.
 - Use `\n` inside `spineTitle` to choose a line break, for example `"Prince of Persia:\nThe Lost Crown"`. Other labels wrap automatically when needed.
 - Use `notes: []` when there are no notes. When I return to a game, I keep its one case: append a dated note, update `lastPlayed`, `totalHours` and `status`, and add the year to `years` if it is a new one.

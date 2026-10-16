@@ -16,6 +16,8 @@ import brown from "./assets/v3-spine-brown.webp";
 import burgundy from "./assets/v3-spine-burgundy.webp";
 import lime from "./assets/v3-spine-lime.webp";
 import violet from "./assets/v3-spine-violet.webp";
+import navy from "./assets/v3-spine-navy.webp";
+import gold from "./assets/v3-spine-gold.webp";
 import { sleeveColors } from "./sleeveColors.js";
 
 const sleeveImages = {
@@ -37,6 +39,8 @@ const sleeveImages = {
   burgundy,
   lime,
   violet,
+  navy,
+  gold,
 };
 
 const lightInk = "#fffaf3";
