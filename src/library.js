@@ -46,20 +46,195 @@ export function selectGames(
     });
 }
 
-export function groupCompactRows(games, capacity) {
-  const maximumSize = Math.max(1, Math.floor(capacity) || 1);
-  const smallerSize = Math.min(4, maximumSize);
-  const rows = [];
-  let remainingCount = games.length;
-  let nextSize = maximumSize;
-  // Fill from the bottom so spare space stays on the first shelf.
-  while (remainingCount > maximumSize) {
-    rows.unshift(games.slice(remainingCount - nextSize, remainingCount));
-    remainingCount -= nextSize;
-    nextSize = nextSize === maximumSize ? smallerSize : maximumSize;
+// Container widths where the cabinet switches layout.
+export const shelfBreakpoints = { wide: 760, compact: 430 };
+
+function countSlots(width, { caseWidth, caseGap, casePadding }) {
+  return Math.max(
+    1,
+    Math.floor((width - casePadding * 2 + caseGap) / (caseWidth + caseGap)),
+  );
+}
+
+// Shares slots between containers in proportion to their capacity, so the
+// free space is spread out instead of piling up on one shelf. Any remainder
+// goes to the earlier containers, keeping the fuller shelves first.
+export function shareSlots(total, capacities) {
+  const capacitySum = capacities.reduce((sum, capacity) => sum + capacity, 0);
+  const shares = capacities.map((capacity) =>
+    Math.floor((total * capacity) / capacitySum),
+  );
+  let leftover = total - shares.reduce((sum, share) => sum + share, 0);
+  for (let index = 0; leftover > 0; index = (index + 1) % shares.length) {
+    if (shares[index] < capacities[index]) {
+      shares[index] += 1;
+      leftover -= 1;
+    }
   }
-  if (remainingCount) rows.unshift(games.slice(0, remainingCount));
-  return rows;
+  return shares;
+}
+
+// Turns shares into consecutive game ranges.
+function toRanges(counts, startIndex = 0) {
+  let nextIndex = startIndex;
+  return counts.map((count) => {
+    const range = { start: nextIndex, end: nextIndex + count };
+    nextIndex += count;
+    return range;
+  });
+}
+
+// Plans the cabinet for a container width. Rows hold game index ranges, so
+// the plan can be tested without React. The plush bookend always sits after
+// the last case on the last game shelf, except on phones where it gets its
+// own shelf like the controller and headset.
+export function planShelf({
+  gameCount,
+  containerWidth,
+  caseWidth,
+  caseGap,
+  casePadding,
+  plushWidth,
+}) {
+  const measures = { caseWidth, caseGap, casePadding };
+  const isWide = containerWidth >= shelfBreakpoints.wide;
+  const isCompact = containerWidth < shelfBreakpoints.compact;
+  const plushSlots = Math.ceil((plushWidth + caseGap) / (caseWidth + caseGap));
+  const fullCapacity = isCompact
+    ? Math.min(5, countSlots(containerWidth, measures))
+    : countSlots(containerWidth, measures);
+
+  if (gameCount === 0) {
+    return {
+      layout: isCompact ? "compact" : "narrow",
+      rows: isCompact
+        ? [{ type: "controller" }, { type: "headset" }]
+        : [
+            {
+              type: "band",
+              cubbies: [{ type: "controller" }, { type: "headset" }],
+            },
+          ],
+    };
+  }
+
+  if (isWide) {
+    // Cubbies are separated by 16px gaps: three thirds on the top row and
+    // two thirds beside the headset on the second.
+    const smallCapacity = Math.min(
+      3,
+      countSlots((containerWidth - 32) / 3, measures),
+    );
+    const besideHeadsetCapacity = countSlots(
+      ((containerWidth - 16) * 2) / 3,
+      measures,
+    );
+    const topCount = Math.min(gameCount, smallCapacity * 2);
+    const leftCount = Math.min(topCount, smallCapacity);
+    // The shelf beside the headset and the shelves below share the rest,
+    // with the plush counted as cases on the last shelf. With only a few
+    // games, the plush sits beside the headset and no lower shelf is added.
+    const occupied = gameCount - topCount + plushSlots;
+    const lowerShelfCount = Math.max(
+      0,
+      Math.ceil((occupied - besideHeadsetCapacity) / fullCapacity),
+    );
+    const capacities = [
+      besideHeadsetCapacity,
+      ...Array(lowerShelfCount).fill(fullCapacity),
+    ];
+    const shares = moveSlotsToLast(
+      shareSlots(occupied, capacities),
+      plushSlots,
+    );
+    shares[shares.length - 1] -= plushSlots;
+    const [besideHeadset, ...lowerShelves] = toRanges(shares, topCount);
+    return {
+      layout: "wide",
+      rows: [
+        {
+          type: "band",
+          cubbies: [
+            { type: "games", start: 0, end: leftCount },
+            { type: "controller" },
+            { type: "games", start: leftCount, end: topCount },
+          ],
+        },
+        {
+          type: "band",
+          cubbies: [
+            {
+              type: "games",
+              ...besideHeadset,
+              isWide: true,
+              hasPlush: lowerShelfCount === 0,
+            },
+            { type: "headset" },
+          ],
+        },
+        ...lowerShelves.map((range, index) => ({
+          type: "games",
+          ...range,
+          hasPlush: index === lowerShelves.length - 1,
+        })),
+      ],
+    };
+  }
+
+  if (isCompact) {
+    // Even rows with the fuller ones first, then the plush on its own shelf.
+    const rowCount = Math.ceil(gameCount / fullCapacity);
+    const [firstRow, ...otherRows] = toRanges(
+      shareSlots(gameCount, Array(rowCount).fill(fullCapacity)),
+    ).map((range) => ({ type: "games", ...range }));
+    const headsetAfter = Math.min(2, otherRows.length);
+    return {
+      layout: "compact",
+      rows: [
+        firstRow,
+        { type: "controller" },
+        ...otherRows.slice(0, headsetAfter),
+        { type: "headset" },
+        ...otherRows.slice(headsetAfter),
+        { type: "plush" },
+      ],
+    };
+  }
+
+  // Narrow: every game shelf is full width, with the plush on the last one.
+  const occupied = gameCount + plushSlots;
+  const rowCount = Math.max(1, Math.ceil(occupied / fullCapacity));
+  const shares = moveSlotsToLast(
+    shareSlots(occupied, Array(rowCount).fill(fullCapacity)),
+    plushSlots,
+  );
+  shares[shares.length - 1] -= plushSlots;
+  const [firstRow, ...otherRows] = toRanges(shares).map((range, index) => ({
+    type: "games",
+    ...range,
+    hasPlush: index === rowCount - 1,
+  }));
+  return {
+    layout: "narrow",
+    rows: [
+      firstRow,
+      { type: "band", cubbies: [{ type: "controller" }, { type: "headset" }] },
+      ...otherRows,
+    ],
+  };
+}
+
+// Makes sure the last shelf has room for the plush, borrowing from the
+// shelves just above it when there are only a few games.
+function moveSlotsToLast(shares, neededSlots) {
+  const lastIndex = shares.length - 1;
+  for (let index = lastIndex - 1; index >= 0; index -= 1) {
+    while (shares[lastIndex] < neededSlots && shares[index] > 0) {
+      shares[index] -= 1;
+      shares[lastIndex] += 1;
+    }
+  }
+  return shares;
 }
 
 export function formatPlayedDate(value) {

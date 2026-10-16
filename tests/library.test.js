@@ -1,7 +1,7 @@
 import test from 'node:test';
 import { existsSync } from 'node:fs';
 import assert from 'node:assert/strict';
-import { selectGames, groupCompactRows, getGenres, getYears, gameStatuses, formatPlayedDate, formatHours } from '../src/library.js';
+import { selectGames, planShelf, shareSlots, getGenres, getYears, gameStatuses, formatPlayedDate, formatHours } from '../src/library.js';
 import { games, profile } from '../src/data/games.js';
 import { sleeveColors } from '../src/sleeveColors.js';
 
@@ -41,20 +41,65 @@ test('genre counts can overlap, but the filter options remain unique', () => {
   assert.deepEqual(getGenres([{ genres: ['Puzzle', 'Adventure'] }, { genres: ['Puzzle'] }]), ['Adventure', 'Puzzle']);
 });
 
-test('compact shelves fill from the bottom and preserve game order as the collection grows', () => {
-  const entries = Array.from({ length: 40 }, (unusedValue, gameIndex) => gameIndex);
-  assert.deepEqual(groupCompactRows(entries.slice(0, 22), 5).map(row => row.length), [4, 4, 5, 4, 5]);
-  assert.deepEqual(groupCompactRows(entries.slice(0, 23), 5).map(row => row.length), [5, 4, 5, 4, 5]);
-  assert.deepEqual(groupCompactRows(entries.slice(0, 24), 5).map(row => row.length), [1, 5, 4, 5, 4, 5]);
-  assert.deepEqual(groupCompactRows(entries.slice(0, 22), 4).map(row => row.length), [2, 4, 4, 4, 4, 4]);
-  for (const capacity of [1, 3, 4, 5]) {
-    for (let count = 0; count <= entries.length; count++) {
-      const collection = entries.slice(0, count);
-      const rows = groupCompactRows(collection, capacity);
-      assert.deepEqual(rows.flat(), collection);
-      assert.ok(rows.every(row => row.length > 0 && row.length <= capacity));
-      assert.ok(rows.slice(1).every(row => row.length >= Math.min(4, capacity)));
+const desktop = { containerWidth: 1030, caseWidth: 56, caseGap: 10, casePadding: 18, plushWidth: 232 };
+const tablet = { ...desktop, containerWidth: 600 };
+const phone = { containerWidth: 331, caseWidth: 56, caseGap: 5, casePadding: 12, plushWidth: 232 };
+
+// Flattens a plan into its game shelves, in reading order.
+const gameShelves = plan => plan.rows.flatMap(row => row.type === 'band' ? row.cubbies : [row]).filter(cubby => cubby.type === 'games');
+const sizes = plan => gameShelves(plan).map(shelf => shelf.end - shelf.start);
+
+test('slots are shared by capacity with the remainder going to earlier shelves', () => {
+  assert.deepEqual(shareSlots(26, [8, 8, 8, 8]), [7, 7, 6, 6]);
+  assert.deepEqual(shareSlots(20, [9, 15]), [8, 12]);
+});
+
+test('every layout keeps every game once and in order, with one controller and headset', () => {
+  for (const measures of [desktop, tablet, phone]) {
+    for (let gameCount = 0; gameCount <= 60; gameCount++) {
+      const plan = planShelf({ gameCount, ...measures });
+      const shelves = gameShelves(plan);
+      let nextIndex = 0;
+      for (const shelf of shelves) {
+        assert.equal(shelf.start, nextIndex);
+        nextIndex = shelf.end;
+      }
+      assert.equal(nextIndex, gameCount);
+      const accessories = plan.rows.flatMap(row => row.type === 'band' ? row.cubbies : [row]).map(cubby => cubby.type);
+      assert.equal(accessories.filter(type => type === 'controller').length, 1);
+      assert.equal(accessories.filter(type => type === 'headset').length, 1);
     }
+  }
+});
+
+test('the plush sits once, after the last games, with room reserved for it', () => {
+  for (const measures of [desktop, tablet]) {
+    for (let gameCount = 1; gameCount <= 60; gameCount++) {
+      const shelves = gameShelves(planShelf({ gameCount, ...measures }));
+      const withPlush = shelves.filter(shelf => shelf.hasPlush);
+      assert.equal(withPlush.length, 1);
+      assert.equal(withPlush[0], shelves.at(-1));
+    }
+  }
+  for (let gameCount = 1; gameCount <= 60; gameCount++) {
+    const plan = planShelf({ gameCount, ...phone });
+    assert.equal(plan.rows.at(-1).type, 'plush');
+  }
+  assert.equal(planShelf({ gameCount: 0, ...desktop }).rows.some(row => row.type === 'plush'), false);
+});
+
+test('desktop shares the free space between the shelf beside the headset and the shelf below', () => {
+  // Today's collection: 3 + 3 on top, then 8 beside the headset and 8 plus Sonic below.
+  assert.deepEqual(sizes(planShelf({ gameCount: 22, ...desktop })), [3, 3, 8, 8]);
+});
+
+test('phone rows stay even, with fuller rows first and no zig-zag', () => {
+  assert.deepEqual(sizes(planShelf({ gameCount: 22, ...phone })), [5, 5, 4, 4, 4]);
+  for (let gameCount = 1; gameCount <= 60; gameCount++) {
+    const rowSizes = sizes(planShelf({ gameCount, ...phone }));
+    assert.ok(rowSizes.every(size => size >= 1 && size <= 5));
+    assert.ok(Math.max(...rowSizes) - Math.min(...rowSizes) <= 1);
+    assert.ok(rowSizes.every((size, index) => index === 0 || size <= rowSizes[index - 1]));
   }
 });
 
