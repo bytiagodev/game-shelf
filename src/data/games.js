@@ -36,7 +36,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-07",
-        text: "Still playing. So far, it's okay, but not great. Boss combat is excellent, while regular enemies are too passive and easy. Musashi's silliness often breaks the atmosphere, and the open world feels empty. Hoping it improves.",
+        text: "So far, it's okay, but not great. Boss combat is excellent, while regular enemies are too passive and easy. Musashi's silliness often breaks the atmosphere, and the open world feels empty. Hoping it improves.",
       },
       {
         date: "2026-10-11",
@@ -381,7 +381,7 @@ export const games = [
     steamAppId: 2996040,
     genres: ["Action", "Adventure", "RPG", "Strategy"],
     years: [2026],
-    lastPlayed: { date: "2026-10-10", precision: "day" },
+    lastPlayed: { date: "2026-10-16", precision: "day" },
     status: "playing",
     totalHours: 62,
     sleeve: "navy",
