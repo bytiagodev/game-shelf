@@ -586,7 +586,8 @@ input::placeholder {
   z-index: 1;
   border: 2px solid var(--ink);
   border-radius: 7px;
-  background: #ff9961;
+  background: var(--sleeve-color, #fffaf3);
+  color: var(--sleeve-ink, var(--ink));
   font-size: 26px;
   line-height: 1;
   width: 44px;

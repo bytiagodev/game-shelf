@@ -41,6 +41,7 @@ export default function GameDetail({ game, onDismiss }) {
     if (game && !dialog.current.open) dialog.current.showModal();
   }, [game]);
 
+  const sleeve = game ? getSleeve(game.sleeve) : null;
   const close = () => dialog.current.close();
   function closeOnBackdrop(event) {
     if (event.target !== dialog.current) return;
@@ -62,7 +63,9 @@ export default function GameDetail({ game, onDismiss }) {
       onClose={onDismiss}
       onClick={closeOnBackdrop}
       style={
-        game ? { "--sleeve-color": getSleeve(game.sleeve).color } : undefined
+        sleeve
+          ? { "--sleeve-color": sleeve.color, "--sleeve-ink": sleeve.ink }
+          : undefined
       }
     >
       {game && (
