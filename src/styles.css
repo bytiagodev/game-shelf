@@ -604,9 +604,11 @@ input::placeholder {
   display: flex;
   flex-direction: column;
 }
-/* The body scrolls inside the coloured frame, so text never slides over it. */
+/* The body scrolls inside the coloured frame, so text never slides over it.
+   It starts at its natural height and only shrinks when the screen is too
+   short; a zero starting height (flex: 1) collapses it in Safari. */
 .dialog-body {
-  flex: 1;
+  flex: 0 1 auto;
   min-height: 0;
   overflow-y: auto;
   padding: 44px;
