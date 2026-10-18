@@ -265,7 +265,7 @@ input::placeholder {
   --case-padding: 18px;
   --shelf-contact: 8px;
   /* Read by planShelf to reserve room for the plush on the last shelf. */
-  --plush-width: 232px;
+  --plush-width: 250px;
 }
 .shelf-row {
   position: relative;
@@ -361,7 +361,10 @@ input::placeholder {
   object-fit: contain;
   object-position: center bottom;
 }
-/* Sonic, Tiago's plush, sits after the last case as a bookend. */
+/* Sonic, Tiago's plush, sits after the last case as a bookend. His seat is
+   about 87% down the artwork, so he is lowered until it rests on the shelf
+   surface and his shoes hang over the front edge, instead of standing on his
+   soles. */
 .plush-rest {
   position: relative;
   flex-shrink: 0;
@@ -372,15 +375,16 @@ input::placeholder {
   display: block;
   width: var(--plush-width);
   height: auto;
+  transform: translateY(13.5%);
 }
 .plush-rest::before,
 .plush-cubby-rest::before {
   content: "";
   position: absolute;
-  width: 76%;
+  width: 64%;
   height: 7px;
   bottom: -1px;
-  left: 12%;
+  left: 18%;
   border-radius: 50%;
   background: #28283e40;
 }
@@ -389,7 +393,7 @@ input::placeholder {
   position: absolute;
   bottom: calc(-1 * var(--shelf-contact));
   left: 50%;
-  height: calc(100% - 18px);
+  height: calc(100% - 2px);
   transform: translateX(-50%);
   z-index: 2;
 }
