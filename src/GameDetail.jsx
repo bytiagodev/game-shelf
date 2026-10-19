@@ -37,8 +37,14 @@ function Cover({ game }) {
 
 export default function GameDetail({ game, onDismiss }) {
   const dialog = useRef(null);
+  const title = useRef(null);
   useEffect(() => {
-    if (game && !dialog.current.open) dialog.current.showModal();
+    if (game && !dialog.current.open) {
+      dialog.current.showModal();
+      // Start on the title rather than the close button: screen readers
+      // announce the game, and Safari doesn't ring the button after a tap.
+      title.current.focus();
+    }
   }, [game]);
 
   const sleeve = game ? getSleeve(game.sleeve) : null;
@@ -73,7 +79,6 @@ export default function GameDetail({ game, onDismiss }) {
           <button
             className="close-button"
             onClick={close}
-            autoFocus
             aria-label="Close game details"
           >
             ×
@@ -98,7 +103,9 @@ export default function GameDetail({ game, onDismiss }) {
                 )}
               </div>
               <div className="detail-content">
-                <h2 id="game-title">{game.title}</h2>
+                <h2 id="game-title" ref={title} tabIndex={-1}>
+                  {game.title}
+                </h2>
                 {game.steamCollection && (
                   <p className="collection-label">
                     From {game.steamCollection}

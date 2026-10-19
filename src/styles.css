@@ -708,6 +708,10 @@ input::placeholder {
   text-underline-offset: 3px;
   min-height: 44px;
 }
+/* Focused on open for screen readers only; it isn't interactive. */
+.detail-content h2:focus {
+  outline: none;
+}
 .detail-content h2 {
   font-size: 30px;
   margin: 0;
