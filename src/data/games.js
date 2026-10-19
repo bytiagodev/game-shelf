@@ -215,7 +215,7 @@ export const games = [
     notes: [
       {
         date: "2026-01-04",
-        text: "Started brilliantly, with a great soundtrack and striking art direction. The parry combat was enjoyable at first, but grew repetitive over time. Gustave's death and replacement hurt my interest, and the story's shift towards an “it was all a dream” kind of twist lost me. I wanted more of the original expedition premise. Corridor-like areas, invisible walls and unrewarding exploration disappointed me too, while movement felt rough. By the end, the change in story direction had left me with little interest in the game.",
+        text: "Started brilliantly, with a great soundtrack and striking art direction. The parry combat was enjoyable at first, but grew repetitive over time. Gustave's death and replacement hurt my interest, and the story's shift towards an “it was all a dream” kind of twist lost me. I wanted more of the original expedition premise, and the change in direction left me with little interest in the game.",
       },
     ],
   },
@@ -267,7 +267,7 @@ export const games = [
     notes: [
       {
         date: "2026-02-17",
-        text: "Playing a cat in a cyberpunk city sounded interesting, and the environments look nice. Once the novelty wore off, movement felt too automated, puzzles were simple, and the stealth sections were a chore. The predictable story focused more on the robots than the cat, with emotionally thin interactions and an anticlimactic ending. Never really clicked with me.",
+        text: "The environments look nice, and playing as a cat in a cyberpunk city made for an interesting start. Once the novelty wore off, movement felt too automated, puzzles were simple, and the stealth sections were a chore. The story focused more on the robots than the cat, with emotionally thin interactions and an anticlimactic ending.",
       },
     ],
   },
@@ -285,7 +285,7 @@ export const games = [
     notes: [
       {
         date: "2026-03-02",
-        text: "Great graphics and animation, with that Pixar-like attention to detail. Liked the distinctive worlds, and getting around with animals and rocket boots was fun. Combat became repetitive and never developed much further. Lost interest in the story after chapter two as the pacing slowed. It did little with its premise and relied heavily on references to earlier games.",
+        text: "Great graphics and animation, with that Pixar-like attention to detail. Liked the distinctive worlds, and getting around with animals and rocket boots was fun. Combat became repetitive and never developed much further. The story lost steam after chapter two as the pacing slowed, and by the end I felt it did little with its premise and relied heavily on references to earlier games.",
       },
     ],
   },
