@@ -57,7 +57,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-05",
-        text: "As a lifelong Bond fan, this delivered. Enjoyed the origin story and atmosphere, especially investigating, eavesdropping, bluffing and using gadgets. Those choices made me feel like Bond. The training opening dragged, combat felt awkward enough to make me wish for lock-on, and I wanted more driving. Had a great time. Hope IO Interactive gets to make another.",
+        text: "As a lifelong Bond fan, this delivered. Enjoyed the origin story and atmosphere, especially investigating, eavesdropping, bluffing and using gadgets. Those choices made me feel like Bond. The training opening dragged, combat felt awkward enough to make me wish for lock-on, and I wanted more driving. Even so, it's one of my favourite games this year. Hope IO Interactive gets to make another.",
       },
     ],
   },
@@ -232,7 +232,7 @@ export const games = [
     notes: [
       {
         date: "2026-01-30",
-        text: "Beautiful world, excellent combat, and a story that stayed with me. Jin's conflict between honour and family felt personal. Fighting his uncle and losing my horse really hurt. Combat could be unforgiving, but learning enemies' moves made victories feel earned. A very memorable game.",
+        text: "Beautiful world, excellent combat, and a story that stayed with me. Jin's conflict between honour and family felt personal, fighting his uncle hit hard, and losing my horse was sad. Combat could be unforgiving, but learning enemies' moves made victories feel earned. Clearing Mongol camps, following foxes and cutting bamboo grew repetitive over a long playthrough, and since so much rests on the story's emotional impact, I have little reason to replay it. A memorable game, if not one I'll return to.",
       },
     ],
   },
@@ -250,7 +250,7 @@ export const games = [
     notes: [
       {
         date: "2026-01-31",
-        text: "Enjoyed the simple early inspections with just a few tools. As I unlocked more, each survivor took longer to check, and the routine started to drag. There was barely any story to break up the repetition. The drone sections felt out of place and controlled poorly.",
+        text: "Enjoyed the simple early inspections with just a few tools. As I unlocked more, each survivor took longer to check, and the routine started to drag. There was barely any story to break up the repetition. The drone sections felt out of place and controlled poorly. A good idea that wore thin long before the end.",
       },
     ],
   },
@@ -267,7 +267,7 @@ export const games = [
     notes: [
       {
         date: "2026-02-17",
-        text: "The environments look nice, and playing as a cat in a cyberpunk city made for an interesting start. Once the novelty wore off, movement felt too automated, puzzles were simple, and the stealth sections were a chore. The story focused more on the robots than the cat, with emotionally thin interactions and an anticlimactic ending.",
+        text: "The environments look nice, and playing as a cat in a cyberpunk city made for an interesting start. Once the novelty wore off, movement felt too automated, puzzles were simple, and the stealth sections were a chore. The story focused more on the robots than the cat, with emotionally thin interactions and an anticlimactic ending. A great premise that the game never lived up to.",
       },
     ],
   },
@@ -319,7 +319,7 @@ export const games = [
     notes: [
       {
         date: "2026-05-09",
-        text: "Basic story that left me missing VII, VIII, IX and X. Combat settled into the same dodge, stagger and cooldown routine, with little meaningful customisation or crafting. The mundane side quests and forgettable characters dragged the pacing down. It's a mix of an MMO and Devil May Cry. Expected more from a mainline Final Fantasy.",
+        text: "The Eikon fights were great, though they often dragged on too long, the cinematics were cool, and I liked the music. Beyond that, the basic story left me missing VII, VIII, IX and X. Combat settled into the same dodge, stagger and cooldown routine, with little meaningful customisation or crafting. The mundane side quests and forgettable characters dragged the pacing down. It's a mix of an MMO and Devil May Cry. Expected more from a mainline Final Fantasy.",
       },
     ],
   },
@@ -336,7 +336,7 @@ export const games = [
     notes: [
       {
         date: "2026-06-21",
-        text: "Kyle's return was nostalgic, but I never liked the beast transformation. Weak revenge story and forgettable supporting characters. The forest-heavy map made parkour less enjoyable, and the cars felt disposable compared with the first game's customisable buggy. Mostly finished because I cared about Kyle and wanted to see where his story went. The original remains my favourite.",
+        text: "Kyle's return was nostalgic, but I never liked the beast transformation. Weak revenge story and forgettable supporting characters. The forest-heavy map made parkour less enjoyable, and the cars felt disposable compared with the first game's customisable buggy. Mostly finished because I cared about Kyle and wanted to see where his story went. Not the follow-up I hoped for, and the original remains my favourite.",
       },
     ],
   },
@@ -387,12 +387,8 @@ export const games = [
     sleeve: "navy",
     notes: [
       {
-        date: "2025-11-28",
-        text: "Great music, responsive combat and varied builds, with bosses that need different approaches. Upgrades made the tough start much easier, and the turtles' dialogue keeps runs entertaining.",
-      },
-      {
         date: "2026-08-18",
-        text: "King's Gambit finally resolved the mystery. Rat King isn't as compelling as Shredder, but the new level and Gauntlet Challenge add welcome variety.",
+        text: "Great music, responsive combat and varied builds, with bosses that need different approaches, and the turtles' dialogue keeps runs entertaining. King's Gambit finally resolved the mystery. Rat King isn't as compelling as Shredder, but the new level and Gauntlet Challenge add welcome variety.",
       },
       {
         date: "2026-10-10",
