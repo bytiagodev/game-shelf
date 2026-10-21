@@ -11,9 +11,9 @@ export const games = [
     steamAppId: 292030,
     genres: ["RPG"],
     years: [2026],
-    lastPlayed: { date: "2026-10-17", precision: "day" },
+    lastPlayed: { date: "2026-10-21", precision: "day" },
     status: "playing",
-    totalHours: 10,
+    totalHours: 37,
     sleeve: "grey",
     notes: [
       {
