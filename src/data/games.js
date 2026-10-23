@@ -36,7 +36,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-15",
-        text: "Played it twice back to back on a higher difficulty to 100% it, something I rarely do nowadays. The combat is the highlight. Blocking, perfect parries, perfect dodges, deflects and Reflexes on top of all that give you a huge range of options. Across two playthroughs it never got repetitive, and I can see myself coming back for a third run someday. Boss battles stayed fun and challenging throughout. Enjoyed the story, supporting cast and villains too. My only gripes are the reused bosses and Musashi's silliness, which sometimes went too far and broke the tone of serious moments.",
+        text: "The combat is the highlight. Blocking, perfect parries, perfect dodges, deflects and reflexes on top of all that give you a huge range of options. Across two playthroughs it never got repetitive. Boss battles stayed fun and challenging throughout. Enjoyed the story, supporting cast and villains too. My only gripes are the reused bosses and Musashi's silliness, which sometimes went too far and broke the tone of serious moments.",
       },
     ],
   },
@@ -53,7 +53,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-05",
-        text: "As a lifelong Bond fan, this delivered. Enjoyed the origin story and atmosphere, especially investigating, eavesdropping, bluffing and using gadgets. Those choices made me feel like Bond. Combat had clever ideas too: throwing objects to stun enemies, shooting knees to make them stumble and targeting hands to disarm them gave each encounter different approaches. It just never felt as fluid as the best melee combat out there, and I sometimes found myself punching air, which made me wish for lock-on. Even so, it's one of my favourite games this year. Hope IO Interactive gets to make another.",
+        text: "As a lifelong Bond fan, this delivered. Enjoyed the origin story and atmosphere, especially investigating, eavesdropping, bluffing and using gadgets. Those choices made me feel like Bond. Combat had clever ideas too: throwing objects to stun enemies, shooting knees to make them stumble and targeting hands to disarm them gave each encounter different approaches. It just never felt as fluid as the best melee combat out there, which made me wish for lock-on. Hope IO Interactive gets to make another.",
       },
     ],
   },
