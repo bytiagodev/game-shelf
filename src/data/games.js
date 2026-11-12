@@ -36,7 +36,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-15",
-        text: "The combat is the highlight. Blocking, perfect parries, perfect dodges, deflects and reflexes on top of all that give you a huge range of options. Across two playthroughs it never got repetitive. Boss battles stayed fun and challenging throughout. Enjoyed the story, supporting cast and villains too. My only gripes are the reused bosses and Musashi's silliness, which sometimes went too far and broke the tone of serious moments.",
+        text: "The combat is the highlight. Blocking, parries, dodges, deflects and reflexes on top of all that give you a huge range of options. Across two playthroughs it never got repetitive. Boss battles stayed fun and challenging throughout. Enjoyed the story, supporting cast and villains too. My only gripes are the reused bosses and Musashi's silliness, which sometimes went too far and broke the tone of serious moments.",
       },
     ],
   },
@@ -349,7 +349,7 @@ export const games = [
     notes: [
       {
         date: "2026-06-12",
-        text: "The pixel art and animations are pretty, but there's little gameplay to hold my attention. Couldn't see much reason to play manually. Idle mode felt more like watching a video of the game than progressing towards automation. Mostly left it running on a second monitor. Didn't give me what I wanted from an idle game.",
+        text: "The pixel art and animations are pretty, but there isn't much to do when playing by hand, and nothing builds towards automation. Idle mode does everything manual play can from the very start, so there was no reason not to switch it on. Most of the time it just ran on a second monitor. Didn't give me what I wanted from an idle game.",
       },
     ],
   },
