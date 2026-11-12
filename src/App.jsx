@@ -1,17 +1,41 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { games, profile } from "./data/games.js";
-import { getGenres, getYears, selectGames } from "./library.js";
+import {
+  findGameByHash,
+  getGenres,
+  getYears,
+  newestShelfYear,
+  selectGames,
+} from "./library.js";
 import Shelf from "./Shelf.jsx";
 import GameDetail from "./GameDetail.jsx";
 
 const years = getYears(games, profile.startYear);
+// A link that ends in #<game id> opens that game's case.
+const linkedGame = findGameByHash(games, window.location.hash);
 
 export default function App() {
-  const [year, setYear] = useState(years[0]);
+  const [year, setYear] = useState(
+    linkedGame ? newestShelfYear(linkedGame, years) : years[0],
+  );
   const [genre, setGenre] = useState("all");
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState("recent");
-  const [selectedGame, setSelectedGame] = useState(null);
+  const [selectedGame, setSelectedGame] = useState(linkedGame);
+
+  useEffect(() => {
+    function openLinkedGame() {
+      const game = findGameByHash(games, window.location.hash);
+      if (game) {
+        setYear(newestShelfYear(game, years));
+        setGenre("all");
+        setQuery("");
+      }
+      setSelectedGame(game);
+    }
+    window.addEventListener("hashchange", openLinkedGame);
+    return () => window.removeEventListener("hashchange", openLinkedGame);
+  }, []);
 
   const yearGames = useMemo(
     () => games.filter((game) => game.years.includes(Number(year))),
@@ -23,6 +47,22 @@ export default function App() {
   function resetFilters() {
     setGenre("all");
     setQuery("");
+  }
+
+  // The address always names the open game, ready to be shared. replaceState
+  // keeps the Back button for leaving the page, not for closing a case.
+  function openGame(game) {
+    history.replaceState(null, "", "#" + game.id);
+    setSelectedGame(game);
+  }
+
+  function closeGame() {
+    history.replaceState(
+      null,
+      "",
+      window.location.pathname + window.location.search,
+    );
+    setSelectedGame(null);
   }
 
   return (
@@ -102,7 +142,7 @@ export default function App() {
                   onChange={(event) => setSort(event.target.value)}
                 >
                   <option value="recent">Last played</option>
-                  <option value="title">Title A–Z</option>
+                  <option value="title">Title A-Z</option>
                 </select>
               </label>
               {(genre !== "all" || query) && (
@@ -115,7 +155,7 @@ export default function App() {
             <div className="shelf-room">
               <Shelf
                 games={visibleGames}
-                onSelect={setSelectedGame}
+                onSelect={openGame}
                 emptyContent={
                   <div className="empty-shelf">
                     <h3>No games here yet.</h3>
@@ -134,10 +174,7 @@ export default function App() {
           </section>
         </main>
       </div>
-      <GameDetail
-        game={selectedGame}
-        onDismiss={() => setSelectedGame(null)}
-      />
+      <GameDetail game={selectedGame} onDismiss={closeGame} />
     </div>
   );
 }

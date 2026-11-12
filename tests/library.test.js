@@ -1,7 +1,7 @@
 import test from 'node:test';
 import { existsSync } from 'node:fs';
 import assert from 'node:assert/strict';
-import { selectGames, planShelf, shareSlots, getGenres, getYears, gameStatuses, formatPlayedDate, formatHours } from '../src/library.js';
+import { findGameByHash, newestShelfYear, selectGames, planShelf, shareSlots, getGenres, getYears, gameStatuses, formatPlayedDate, formatHours } from '../src/library.js';
 import { games, profile } from '../src/data/games.js';
 import { sleeveColors } from '../src/sleeveColors.js';
 
@@ -139,4 +139,18 @@ test('manually edited data has unique ids, valid dates and no invented defaults'
 test('every game has a saved cover; run npm run covers if this fails', () => {
   const missing = games.filter(game => !existsSync(new URL('../src/assets/covers/' + game.id + '.jpg', import.meta.url)));
   assert.deepEqual(missing.map(game => game.id), []);
+});
+
+test('a shared link opens its game on the newest shelf that shows it', () => {
+  const sample = [
+    { id: 'first', years: [2026] },
+    { id: 'returning', years: [2026, 2027] },
+  ];
+  assert.equal(findGameByHash(sample, '#returning'), sample[1]);
+  assert.equal(findGameByHash(sample, 'first'), sample[0]);
+  assert.equal(findGameByHash(sample, '#collection'), null);
+  assert.equal(findGameByHash(sample, ''), null);
+  assert.equal(newestShelfYear(sample[1], [2028, 2027, 2026]), 2027);
+  assert.equal(newestShelfYear(sample[0], [2027, 2026]), 2026);
+  for (const game of games) assert.equal(findGameByHash(games, '#' + game.id), game);
 });

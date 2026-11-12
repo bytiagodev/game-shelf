@@ -45,6 +45,8 @@ export default function GameDetail({ game, onDismiss }) {
       // announce the game, and Safari doesn't ring the button after a tap.
       title.current.focus();
     }
+    // The address can drop the game while its case is open.
+    if (!game && dialog.current.open) dialog.current.close();
   }, [game]);
 
   const sleeve = game ? getSleeve(game.sleeve) : null;

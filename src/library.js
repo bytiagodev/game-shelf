@@ -12,6 +12,18 @@ export function getYears(games, startYear) {
     .sort((firstYear, secondYear) => secondYear - firstYear);
 }
 
+// A shared link ends in #<game id>. Any other hash finds no game.
+export function findGameByHash(games, hash) {
+  const id = hash.replace(/^#/, "");
+  return games.find((game) => game.id === id) ?? null;
+}
+
+// The newest shelf a game sits on, so a shared link opens on a year that
+// shows it. years is the list from getYears, newest first.
+export function newestShelfYear(game, years) {
+  return years.find((year) => game.years.includes(year)) ?? years[0];
+}
+
 export function getGenres(games) {
   return [...new Set(games.flatMap((game) => game.genres))].sort();
 }
