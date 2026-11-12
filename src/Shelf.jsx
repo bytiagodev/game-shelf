@@ -1,9 +1,9 @@
 import { useLayoutEffect, useRef, useState } from "react";
 import { gameStatuses, planShelf } from "./library.js";
 import Controller from "./Controller.jsx";
-import headsetImage from "./assets/v3-headset-blackshark.webp";
-import plushImage from "./assets/v4-sonic-plush.webp";
-import beamImage from "./assets/v2-beam.webp";
+import headsetImage from "./assets/headset-blackshark.webp";
+import plushImage from "./assets/sonic-plush.webp";
+import beamImage from "./assets/beam.webp";
 import { getSleeve } from "./sleeves.js";
 
 function GameCase({ game, onSelect }) {
