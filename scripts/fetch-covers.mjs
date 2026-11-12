@@ -6,9 +6,12 @@ import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { games } from "../src/data/games.js";
 
-const coversFolder = fileURLToPath(new URL("../src/assets/covers/", import.meta.url));
+const coversFolder = fileURLToPath(
+  new URL("../src/assets/covers/", import.meta.url),
+);
 const forceDownload = process.argv.includes("--force");
-const isJpeg = (bytes) => bytes[0] === 0xff && bytes[1] === 0xd8 && bytes[2] === 0xff;
+const isJpeg = (bytes) =>
+  bytes[0] === 0xff && bytes[1] === 0xd8 && bytes[2] === 0xff;
 
 // Steam's store API lists each app's current portrait art. Newer covers sit
 // behind hashed paths, so they can't be guessed from the app ID alone.
@@ -22,10 +25,12 @@ async function findSteamCover(steamAppId) {
     "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json=" +
       encodeURIComponent(JSON.stringify(request)),
   );
-  if (!response.ok) throw new Error("Steam lookup failed with HTTP " + response.status);
+  if (!response.ok)
+    throw new Error("Steam lookup failed with HTTP " + response.status);
   const assets = (await response.json()).response?.store_items?.[0]?.assets;
   const fileName = assets?.library_capsule_2x || assets?.library_capsule;
-  if (!assets?.asset_url_format || !fileName) throw new Error("Steam lists no portrait cover");
+  if (!assets?.asset_url_format || !fileName)
+    throw new Error("Steam lists no portrait cover");
   return (
     "https://shared.fastly.steamstatic.com/store_item_assets/" +
     assets.asset_url_format.replace("${FILENAME}", fileName)
@@ -65,7 +70,11 @@ for (const game of games) {
 }
 
 if (failureCount) {
-  console.log("\n" + failureCount + " cover(s) failed. Check those coverUrl or steamAppId values.");
+  console.log(
+    "\n" +
+      failureCount +
+      " cover(s) failed. Check those coverUrl or steamAppId values.",
+  );
   process.exitCode = 1;
 } else {
   console.log("\nAll covers are saved.");

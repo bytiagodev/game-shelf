@@ -30,6 +30,7 @@ npm run dev
 
 ```sh
 npm test
+npm run format:check
 npm run build
 npm run preview
 ```

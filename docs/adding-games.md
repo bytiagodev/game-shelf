@@ -5,18 +5,16 @@ Edit `src/data/games.js`. Each game is one object.
 ```js
 export const games = [
   {
-    id: 'your-game',
-    title: 'Your game',
+    id: "your-game",
+    title: "Your game",
     steamAppId: null,
-    genres: ['Adventure'],
+    genres: ["Adventure"],
     years: [2026],
-    lastPlayed: { date: '2026-09-01', precision: 'month' },
-    status: 'playing',
+    lastPlayed: { date: "2026-09-01", precision: "month" },
+    status: "playing",
     totalHours: null,
-    sleeve: 'mint',
-    notes: [
-      { date: '2026-10-04', text: 'A thought to keep for later.' },
-    ],
+    sleeve: "mint",
+    notes: [{ date: "2026-10-04", text: "A thought to keep for later." }],
   },
 ];
 ```

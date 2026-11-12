@@ -46,8 +46,20 @@ body::before {
 body::after {
   inset: 0;
   background:
-    linear-gradient(125deg, transparent 18%, #6ce6e510 18%, #6ce6e510 19%, transparent 19%),
-    linear-gradient(125deg, transparent 82%, #548dff10 82%, #548dff10 83%, transparent 83%);
+    linear-gradient(
+      125deg,
+      transparent 18%,
+      #6ce6e510 18%,
+      #6ce6e510 19%,
+      transparent 19%
+    ),
+    linear-gradient(
+      125deg,
+      transparent 82%,
+      #548dff10 82%,
+      #548dff10 83%,
+      transparent 83%
+    );
 }
 body:has(dialog[open]) {
   overflow: hidden;
