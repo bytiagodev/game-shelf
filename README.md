@@ -15,6 +15,7 @@ The shelves are part of it too. The controller, headset and Sonic plush sitting 
 - A status for each game, with a small sticker on cases I'm still playing or dropped.
 - Search, year and genre filters, plus sorting by title or last played.
 - Dated notes that keep earlier impressions when I return to a game.
+- A link for every game: the address changes when a case opens, so a note can be sent to someone.
 - Responsive shelves that keep every row balanced, and game details that work with a keyboard.
 
 Built with React, Vite and plain CSS. Case titles are real text rather than part of the artwork. There is no Steam sync and no account: games are entered by hand, with dates and lifetime hours checked in Steam.
