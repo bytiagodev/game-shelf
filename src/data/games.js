@@ -5,6 +5,23 @@ export const profile = {
 
 export const games = [
   {
+    id: "forever-ago",
+    title: "Forever Ago",
+    steamAppId: 1215940,
+    genres: ["Adventure"],
+    years: [2026],
+    lastPlayed: { date: "2026-11-14", precision: "day" },
+    status: "finished",
+    totalHours: 6,
+    sleeve: "orange",
+    notes: [
+      {
+        date: "2026-11-14",
+        text: "A short walking simulator about loss that I liked overall. The art style and vibrant colours look great, and one good song bookends the game, though the rest of the soundtrack mostly stayed in the background. Alfred walks slowly, but that suits an old man and never became annoying. The story is emotional and relatable, and it's easy to understand where Alfred comes from. I get that grief and illness can make people bitter, but he snaps at everyone through the first half, even the dog that saved his life, then turns kind almost overnight once someone calls him out. We also see so little of Audrey while she was healthy that I couldn't care for her as much as the game hoped, though her kindness near the end helped. With more of their happier days, it would have resonated even more.",
+      },
+    ],
+  },
+  {
     id: "the-witcher-3-wild-hunt-remastered",
     title: "The Witcher 3: Wild Hunt Remastered",
     spineTitle: "The Witcher 3:\nWild Hunt Remastered",
@@ -377,9 +394,9 @@ export const games = [
     steamAppId: 2996040,
     genres: ["Action", "Adventure", "RPG", "Strategy"],
     years: [2026],
-    lastPlayed: { date: "2026-10-16", precision: "day" },
+    lastPlayed: { date: "2026-11-13", precision: "day" },
     status: "finished",
-    totalHours: 63,
+    totalHours: 64,
     sleeve: "navy",
     notes: [
       {
