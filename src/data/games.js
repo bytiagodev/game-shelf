@@ -5,6 +5,23 @@ export const profile = {
 
 export const games = [
   {
+    id: "phantom-blade-zero",
+    title: "Phantom Blade Zero",
+    steamAppId: 4115450,
+    genres: ["Action", "Adventure", "RPG"],
+    years: [2026],
+    lastPlayed: { date: "2026-11-14", precision: "day" },
+    status: "playing",
+    totalHours: 1,
+    sleeve: "black",
+    notes: [
+      {
+        date: "2026-11-14",
+        text: "First impressions are good. The art style is great, the soundtrack blends traditional and modern music really well, and while it's too early to judge the plot, it seems interesting. Combat animations are excellent. Soul spins and pirouettes through fights, deflecting projectiles one by one and sending them flying away. Those same animations are also a small drawback. Where Onimusha made me feel in full control of every move, here, especially in boss fights, it sometimes feels like each fighter is doing their own thing and happening to land hits. It looks fantastic and captures the wuxia style, but at times I feel like I'm watching the fight more than playing it.",
+      },
+    ],
+  },
+  {
     id: "forever-ago",
     title: "Forever Ago",
     steamAppId: 1215940,
