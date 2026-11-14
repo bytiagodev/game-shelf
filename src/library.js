@@ -50,10 +50,10 @@ export function selectGames(
       if (sort === "title")
         return firstGame.title.localeCompare(secondGame.title, "en");
       // A missing date goes last. Dates are manually recorded, never inferred from hours.
-      return (
-        (secondGame.lastPlayed?.date ?? "").localeCompare(
-          firstGame.lastPlayed?.date ?? "",
-        ) || firstGame.title.localeCompare(secondGame.title, "en")
+      // Games played on the same day keep their order in games.js, where the
+      // newest entry sits at the top. Array sort is stable, so a tie returns 0.
+      return (secondGame.lastPlayed?.date ?? "").localeCompare(
+        firstGame.lastPlayed?.date ?? "",
       );
     });
 }

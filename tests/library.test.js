@@ -50,7 +50,7 @@ test("filters intersect and search ignores surrounding spaces and case", () => {
   );
 });
 
-test("recent order puts unknown dates last and breaks ties by title without mutating data", () => {
+test("recent order puts unknown dates last and keeps file order on ties without mutating data", () => {
   const entries = [
     { title: "Unknown", years: [2026], genres: [], lastPlayed: null },
     {
@@ -74,7 +74,7 @@ test("recent order puts unknown dates last and breaks ties by title without muta
   ];
   assert.deepEqual(
     selectGames(entries, { year: 2026 }).map((game) => game.title),
-    ["Alpha", "Zebra", "Earlier", "Unknown"],
+    ["Zebra", "Alpha", "Earlier", "Unknown"],
   );
   assert.equal(entries[0].title, "Unknown");
   assert.deepEqual(
@@ -87,6 +87,7 @@ test("recent order puts unknown dates last and breaks ties by title without muta
 
 test("a game played across years appears on each of those shelves, and no shelf predates the start year", () => {
   const entries = [
+    { id: "new", title: "New", years: [2027], genres: [], lastPlayed: null },
     {
       id: "returning",
       title: "Returning",
@@ -94,7 +95,6 @@ test("a game played across years appears on each of those shelves, and no shelf 
       genres: [],
       lastPlayed: null,
     },
-    { id: "new", title: "New", years: [2027], genres: [], lastPlayed: null },
   ];
   assert.deepEqual(
     selectGames(entries, { year: 2026 }).map((game) => game.id),

@@ -21,6 +21,7 @@ export const games = [
 
 - `id` is a unique, stable identifier.
 - `years` lists every year the game was played, from 2026 onwards. When returning to a game in a new year, add that year instead of creating a second case; the game then appears on each of those shelves. Years before the collection's start year are never shown.
+- Add new games at the top of the list. Games last played on the same day show in the order they appear in the file, so the one added last comes first.
 - `lastPlayed` can be `null`, an exact date with `precision: 'day'`, or an approximate month with `precision: 'month'`. For a month, use its first day for sorting; the interface displays only the month and year.
 - `status` is `'playing'`, `'finished'`, `'dropped'` or `null` when not recorded.
 - `totalHours` is the lifetime total copied from Steam. Use `null` if unknown; zero remains zero. It does not represent hours played that year.
