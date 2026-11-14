@@ -17,7 +17,7 @@ export const games = [
     notes: [
       {
         date: "2026-11-14",
-        text: "First impressions are good. The art style is great, the soundtrack blends traditional and modern music really well, and while it's too early to judge the plot, it seems interesting. Combat animations are excellent. Soul spins and pirouettes through fights, deflecting projectiles one by one and sending them flying away. Those same animations are also a small drawback. Where Onimusha made me feel in full control of every move, here, especially in boss fights, it sometimes feels like each fighter is doing their own thing and happening to land hits. It looks fantastic and captures the wuxia style, but at times I feel like I'm watching the fight more than playing it.",
+        text: "Promising start. The art style is great, the soundtrack blends traditional and modern music well, and the plot seems interesting. Combat animations are excellent, with Soul pirouetting through fights and deflecting projectiles one by one. That flair comes at a small cost, though. Unlike Onimusha's precise control, boss fights sometimes feel like each fighter is doing their own thing, and I end up watching the fight more than playing it.",
       },
     ],
   },
@@ -34,7 +34,7 @@ export const games = [
     notes: [
       {
         date: "2026-11-14",
-        text: "A short walking simulator about loss that I liked overall. The art style and vibrant colours look great, and one good song bookends the game, though the rest of the soundtrack mostly stayed in the background. Alfred walks slowly, but that suits an old man and never became annoying. The story is emotional and relatable, and it's easy to understand where Alfred comes from. I get that grief and illness can make people bitter, but he snaps at everyone through the first half, even the dog that saved his life, then turns kind almost overnight once someone calls him out. We also see so little of Audrey while she was healthy that I couldn't care for her as much as the game hoped, though her kindness near the end helped. With more of their happier days, it would have resonated even more.",
+        text: "A short walking simulator about loss that I liked overall. The art style and vibrant colours look great, and one good song bookends the game. The story is emotional and relatable, though two things kept it from resonating more. I get that grief can make people bitter, but Alfred snaps at everyone, even the dog that saved his life, then turns kind almost overnight once someone calls him out. We also see so little of Audrey while she was healthy that I couldn't care for her as much as the game hoped, though her kindness near the end helped.",
       },
     ],
   },
@@ -52,7 +52,7 @@ export const games = [
     notes: [
       {
         date: "2026-11-12",
-        text: "It had been over a decade since I last played Wild Hunt, so I wasn't sure how it would hold up, but it's still great. The graphics are beautiful, the soundtrack is top notch, the story is as good as I remembered, and the open world made me want to search every corner for treasure and quests. Gwent is a lot of fun too, both as a break from the adventure and as a game in its own right. The game as a whole feels modern, though the Remastered barely touched the combat, which remains a weak spot, and Roach can be clunky and unresponsive. It was also my first time with the DLC, and Hearts of Stone was the highlight: Gaunter O'Dimm is a brilliantly written villain, Olgierd grew on me, and its focused, tragic fable full of morally grey choices outweighed the reused locations. Blood and Wine clicked less. Apart from Regis, the new characters didn't land, the vibrant fairytale setting wasn't for me, and the plot unravelled once the Beast was revealed too early. Geralt's send-off was fine, just not the one I envisioned. I still enjoyed it, but it was my least favourite part.",
+        text: "Over a decade since I last played it, and it still holds up. The graphics are beautiful, the soundtrack is top notch, the story is as good as I remembered, and the open world kept me exploring every corner. Gwent is a lot of fun too, even in its own right. The combat remains a weak spot the Remastered barely touched, and Roach can be clunky. It was my first time with the DLC. Hearts of Stone was the highlight, with Gaunter O'Dimm as a brilliant villain and a focused, tragic story that outweighed the reused locations. Blood and Wine clicked less. Regis aside, the characters didn't land, the fairytale setting wasn't for me, and the plot unravelled once the Beast was revealed. Still enjoyed it, but it was my least favourite part.",
       },
     ],
   },
