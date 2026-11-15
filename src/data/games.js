@@ -34,7 +34,7 @@ export const games = [
     notes: [
       {
         date: "2026-11-14",
-        text: "A story about love, loss, memories and the moments we wish we could live just one more time. I didn't always agree with Alfred, but I understood him. Grief can make people bitter, yet his change felt abrupt: he snaps at everyone, even the dog that saved his life, then turns kind almost overnight once someone calls him out. Audrey's kindness near the end shows who she was, but we see so little of her while she was healthy that the ending didn't move me as much as the game hoped.",
+        text: "A short walking simulator about loss that I liked. The art style and vibrant colours are lovely, and one memorable song bookends the game, though the rest of the soundtrack fades into the background. The story is emotional and relatable, but Alfred's constant bitterness in the first half makes his sudden change of heart feel unearned. We also see so little of Audrey's happier days that I struggled to connect with her as much as the game hoped. Seeing more of their life together would have made the story hit harder.",
       },
     ],
   },
