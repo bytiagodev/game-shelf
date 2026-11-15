@@ -17,7 +17,7 @@ export const games = [
     notes: [
       {
         date: "2026-11-14",
-        text: "Promising start. The art style is great, the soundtrack blends traditional and modern music well, and the plot seems interesting. Combat animations are excellent, with Soul pirouetting through fights and deflecting projectiles one by one. That flair comes at a small cost, though. Unlike Onimusha's precise control, boss fights sometimes feel like each fighter is doing their own thing, and I end up watching the fight more than playing it.",
+        text: "Promising start. The art style is striking, the soundtrack blends traditional and modern music well, and the plot seems interesting. Combat animations are excellent, with Soul pirouetting through fights and deflecting projectiles one by one. That flair comes at a small cost, though. Unlike Onimusha's precise control, boss fights sometimes feel like both sides are doing their own thing, and I end up watching more than playing.",
       },
     ],
   },
@@ -30,11 +30,11 @@ export const games = [
     lastPlayed: { date: "2026-11-14", precision: "day" },
     status: "finished",
     totalHours: 6,
-    sleeve: "orange",
+    sleeve: "lavender",
     notes: [
       {
         date: "2026-11-14",
-        text: "A short walking simulator about loss that I liked overall. The art style and vibrant colours look great, and one good song bookends the game. The story is emotional and relatable, though two things kept it from resonating more. I get that grief can make people bitter, but Alfred snaps at everyone, even the dog that saved his life, then turns kind almost overnight once someone calls him out. We also see so little of Audrey while she was healthy that I couldn't care for her as much as the game hoped, though her kindness near the end helped.",
+        text: "A short walking simulator about loss that I liked overall. The art style and vibrant colours look great, and one good song bookends the game. The story is emotional and relatable, though two things kept it from resonating more. I get that grief can make people bitter, but Alfred snaps at everyone, even the dog that saved his life, then turns kind almost overnight once someone calls him out. We also see so little of Audrey while she was healthy that I couldn't care for her as much as the game hoped. Her kindness near the end helped.",
       },
     ],
   },
@@ -105,7 +105,7 @@ export const games = [
     notes: [
       {
         date: "2026-09-29",
-        text: "Metroidvanias aren't usually my thing, but this won me over. Enjoyed the responsive combat, exploration and abilities, with quality-of-life features that made a real difference. Some powers arrived too late, the story was forgettable, and I wasn't a fan of Sargon's design. Still, it rekindled my interest in Prince of Persia.",
+        text: "Metroidvanias aren't usually my thing, but this won me over. The combat is responsive, and exploration and new abilities kept things fresh, with quality-of-life features that made a real difference. Some powers arrived too late, the story was forgettable, and I wasn't a fan of Sargon's design. Still, it rekindled my interest in Prince of Persia.",
       },
     ],
   },
@@ -122,7 +122,7 @@ export const games = [
     notes: [
       {
         date: "2026-09-23",
-        text: "Nearly skipped it because I'm usually not a fan of time limits. Glad I didn't. Enjoyed the story, atmosphere and freedom to explore. Day/night changes and directional parrying kept things interesting, and the time pressure made decisions feel meaningful. Enemy variety was the main weakness, especially repeated guards, boars and wolves. Exceeded my expectations. Would like some DLC and to see where they take a sequel.",
+        text: "Nearly skipped it because I'm usually not a fan of time limits. Glad I didn't. The story, atmosphere and freedom to explore all won me over. Day/night changes and directional parrying kept things interesting, and the time pressure made decisions feel meaningful. Enemy variety was the main weakness, especially repeated guards, boars and wolves. Exceeded my expectations. Would like some DLC and to see where they take a sequel.",
       },
     ],
   },
@@ -139,7 +139,7 @@ export const games = [
     notes: [
       {
         date: "2026-09-11",
-        text: "Really captured the feeling of being Indy. Enjoyed the locations, exploration, whip and puzzles, and Indy's voice acting was great. Voss occasionally became too silly, boat travel made backtracking cumbersome, and enemies offered little challenge. The DLC was short, with weaker puzzles and little contribution to the story. Still had a great time.",
+        text: "Really captured the feeling of being Indy. The locations, exploration, whip and puzzles were all a joy, and Indy's voice acting was spot on. Voss occasionally became too silly, boat travel made backtracking cumbersome, and enemies offered little challenge. The DLC was short, with weaker puzzles and little to add to the story. Still a lot of fun overall.",
       },
     ],
   },
@@ -156,7 +156,7 @@ export const games = [
     notes: [
       {
         date: "2026-08-17",
-        text: "Okay, but fell short of its potential. Combat improved after a clunky start, and I liked the music, visual ideas and having Koo alongside me. Emma was bland, and the story wasted an interesting premise. Reused bosses and an unreliable camera held it back too. More development time might have made a real difference.",
+        text: "Okay, but fell short of its potential. Combat improved after a clunky start, and I liked the music, visual ideas and having Koo alongside me. Emma was bland, and the story wasted an interesting premise. Reused bosses and an unreliable camera held it back too. More development time might have let it reach that potential.",
       },
     ],
   },
@@ -227,7 +227,7 @@ export const games = [
     notes: [
       {
         date: "2026-07-04",
-        text: "Strong dystopian cyberpunk setting. The art, characters, story and mystery kept me interested, but the gameplay was dull. The ending felt anticlimactic, and I couldn't see why the two anti-authority choices had to exclude each other. That restriction felt forced. Mixed feelings overall, though I'd still give DLC or a sequel a try.",
+        text: "Strong dystopian cyberpunk setting. The art, characters, story and mystery kept me interested, but the gameplay was dull. The ending felt anticlimactic, and I couldn't see why the two anti-authority choices had to exclude each other. That restriction seemed forced. Mixed feelings overall, though I'd still give DLC or a sequel a try.",
       },
     ],
   },
@@ -245,7 +245,7 @@ export const games = [
     notes: [
       {
         date: "2026-01-04",
-        text: "Started brilliantly, with a great soundtrack and striking art direction. The parry combat was enjoyable at first, but grew repetitive over time. Gustave's death and replacement hurt my interest, and the story's shift towards an “it was all a dream” kind of twist lost me. I wanted more of the original expedition premise, and the change in direction left me with little interest in the game.",
+        text: "Started brilliantly, with a superb soundtrack and striking art direction. The parry combat was enjoyable at first but grew repetitive. Gustave's death and replacement dulled my enthusiasm, and the story's shift towards an “it was all a dream” kind of twist lost me. I wanted more of the original expedition premise, and by the end I had little interest left.",
       },
     ],
   },
@@ -262,7 +262,7 @@ export const games = [
     notes: [
       {
         date: "2026-01-30",
-        text: "Beautiful world, excellent combat, and a story that stayed with me. Jin's conflict between honour and family felt personal, fighting his uncle hit hard, and losing my horse was sad. Combat could be unforgiving, but learning enemies' moves made victories feel earned. Clearing Mongol camps, following foxes and cutting bamboo grew repetitive over a long playthrough, and since so much rests on the story's emotional impact, I have little reason to replay it. A memorable game, if not one I'll return to.",
+        text: "Beautiful world, excellent combat, and a story that stayed with me. Jin's conflict between honour and family felt personal, fighting his uncle hit hard, and losing my horse was sad. Fights could be unforgiving, but learning enemies' moves made victories feel earned. Clearing Mongol camps, following foxes and cutting bamboo grew repetitive over a long playthrough, and since so much rests on the story's emotional impact, I have little reason to replay it. A memorable game, if not one I'll return to.",
       },
     ],
   },
@@ -315,7 +315,7 @@ export const games = [
     notes: [
       {
         date: "2026-03-02",
-        text: "Great graphics and animation, with that Pixar-like attention to detail. Liked the distinctive worlds, and getting around with animals and rocket boots was fun. Combat became repetitive and never developed much further. The story lost steam after chapter two as the pacing slowed, and by the end I felt it did little with its premise and relied heavily on references to earlier games.",
+        text: "The graphics and animation are superb, with a Pixar-like attention to detail. The worlds are distinctive, and getting around with animals and rocket boots was fun. Combat, though, became repetitive and never evolved much. The story lost steam after chapter two as the pacing slowed, and by the end it had done little with its premise, leaning heavily on references to earlier games.",
       },
     ],
   },
@@ -332,7 +332,7 @@ export const games = [
     notes: [
       {
         date: "2026-03-30",
-        text: "Great visuals. Enjoyed the combat and party interactions. Rebirth continues Remake, but together they come across more as a sequel to the original VII than the faithful remake I wanted. The Disneyland-like atmosphere and exaggerated dialogue kept undermining serious moments. Exploration became an unrewarding checklist of map markers and small chores. It's a good game buried under too much filler.",
+        text: "Rebirth continues Remake, but together they play more like a sequel to the original VII than the faithful remake I wanted. The combat, party banter and visuals are excellent, yet the Disneyland-like atmosphere and exaggerated dialogue kept undermining serious moments. Exploration became an unrewarding checklist of map markers and chores. A good game buried under too much filler.",
       },
     ],
   },
@@ -349,7 +349,7 @@ export const games = [
     notes: [
       {
         date: "2026-05-09",
-        text: "The Eikon fights were great, though they often dragged on too long, the cinematics were cool, and I liked the music. Beyond that, the basic story left me missing VII, VIII, IX and X. Combat settled into the same dodge, stagger and cooldown routine, with little meaningful customisation or crafting. The mundane side quests and forgettable characters dragged the pacing down. It's a mix of an MMO and Devil May Cry. Expected more from a mainline Final Fantasy.",
+        text: "The Eikon fights were impressive, if often overlong, the cinematics were striking, and I liked the music. Beyond that, the basic story left me missing VII, VIII, IX and X. Combat settled into the same dodge, stagger and cooldown routine with little meaningful customisation or crafting, while mundane side quests and forgettable characters slowed the pacing. Part MMO, part Devil May Cry. Expected more from a mainline Final Fantasy.",
       },
     ],
   },
@@ -418,7 +418,7 @@ export const games = [
     notes: [
       {
         date: "2026-08-18",
-        text: "Great music, responsive combat and varied builds, with bosses that need different approaches, and the turtles' dialogue keeps runs entertaining. King's Gambit finally resolved the mystery. Rat King isn't as compelling as Shredder, but the new level and Gauntlet Challenge add welcome variety.",
+        text: "Excellent music, responsive combat and varied builds, with bosses that need different approaches, and the turtles' dialogue keeps runs entertaining. King's Gambit finally resolved the mystery. Rat King isn't as compelling as Shredder, but the new level and Gauntlet Challenge add welcome variety.",
       },
       {
         date: "2026-10-10",
