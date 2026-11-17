@@ -34,7 +34,7 @@ export const games = [
     notes: [
       {
         date: "2026-11-14",
-        text: "The art style and vibrant colours are lovely, and one memorable song bookends the game, though the rest of the soundtrack fades into the background. The story is emotional and relatable, but Alfred's constant bitterness in the first half makes his sudden change of heart feel unearned. We also see so little of Audrey's happier days that I struggled to connect with her as much as the game hoped. Seeing more of their life together would have made the story hit harder.",
+        text: "The art style and vibrant colours are lovely, and one pleasant song bookends the game. The story is emotional and relatable, but Alfred's constant bitterness in the first half makes his sudden change of heart feel unearned. We also see so little of Audrey's happier days that I struggled to connect with her as much as the game hoped. More of their life together would have made it hit harder.",
       },
     ],
   },
@@ -52,7 +52,7 @@ export const games = [
     notes: [
       {
         date: "2026-11-12",
-        text: "Over a decade since I last played it, and it still holds up. The graphics are beautiful, the soundtrack is top notch, the story is as good as I remembered, and the open world kept me exploring every corner. Gwent is a lot of fun too, even in its own right. The combat remains a weak spot the Remastered barely touched, and Roach can be clunky. It was my first time with the DLC. Hearts of Stone was the highlight, with Gaunter O'Dimm as a brilliant villain and a focused, tragic story that outweighed the reused locations. Blood and Wine clicked less. Regis aside, the characters didn't land, the fairytale setting wasn't for me, and the plot unravelled once the Beast was revealed. Still enjoyed it, but it was my least favourite part.",
+        text: "Over a decade later, it still holds up. The graphics, soundtrack and story are as good as I remembered, the open world kept me exploring every corner, and Gwent is fun in its own right. The combat remains a weak spot, and Roach can be clunky. Of the DLC, both new to me, Hearts of Stone was the highlight thanks to Gaunter O'Dimm. Blood and Wine clicked less. Regis aside, the characters didn't land, the fairytale setting wasn't for me, and the plot unravelled once the Beast was revealed.",
       },
     ],
   },
@@ -87,7 +87,7 @@ export const games = [
     notes: [
       {
         date: "2026-10-05",
-        text: "As a lifelong Bond fan, this delivered. Enjoyed the origin story and atmosphere, especially investigating, eavesdropping, bluffing and using gadgets. Those choices made me feel like Bond. Combat had clever ideas too: throwing objects to stun enemies, shooting knees to make them stumble and targeting hands to disarm them gave each encounter different approaches. It just never felt as fluid as the best melee combat out there, which made me wish for lock-on. Hope IO Interactive gets to make another.",
+        text: "As a lifelong Bond fan, this delivered. Enjoyed the origin story and atmosphere, and investigating, eavesdropping, bluffing and using gadgets made me feel like Bond. Combat had clever ideas, like throwing objects to stun enemies, shooting knees to make them stumble and targeting hands to disarm them. It just never felt as fluid as the best melee combat, which made me wish for lock-on. Hope IO Interactive makes another.",
       },
     ],
   },
@@ -210,7 +210,7 @@ export const games = [
     notes: [
       {
         date: "2026-08-25",
-        text: "Started the collection with Kingdom Hearts Final Mix, my first time with this version after playing the original on PS2. Enjoyed it, especially the worlds, characters and music, even if it didn't quite recapture the magic I remembered. Combat is mostly too easy outside bosses, and the camera often gets in the way. The Hercules tournaments offer a welcome change of pace. Skipping Chain of Memories because of its card combat system, but plan to play II.",
+        text: "My first time with Final Mix, after playing the original on PS2. Enjoyed the worlds, characters and music, even if it didn't quite recapture the magic I remembered. Combat is mostly too easy outside bosses, and the camera often gets in the way, though the Hercules tournaments offer a welcome change of pace. Skipping Chain of Memories because of its card combat, but plan to play II.",
       },
     ],
   },
@@ -262,7 +262,7 @@ export const games = [
     notes: [
       {
         date: "2026-01-30",
-        text: "Beautiful world, excellent combat, and a story that stayed with me. Jin's conflict between honour and family felt personal, fighting his uncle hit hard, and losing my horse was sad. Fights could be unforgiving, but learning enemies' moves made victories feel earned. Clearing Mongol camps, following foxes and cutting bamboo grew repetitive over a long playthrough, and since so much rests on the story's emotional impact, I have little reason to replay it. A memorable game, if not one I'll return to.",
+        text: "Beautiful world, excellent combat, and a story that stayed with me. Jin's conflict between honour and family felt personal, and fighting his uncle hit hard. Fights could be unforgiving, but learning enemies' moves made victories feel earned. Clearing camps, following foxes and cutting bamboo grew repetitive, and since so much rests on the story's emotional impact, I have little reason to replay it. Memorable, if not one I'll return to.",
       },
     ],
   },
