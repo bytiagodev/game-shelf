@@ -34,7 +34,7 @@ export const games = [
     notes: [
       {
         date: "2026-11-14",
-        text: "A short walking simulator about loss that I liked. The art style and vibrant colours are lovely, and one memorable song bookends the game, though the rest of the soundtrack fades into the background. The story is emotional and relatable, but Alfred's constant bitterness in the first half makes his sudden change of heart feel unearned. We also see so little of Audrey's happier days that I struggled to connect with her as much as the game hoped. Seeing more of their life together would have made the story hit harder.",
+        text: "The art style and vibrant colours are lovely, and one memorable song bookends the game, though the rest of the soundtrack fades into the background. The story is emotional and relatable, but Alfred's constant bitterness in the first half makes his sudden change of heart feel unearned. We also see so little of Audrey's happier days that I struggled to connect with her as much as the game hoped. Seeing more of their life together would have made the story hit harder.",
       },
     ],
   },
