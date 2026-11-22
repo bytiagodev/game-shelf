@@ -5,6 +5,23 @@ export const profile = {
 
 export const games = [
   {
+    id: "milki-delivery",
+    title: "Milki Delivery",
+    steamAppId: 4259360,
+    genres: ["Adventure", "Simulation"],
+    years: [2026],
+    lastPlayed: { date: "2026-11-22", precision: "day" },
+    status: "finished",
+    totalHours: 4,
+    sleeve: "blue",
+    notes: [
+      {
+        date: "2026-11-22",
+        text: "Not my usual kind of game, but I'm glad I gave it a chance. Delivering milk around the countryside to find your cow Milki a friend is the whole premise, and it's all it needs. The hand-drawn art, relaxing music and simple route planning are charming, and slowing down to chat with locals, help them and gather resources made each outing rewarding. Short, gentle and clearly made with care.",
+      },
+    ],
+  },
+  {
     id: "phantom-blade-zero",
     title: "Phantom Blade Zero",
     steamAppId: 4115450,
