@@ -17,7 +17,7 @@ export const games = [
     notes: [
       {
         date: "2026-11-21",
-        text: "The art style is stunning, and the soundtrack blends traditional and modern music beautifully. Combat is the star: Soul pirouettes through fights like a wuxia dance, and it feels even better than it looks. Free respecs encouraged me to keep switching weapons, each with unique animations, which kept combat fresh. The story was interesting, but told mostly through scattered notes and time-skipping cutscenes. Soul's personality is bland and the cast forgettable. Still, I had a blast.",
+        text: "Combat is the star. Soul pirouettes through fights like a wuxia dance, and it feels even better than it looks. Free respecs encouraged me to keep switching weapons, each with unique animations, which kept combat fresh. The art style is stunning, and the soundtrack blends traditional and modern music beautifully. The story was interesting, but told mostly through scattered notes and time-skipping cutscenes. Soul's personality is bland and the cast forgettable. Still, I had a blast.",
       },
     ],
   },
@@ -417,12 +417,8 @@ export const games = [
     sleeve: "navy",
     notes: [
       {
-        date: "2026-08-18",
-        text: "Excellent music, responsive combat and varied builds, with bosses that need different approaches, and the turtles' dialogue keeps runs entertaining. King's Gambit finally resolved the mystery. Rat King isn't as compelling as Shredder, but the new level and Gauntlet Challenge add welcome variety.",
-      },
-      {
         date: "2026-10-10",
-        text: "Still return occasionally for a couple of runs, but repeated routes and no upgrades left to buy give me less reason to play. The character DLC is fairly priced, though only Casey Jones stood out. Hoping for continued support and new levels.",
+        text: "Excellent music, responsive combat and varied builds, with bosses that need different approaches, and the turtles' dialogue keeps runs entertaining. The Gauntlet Challenge and fairly priced character DLC add welcome variety, though only Casey Jones stood out. With repeated routes and no upgrades left to buy, I only return occasionally for a couple of runs, but continued support with new levels would bring me back for more.",
       },
     ],
   },
