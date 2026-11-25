@@ -5,6 +5,23 @@ export const profile = {
 
 export const games = [
   {
+    id: "the-last-gas-station",
+    title: "The Last Gas Station",
+    steamAppId: 3690030,
+    genres: ["Adventure", "Casual", "Simulation"],
+    years: [2026],
+    lastPlayed: { date: "2026-11-25", precision: "day" },
+    status: "finished",
+    totalHours: 10,
+    sleeve: "red",
+    notes: [
+      {
+        date: "2026-11-25",
+        text: "The art style is pleasing, the setting is a lot of fun, and its mechanics ease in gently, even for a shop management newcomer. The minigames, from refilling oil to washing cars, are the highlight, which makes automation my biggest gripe: each upgrade takes more of them away until the cozy station feels like a factory. The story also fell apart, leaving most legends unresolved. Still a nice game, just short of its potential.",
+      },
+    ],
+  },
+  {
     id: "milki-delivery",
     title: "Milki Delivery",
     steamAppId: 4259360,
